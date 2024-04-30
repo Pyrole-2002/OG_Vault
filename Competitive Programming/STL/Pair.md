@@ -1,0 +1,5 @@
+- Pair is used to combine two values of any data types.
+- It is used if we want to store tuples.
+- The first element is referenced as `first` and the second element is referenced as `second`.
+- Pairs can be assigned, copied and compared.
+- The array of objects allocated in a [[Map]] or [[Hash Map]] is of type pair.

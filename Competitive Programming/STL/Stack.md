@@ -4,3 +4,24 @@
 ```cpp
 stack<object_type> variable_name;
 ```
+
+### Functions
+```cpp
+stack<int> s;
+
+// empty() returns true if stack is empty else false
+s.empty();
+
+// size() returns the size of the stack
+s.size();
+
+// top() returns a reference to the top most element
+s.top();
+
+// push() and emplace() inserts an element to the top of stack
+s.push(2);
+s.emplace(3);
+
+// pop() deletes the topmost element from stack
+s.pop();
+```
