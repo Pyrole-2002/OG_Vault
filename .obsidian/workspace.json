@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "f1815148c791e9cb",
+        "id": "cd8b8576bc0773e4",
         "type": "tabs",
         "children": [
           {
-            "id": "c00c7410f532227b",
+            "id": "b927c22811f546cb",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -148,7 +148,7 @@
       "publish:Publish changes...": false
     }
   },
-  "active": "c00c7410f532227b",
+  "active": "b927c22811f546cb",
   "lastOpenFiles": [
     "Competitive Programming/STL/Stack.md",
     "Competitive Programming/STL/Priority Queue.md",
