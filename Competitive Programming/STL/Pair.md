@@ -3,3 +3,7 @@
 - The first element is referenced as `first` and the second element is referenced as `second`.
 - Pairs can be assigned, copied and compared.
 - The array of objects allocated in a [[Map]] or [[Hash Map]] is of type pair.
+## Syntax
+```cpp
+pair<object_type1, object_type2> variable_name;
+```
