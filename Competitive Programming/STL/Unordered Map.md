@@ -16,6 +16,28 @@ m.emplace("b", 2);
 m["c"] = 3;
 
 // begin() returns an iterator to the first element in the container
+m.begin();
+
+// end() returns an iterator to the theoretical element after the last element in the container
+m.end();
+
+// bucket() returns the bucket number wehre the key is located
+m.bucket("a");
+
+// bucket_count() returns the number of buckets in the container
+m.bucket_count();
+
+// bucket_size() returns the number of elements in a bucket (given bucket_number)
+m.bucket_size(i);
+
+// find() returns an iterator to the key
+m.find("a");
+
+// empty() returns true if the container is empty else false
+m.empty();
+
+// erase() erases a key in the container
+m.erase("a");
 ```
 
 #### Unordered Map vs [[Unordered Set]]
