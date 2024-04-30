@@ -4,4 +4,6 @@
 ## Syntax
 ```cpp
 priority_queue<object_type> variable_name;
+
+// min heap for priority queue
 ```
