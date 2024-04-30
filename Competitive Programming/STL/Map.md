@@ -21,7 +21,7 @@ m.emplace("Five", 5);
 m.count("Four");
 
 // find() returns an iterator to the element with matching key
-pair<string, int> p = m.find("Three"); // p->first gives the key, p->second gives the value
+pair<string, int>* p = m.find("Three"); // p->first gives the key, p->second gives the value
 
 // size() returns the size of the map
 m.size();
