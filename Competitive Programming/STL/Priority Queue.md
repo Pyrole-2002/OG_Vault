@@ -6,4 +6,26 @@
 priority_queue<object_type> variable_name;
 
 // min heap for priority queue
+priority_queue<object_type, vector<object_type>, greater<object_type>> variable_name;
+```
+
+### Functions
+```cpp
+priority_queue<int> q;
+
+// empty() returns true if container is empty else false
+q.empty();
+
+// size() returns the size of the container
+q.size();
+
+// top() returns a reference to the topmost element of queue
+q.top();
+
+// push() and emplace() inserts a new element at the end of queue
+q.push(1);
+q.emplace(2);
+
+// swap() swaps the contents of two containers of same data type
+q1.swap(q2);
 ```

@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "8dbd7680080aff7e",
+        "id": "f1815148c791e9cb",
         "type": "tabs",
         "children": [
           {
-            "id": "df189e29515896f7",
+            "id": "c00c7410f532227b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Competitive Programming/STL/Priority Queue.md",
+                "file": "Competitive Programming/STL/Stack.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Competitive Programming/STL/Priority Queue.md",
+                "file": "Competitive Programming/STL/Stack.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Competitive Programming/STL/Priority Queue.md",
+                "file": "Competitive Programming/STL/Stack.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Competitive Programming/STL/Priority Queue.md"
+                "file": "Competitive Programming/STL/Stack.md"
               }
             }
           }
@@ -148,15 +148,16 @@
       "publish:Publish changes...": false
     }
   },
-  "active": "df189e29515896f7",
+  "active": "c00c7410f532227b",
   "lastOpenFiles": [
+    "Competitive Programming/STL/Stack.md",
     "Competitive Programming/STL/Priority Queue.md",
-    "Competitive Programming/STL/Vector.md",
     "Competitive Programming/STL/Queue.md",
-    "Competitive Programming/STL/List.md",
-    "Competitive Programming/STL/Forward List.md",
-    "Competitive Programming/STL/Array.md",
     "Competitive Programming/STL/Deque.md",
+    "Competitive Programming/STL/Forward List.md",
+    "Competitive Programming/STL/Vector.md",
+    "Competitive Programming/STL/List.md",
+    "Competitive Programming/STL/Array.md",
     "Competitive Programming/STL/Set.md",
     "Competitive Programming/STL/Unordered Set.md",
     "Competitive Programming/STL/Unordered Multiset.md",
