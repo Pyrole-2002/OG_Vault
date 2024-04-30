@@ -1,0 +1,178 @@
+{
+  "main": {
+    "id": "82e04c108335f0ba",
+    "type": "split",
+    "children": [
+      {
+        "id": "8dbd7680080aff7e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "df189e29515896f7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Competitive Programming/STL/Priority Queue.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7df82c6db3768094",
+    "type": "split",
+    "children": [
+      {
+        "id": "6d451705aeafefc0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "73e68f4042b908ce",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "5b44d258e43b9e9c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "157051a422d1675e",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 241.50260543823242
+  },
+  "right": {
+    "id": "79f8c558b83a1164",
+    "type": "split",
+    "children": [
+      {
+        "id": "6686fb16ad2ece5c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b770e66c8579e300",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Competitive Programming/STL/Priority Queue.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "2ffe054db06c44ed",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Competitive Programming/STL/Priority Queue.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "3b63461994838e09",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "9a795c0670258931",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Competitive Programming/STL/Priority Queue.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "publish:Publish changes...": false
+    }
+  },
+  "active": "df189e29515896f7",
+  "lastOpenFiles": [
+    "Competitive Programming/STL/Priority Queue.md",
+    "Competitive Programming/STL/Vector.md",
+    "Competitive Programming/STL/Queue.md",
+    "Competitive Programming/STL/List.md",
+    "Competitive Programming/STL/Forward List.md",
+    "Competitive Programming/STL/Array.md",
+    "Competitive Programming/STL/Deque.md",
+    "Competitive Programming/STL/Set.md",
+    "Competitive Programming/STL/Unordered Set.md",
+    "Competitive Programming/STL/Unordered Multiset.md",
+    "().md",
+    "Competitive Programming/Tricks.md",
+    "Binary Search Tree.md",
+    "Competitive Programming/Number Theory/Fibonacci Computation.md",
+    "Competitive Programming/Number Theory/Fermat's Little Theorem.md",
+    "Competitive Programming/Number Theory/Binary Exponentiation.md",
+    "Competitive Programming/STL",
+    "Competitive Programming/Number Theory/Euclidean Algorithm.md",
+    "Competitive Programming/Tricks",
+    "Euclidean Algorithm.md",
+    "Competitive Programming/Number Theory",
+    "Competitive Programming",
+    "create a link.md",
+    "Welcome.md"
+  ]
+}
