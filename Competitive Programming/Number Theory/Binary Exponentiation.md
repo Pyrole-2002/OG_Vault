@@ -4,7 +4,7 @@ Calculates $A^B$ in $O(\log B)$ instead of usual $O(B)$
 - **Case 3:** If $B$ is odd, then we calculate $(A \times (A^{\frac{B-1}{2}}) ^ 2)$.
 
 ```cpp
-long long binpow(long long A, long long B) // recursive
+long long binpow(long long A, long long B) // recursive (slower)
 {
     if (B == 0)
         return 1;
@@ -17,17 +17,17 @@ long long binpow(long long A, long long B) // recursive
 ```
 
 ```cpp
-long long power(long long a, long long b) // iterative (faster)
+long long binpow(long long a, long long b) // iterative (faster)
 {
-    long long result = 1;
+    long long res = 1;
     while(b)
 		{
         if (b & 1) 
-			result = result * a;
+			res = res * a;
         a = a * a;
         b >>= 1;
     }
-    return result;
+    return res;
 }
 ```
 

@@ -55,3 +55,33 @@ int lcm(int a, int b)
 }
 ```
 # Binary GCD
+- The slow part of the algorithm is the modulo operations. These are a lot slower than the simple addition, subtraction or bitwise operations. So we use some properties to implement a faster binary GCD function (same as the inbuilt GCD function).
+- If both numbers are even, then we can factor out a $2$ from both and compute the GCD of the remaining.
+  $\gcd(2a, 2b) = 2\gcd(a, b)$
+- If one of the numbers is even and other is odd, then we can remove the factor of $2$ from the even one.
+  $\gcd(2a, b) = \gcd(a, b)$
+- If both numbers are odd, then we can subtract one number from the other and calculate GCD.
+  $gcd(a, b) = \gcd(a-b, b)$
+```cpp
+int gcdBinary(int a, int b)
+{
+	if (!a || !b)
+	{
+		return a | b; // if either one of a or b is 0, return the non-zero value
+	}
+	unsigned shift = __builtin_ctz(a | b); // calculates the number of trailing zeroes in binary form of a | b
+	a >>= __builtin_ctz(a); // remove trailing zeroes from 
+	do
+	{
+		b >>= __builtin_ctz(b);
+		if (a > b)
+		{
+			swap(a, b);
+		}
+		b -= a;
+	}
+	while (b);
+	return a << shift;
+}
+```
+# Extended Euclidean Algorithm
