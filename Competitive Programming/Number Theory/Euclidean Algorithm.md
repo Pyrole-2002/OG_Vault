@@ -1,1 +1,6 @@
 Given two non-negative integers $a$ and $b$, Euclidean Algorithm helps find the GCD for both.
+$$
+\gcd(a, b) =
+\begin{}
+\end{}
+$$
