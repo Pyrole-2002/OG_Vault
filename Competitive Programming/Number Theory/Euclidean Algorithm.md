@@ -39,8 +39,19 @@ int gcdIterative(int a, int b)
 ```
 
 > [!tip] Always use C++ inbuilt [[Tricks#Inbuilt GCD|GCD]] function.
-
 ## Time Complexity
 - The time complexity of Euclidean Algorithm is estimated by Lame's Theorem, which establishes a connection between the Euclidean Algorithm and the [[Fibonacci Computation]].
 - Consecutive Fibonacci Numbers are the worst case input for Euclidean Algorithm.
 - Given that the Fibonacci Numbers grow exponentially, the Euclidean Algorithm works in $O\Big(\log\big(\min(a, b)\big)\Big)$.
+### LCM
+$$
+\DeclareMathOperator{\lcm}{lcm}
+a\cdot b = \lcm(a,b)\cdot\gcd(a,b)
+$$
+```cpp
+int lcm(int a, int b)
+{
+	return (a / gcd(a, b)) * b; // avoids integer overflow
+}
+```
+# Binary GCD
