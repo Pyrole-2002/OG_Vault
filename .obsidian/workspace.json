@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "BRSM Report.md",
+                "file": "Random Shit/BRSM Report.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -100,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "BRSM Report.md",
+                "file": "Random Shit/BRSM Report.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "BRSM Report.md",
+                "file": "Random Shit/BRSM Report.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "BRSM Report.md"
+                "file": "Random Shit/BRSM Report.md"
               }
             }
           }
@@ -162,10 +162,10 @@
       "publish:Publish changes...": false
     }
   },
-  "active": "1a6814c3a90c8dcc",
+  "active": "73e68f4042b908ce",
   "lastOpenFiles": [
     "Competitive Programming/Number Theory/Euclidean Algorithm.md",
-    "BRSM Report.md",
+    "Random Shit/BRSM Report.md",
     "Random Shit",
     "Competitive Programming/Number Theory/Binary Exponentiation.md",
     "Competitive Programming/Number Theory/Fermat's Little Theorem.md",
