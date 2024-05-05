@@ -4,24 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "0d1de216a1ee5f8c",
+        "id": "a82a2458ce12ef92",
         "type": "tabs",
         "children": [
           {
-            "id": "b44d384527e06356",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Competitive Programming/Number Theory/Euclidean Algorithm.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1a6814c3a90c8dcc",
+            "id": "d3d726fb2a376f11",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -33,8 +20,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -162,18 +148,20 @@
       "publish:Publish changes...": false
     }
   },
-  "active": "1a6814c3a90c8dcc",
+  "active": "d3d726fb2a376f11",
   "lastOpenFiles": [
     "Competitive Programming/Number Theory/Euclidean Algorithm.md",
+    "Competitive Programming/STL/Unordered Set.md",
+    "Binary Search Tree.md",
+    "Competitive Programming/STL/Unordered Multiset.md",
+    "Competitive Programming/STL/Unordered Multimap.md",
     "Random Shit/BRSM Project Report.md",
     "Random Shit",
     "Competitive Programming/Number Theory/Binary Exponentiation.md",
     "Competitive Programming/Number Theory/Fermat's Little Theorem.md",
     "Competitive Programming/Tricks.md",
     "Competitive Programming/Number Theory/Fibonacci Computation.md",
-    "Competitive Programming/STL/Unordered Multimap.md",
     "Competitive Programming/STL/Unordered Map.md",
-    "Competitive Programming/STL/Unordered Multiset.md",
     "Competitive Programming/STL/Vector.md",
     "Competitive Programming/STL/Stack.md",
     "Competitive Programming/STL/Multimap.md",
@@ -187,9 +175,7 @@
     "Competitive Programming/STL/Forward List.md",
     "Competitive Programming/STL/List.md",
     "Competitive Programming/STL/Array.md",
-    "Competitive Programming/STL/Unordered Set.md",
     "().md",
-    "Binary Search Tree.md",
     "Competitive Programming/STL",
     "Competitive Programming/Tricks",
     "Euclidean Algorithm.md",
