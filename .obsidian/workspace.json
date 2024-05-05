@@ -19,8 +19,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "1a6814c3a90c8dcc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "BRSM Report.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Competitive Programming/Number Theory/Euclidean Algorithm.md",
+                "file": "BRSM Report.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Competitive Programming/Number Theory/Euclidean Algorithm.md",
+                "file": "BRSM Report.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Competitive Programming/Number Theory/Euclidean Algorithm.md"
+                "file": "BRSM Report.md"
               }
             }
           }
@@ -148,10 +162,12 @@
       "publish:Publish changes...": false
     }
   },
-  "active": "b44d384527e06356",
+  "active": "1a6814c3a90c8dcc",
   "lastOpenFiles": [
-    "Competitive Programming/Number Theory/Binary Exponentiation.md",
     "Competitive Programming/Number Theory/Euclidean Algorithm.md",
+    "BRSM Report.md",
+    "Random Shit",
+    "Competitive Programming/Number Theory/Binary Exponentiation.md",
     "Competitive Programming/Number Theory/Fermat's Little Theorem.md",
     "Competitive Programming/Tricks.md",
     "Competitive Programming/Number Theory/Fibonacci Computation.md",
@@ -178,7 +194,6 @@
     "Competitive Programming/Tricks",
     "Euclidean Algorithm.md",
     "Competitive Programming/Number Theory",
-    "Competitive Programming",
-    "create a link.md"
+    "Competitive Programming"
   ]
 }
