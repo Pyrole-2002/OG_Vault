@@ -44,4 +44,11 @@
 | G2            |                         Second period grade (numeric) |
 | G3            |                                 Final grade (numeric) |
 ### Ambiguities
-- 
+- The dataset comprises grades for two core courses, Mathematics and Portuguese, both mandatory for all students.
+- The Mathematics dataset includes information from 395 distinct students, lacking individual student identification.
+- The Portuguese dataset encompasses data from 649 distinct students, also without student identification.
+- The authors of the dataset and associated research paper provided an R script to merge the datasets and identify common students taking both courses.
+- According to the merging script, two students are considered identical if they share the same values for specific variables: school, sex, age, address, famsize, Pstatus, Medu, Fedu, Mjob, Fjob, reason, nursery, and internet.
+- However, it's possible that distinct students could share identical values for these variables, raising concerns about the accuracy of the merging process.
+- Additionally, the merging script does not account for other variables such as guardian, traveltime, activities, romantic, famrel, freetime, goout, Dalc, Walc, health, and absences, which can significantly influence the results.
+- Due to the absence of a unique student identification ID, it's safest to conduct statistical tests only on the Portuguese dataset to avoid potential inaccuracies in merging and analysis.
