@@ -122,3 +122,15 @@
 ![[Pasted image 20240506134046.png]]
 
 ---
+### Correlation Heatmap
+![[Pasted image 20240506140734.png]]
+- Mother's Education and Father's Education are highly correlated.
+- G1, G2, G3 are highly correlated with each other and negatively correlated to number of failures which is intuitive.
+- Weekend and Weekday alcohol consumption are highly correlated and also correlated to how much student goes to hangouts.
+### PCA Scree Plot
+![[Pasted image 20240506140840.png]]![[Pasted image 20240506140856.png]]
+The first two principle components explain large fraction of the variance.
+### Factor Analysis
+![[Pasted image 20240506140923.png]]![[Pasted image 20240506140938.png]]
+
+---
