@@ -55,3 +55,70 @@
 ## Distribution of Data
 #### School
 ![[Pasted image 20240506132141.png]]
+#### Shapiro test for Age
+![[Pasted image 20240506132646.png]]
+![[Pasted image 20240506132704.png]]
+#### Gender
+![[Pasted image 20240506132759.png]]
+#### Address
+![[Pasted image 20240506132821.png]]
+#### Family Size
+![[Pasted image 20240506132901.png]]
+#### Parent's Cohabitation Status
+![[Pasted image 20240506132930.png]]
+#### Mother's Education
+![[Pasted image 20240506132958.png]]
+#### Father's Education
+![[Pasted image 20240506133027.png]]
+#### Mother's Job
+![[Pasted image 20240506133106.png]]![[Pasted image 20240506133121.png]]
+#### Father's Job
+![[Pasted image 20240506133143.png]]
+#### Reason to chose school
+![[Pasted image 20240506133204.png]]
+#### Guardian
+![[Pasted image 20240506133341.png]]
+#### Travel Time
+![[Pasted image 20240506133402.png]]
+#### Study Time
+![[Pasted image 20240506133433.png]]
+#### Failures
+![[Pasted image 20240506133509.png]]
+#### Extra Educational Support
+![[Pasted image 20240506133536.png]]
+#### Family Education Support
+![[Pasted image 20240506133603.png]]
+#### Paid Classes
+![[Pasted image 20240506133617.png]]
+#### Extra-Curricular Activities
+![[Pasted image 20240506133644.png]]
+#### Nursery
+![[Pasted image 20240506133658.png]]
+#### Higher Education
+![[Pasted image 20240506133718.png]]
+#### Internet Access
+![[Pasted image 20240506133734.png]]
+#### Romantic Relationship
+![[Pasted image 20240506133753.png]]
+#### Family Relationship
+![[Pasted image 20240506133813.png]]
+#### Free Time
+![[Pasted image 20240506133827.png]]
+#### Going Out
+![[Pasted image 20240506133841.png]]
+#### Workday Alcohol Consumption
+![[Pasted image 20240506133858.png]]
+#### Weekend Alcohol Consumption
+![[Pasted image 20240506133921.png]]
+#### Health
+![[Pasted image 20240506133942.png]]
+#### Absences
+![[Pasted image 20240506133954.png]]
+#### G1
+![[Pasted image 20240506134026.png]]
+#### G2
+![[Pasted image 20240506134037.png]]
+#### G3
+![[Pasted image 20240506134046.png]]
+
+---
