@@ -52,3 +52,6 @@
 - However, it's possible that distinct students could share identical values for these variables, raising concerns about the accuracy of the merging process.
 - Additionally, the merging script does not account for other variables such as guardian, traveltime, activities, romantic, famrel, freetime, goout, Dalc, Walc, health, and absences, which can significantly influence the results.
 - Due to the absence of a unique student identification ID, it's safest to conduct statistical tests only on the Portuguese dataset to avoid potential inaccuracies in merging and analysis.
+## Distribution of Data
+#### School
+![[Pasted image 20240506132141.png]]
