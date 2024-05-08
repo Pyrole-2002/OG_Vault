@@ -55,13 +55,17 @@
 ## Distribution of Data
 #### School
 ![[Pasted image 20240506132141.png]]
+The two schools from which data was collected were named GP and MS, with GP having significantly more students than MS in the dataset.
 #### Shapiro test for Age
 ![[Pasted image 20240506132646.png]]
+The shapiro test for normality shows that age isn't normally distributed. The same can be verified from the age distribution plot below.
 ![[Pasted image 20240506132704.png]]
 #### Gender
 ![[Pasted image 20240506132759.png]]
+Majority of participants were Female.
 #### Address
 ![[Pasted image 20240506132821.png]]
+Majority of students resided in urban areas.
 #### Family Size
 ![[Pasted image 20240506132901.png]]
 #### Parent's Cohabitation Status
@@ -76,10 +80,13 @@
 ![[Pasted image 20240506133143.png]]
 #### Reason to chose school
 ![[Pasted image 20240506133204.png]]
+We can see that the most common reason to chose the specific school was the proximity to the students home.
 #### Guardian
 ![[Pasted image 20240506133341.png]]
+A large proportion of students had their mother as their guardian.
 #### Travel Time
 ![[Pasted image 20240506133402.png]]
+Majority of students had very little travel time to school (< 30 min), this is also supported by the distribution of reason to choose that schoo
 #### Study Time
 ![[Pasted image 20240506133433.png]]
 #### Failures
