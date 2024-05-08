@@ -86,27 +86,36 @@ We can see that the most common reason to chose the specific school was the prox
 A large proportion of students had their mother as their guardian.
 #### Travel Time
 ![[Pasted image 20240506133402.png]]
-Majority of students had very little travel time to school (< 30 min), this is also supported by the distribution of reason to choose that schoo
+Majority of students had very little travel time to school (< 30 min), this is also supported by the distribution of reason to choose that school.
 #### Study Time
 ![[Pasted image 20240506133433.png]]
 #### Failures
 ![[Pasted image 20240506133509.png]]
+Most students have 0 failures.
 #### Extra Educational Support
 ![[Pasted image 20240506133536.png]]
+Most students take extra educational support.
 #### Family Education Support
 ![[Pasted image 20240506133603.png]]
+A decent portion of the students don't have family education support, however majority students do.
 #### Paid Classes
 ![[Pasted image 20240506133617.png]]
+Almost all students take paid classes.
 #### Extra-Curricular Activities
 ![[Pasted image 20240506133644.png]]
+Approximately half of the students don't take part in extra-curricular actvities.
 #### Nursery
 ![[Pasted image 20240506133658.png]]
+Majority of the students took nursery in childhood.
 #### Higher Education
 ![[Pasted image 20240506133718.png]]
+A large proportion of the students want to take higher education in future.
 #### Internet Access
 ![[Pasted image 20240506133734.png]]
+Majority of the students have access to internet.
 #### Romantic Relationship
 ![[Pasted image 20240506133753.png]]
+More than half of the students are engaged in romantic relationships.
 #### Family Relationship
 ![[Pasted image 20240506133813.png]]
 #### Free Time
@@ -115,12 +124,14 @@ Majority of students had very little travel time to school (< 30 min), this is a
 ![[Pasted image 20240506133841.png]]
 #### Workday Alcohol Consumption
 ![[Pasted image 20240506133858.png]]
+Majority of students don't consume alcohol on weekdays or consume very less.
 #### Weekend Alcohol Consumption
 ![[Pasted image 20240506133921.png]]
 #### Health
 ![[Pasted image 20240506133942.png]]
 #### Absences
 ![[Pasted image 20240506133954.png]]
+Interesting pattern we see here is that the number of odd absences are significantly more than their corresponding neighboring even absences.
 #### G1
 ![[Pasted image 20240506134026.png]]
 #### G2
@@ -129,15 +140,20 @@ Majority of students had very little travel time to school (< 30 min), this is a
 ![[Pasted image 20240506134046.png]]
 
 ---
-### Correlation Heatmap
+## Correlation Heatmap
 ![[Pasted image 20240506140734.png]]
 - Mother's Education and Father's Education are highly correlated.
 - G1, G2, G3 are highly correlated with each other and negatively correlated to number of failures which is intuitive.
 - Weekend and Weekday alcohol consumption are highly correlated and also correlated to how much student goes to hangouts.
-### PCA Scree Plot
+## PCA Scree Plot
 ![[Pasted image 20240506140840.png]]![[Pasted image 20240506140856.png]]
 The first two principle components explain large fraction of the variance.
-### Factor Analysis
+## Factor Analysis
 ![[Pasted image 20240506140923.png]]![[Pasted image 20240506140938.png]]
 
 ---
+## Hypothesis Testing
+$$H_A: \text{Students who have internet access at home have higher scores (G3) than students who do not have internet access at home}$$
+$$H_0: \text{There is no difference in the scores (G3) between students who have internet access at home and students who do not have internet access at home.}$$
+> [!tip] Note
+> I have tested the hypothesis separately for each school, continuing what Ashmit showed in his analysis that the grade distribution of the two schools is different.
