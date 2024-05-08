@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Random Shit/BRSM Project Report.md",
+                "file": "Competitive Programming/STL/Set.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Random Shit/BRSM Project Report.md",
+                "file": "Competitive Programming/STL/Set.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Random Shit/BRSM Project Report.md",
+                "file": "Competitive Programming/STL/Set.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Random Shit/BRSM Project Report.md"
+                "file": "Competitive Programming/STL/Set.md"
               }
             }
           }
@@ -150,6 +150,17 @@
   },
   "active": "d3d726fb2a376f11",
   "lastOpenFiles": [
+    "Competitive Programming/STL/Queue.md",
+    "Competitive Programming/STL/Priority Queue.md",
+    "Competitive Programming/STL/Pair.md",
+    "Competitive Programming/STL/Multiset.md",
+    "Competitive Programming/STL/Multimap.md",
+    "Competitive Programming/STL/Map.md",
+    "Competitive Programming/STL/List.md",
+    "Competitive Programming/STL/Deque.md",
+    "Competitive Programming/STL/Forward List.md",
+    "Competitive Programming/STL/Array.md",
+    "Random Shit/BRSM Project Report.md",
     "Pasted image 20240506140938.png",
     "Pasted image 20240506140923.png",
     "Pasted image 20240506140856.png",
@@ -160,8 +171,6 @@
     "Pasted image 20240506134026.png",
     "Pasted image 20240506133954.png",
     "Pasted image 20240506133942.png",
-    "Pasted image 20240506133827.png",
-    "Random Shit/BRSM Project Report.md",
     "Competitive Programming/Number Theory/Euclidean Algorithm.md",
     "Competitive Programming/STL/Unordered Set.md",
     "Binary Search Tree.md",
@@ -175,17 +184,7 @@
     "Competitive Programming/STL/Unordered Map.md",
     "Competitive Programming/STL/Vector.md",
     "Competitive Programming/STL/Stack.md",
-    "Competitive Programming/STL/Multimap.md",
-    "Competitive Programming/STL/Map.md",
-    "Competitive Programming/STL/Pair.md",
-    "Competitive Programming/STL/Multiset.md",
     "Competitive Programming/STL/Set.md",
-    "Competitive Programming/STL/Priority Queue.md",
-    "Competitive Programming/STL/Queue.md",
-    "Competitive Programming/STL/Deque.md",
-    "Competitive Programming/STL/Forward List.md",
-    "Competitive Programming/STL/List.md",
-    "Competitive Programming/STL/Array.md",
     "().md",
     "Competitive Programming/STL",
     "Competitive Programming/Tricks",
