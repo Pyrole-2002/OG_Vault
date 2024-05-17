@@ -21,7 +21,7 @@ long long binpow(long long a, long long b) // iterative (faster)
 {
     long long res = 1;
     while(b)
-		{
+	{
         if (b & 1) 
 			res = res * a;
         a = a * a;
@@ -32,3 +32,4 @@ long long binpow(long long a, long long b) // iterative (faster)
 ```
 
 > [!tip] When multiplying two big numbers, $a$ and $b$ modulo $m$, the product may be too big to fit in the data-type. So we use a variation of binary exponentiation to compute $a \cdot b \mod m$.
+## 
