@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "a82a2458ce12ef92",
+        "id": "b02be4af14934395",
         "type": "tabs",
         "children": [
           {
-            "id": "d3d726fb2a376f11",
+            "id": "48530590d9d08699",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Random Shit/BRSM Project Report.md",
+                "file": "Competitive Programming/STL/Iterators.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Random Shit/BRSM Project Report.md",
+                "file": "Competitive Programming/STL/Iterators.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Random Shit/BRSM Project Report.md",
+                "file": "Competitive Programming/STL/Iterators.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Random Shit/BRSM Project Report.md"
+                "file": "Competitive Programming/STL/Iterators.md"
               }
             }
           }
@@ -148,8 +148,13 @@
       "publish:Publish changes...": false
     }
   },
-  "active": "d3d726fb2a376f11",
+  "active": "48530590d9d08699",
   "lastOpenFiles": [
+    "Untitled.md",
+    "Competitive Programming/STL/Iterators.md",
+    "Pasted image 20240506132646.png",
+    "Pasted image 20240506132141.png",
+    "Random Shit/BRSM Project Report.md",
     "Pasted image 20240508212025.png",
     "Pasted image 20240508211903.png",
     "Pasted image 20240508211834.png",
@@ -168,11 +173,7 @@
     "Competitive Programming/STL/Deque.md",
     "Competitive Programming/STL/Forward List.md",
     "Competitive Programming/STL/Array.md",
-    "Random Shit/BRSM Project Report.md",
     "Pasted image 20240506140938.png",
-    "Pasted image 20240506140923.png",
-    "Pasted image 20240506140856.png",
-    "Pasted image 20240506140840.png",
     "Competitive Programming/Number Theory/Euclidean Algorithm.md",
     "Competitive Programming/STL/Unordered Set.md",
     "Binary Search Tree.md",
@@ -186,7 +187,6 @@
     "Competitive Programming/STL/Unordered Map.md",
     "Competitive Programming/STL/Vector.md",
     "Competitive Programming/STL/Stack.md",
-    "().md",
     "Competitive Programming/STL",
     "Competitive Programming/Tricks",
     "Competitive Programming/Number Theory",

@@ -1,0 +1,1 @@
+Iterators are used to point at the memory addresses of STL containers. They are primarily used in sequences. They reduce the complexity and execution time of the program.
