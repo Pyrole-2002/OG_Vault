@@ -39,6 +39,12 @@ To do this, raise the permutation to it's $k$-th power using binary exponentiati
 vector<int> applyPermutation(vector<int> seq, vector<int> perm)
 {
 	vector<int> new_seq(seq.size());
-	for()
+	for (int i = 0; i < seq.size(); i++)
+	{
+		new_seq[i] = seq[perm[i]];
+	}
+	return new_seq;
 }
+
+
 ```
