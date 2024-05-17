@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Competitive Programming/Number Theory/Binary Exponentiation.md",
+                "file": "Competitive Programming/Number Theory/Euclidean Algorithm.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Competitive Programming/Number Theory/Binary Exponentiation.md",
+                "file": "Competitive Programming/Number Theory/Euclidean Algorithm.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Competitive Programming/Number Theory/Binary Exponentiation.md",
+                "file": "Competitive Programming/Number Theory/Euclidean Algorithm.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Competitive Programming/Number Theory/Binary Exponentiation.md"
+                "file": "Competitive Programming/Number Theory/Euclidean Algorithm.md"
               }
             }
           }
@@ -150,6 +150,7 @@
   },
   "active": "48530590d9d08699",
   "lastOpenFiles": [
+    "Competitive Programming/Number Theory/Binary Exponentiation.md",
     "Competitive Programming/STL/Iterators.md",
     "Untitled.md",
     "Pasted image 20240506132646.png",
@@ -180,7 +181,6 @@
     "Competitive Programming/STL/Unordered Multiset.md",
     "Competitive Programming/STL/Unordered Multimap.md",
     "Random Shit",
-    "Competitive Programming/Number Theory/Binary Exponentiation.md",
     "Competitive Programming/Number Theory/Fermat's Little Theorem.md",
     "Competitive Programming/Tricks.md",
     "Competitive Programming/Number Theory/Fibonacci Computation.md",

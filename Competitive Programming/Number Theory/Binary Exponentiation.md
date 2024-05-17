@@ -61,4 +61,11 @@ vector<int> permute(vector<int> seq, vector<int> perm, long long k)
 > [!tip] This task can be solved more efficiently in linear time by building the permutation graph and considering each cycle independently. You could then compute $k$ modulo the size of the cycle and find the final position for each number which is part of this cycle.
 ## Multiplying Big Numbers Modulo $m$
 When multiplying two big numbers, $a$ and $b$ modulo $m$, the product may be too big to fit in the data-type. So we use a variation of binary exponentiation to compute $a \cdot b \pmod m$.
-$$$$
+$$
+a\cdot b =
+\begin{cases}
+0 & \text{if $a=0$}\\
+2\cdot\frac{a}{2}\cdot b & \text{if $a>0$ and $a$ even}\\
+2\cdot\frac{a-1}{2}\cdot b + b & \text{if $a>0$ and $a$ odd}
+\end{cases}
+$$
