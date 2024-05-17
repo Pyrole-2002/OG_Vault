@@ -89,4 +89,14 @@ The extended euclidean algorithm also represents the GCD in terms of coefficient
 $$a\cdot x + b\cdot y = \gcd(a, b)$$
 - Denoting the GCD of $a$ and $b$ with $g$.
 - The euclidean algorithm ends with $b=0$ and $a=g$. For these parameters, $(x, y) = (1, 0)$.
-- We now go backwards to figure out how the coefficients change during the transition of parameters from $(a, b) \text{to} (b, a\bmod b)$.
+- We now need to figure out how the coefficients change during the transition of parameters from $(a, b)$ to $(b, a\bmod b)$.
+- We can represent $a\bmod b$ as:
+$$
+a\bmod b = a - \left\lfloor\frac{a}{b}\right\rfloor \cdot b
+$$
+- Assuming coefficients $(x, y)$ for $(a, b)$ , and $(x', y')$ for $(b, a\bmod b)$:
+$$
+\begin{equation}
+
+\end{equation}
+$$
