@@ -96,7 +96,50 @@ a\bmod b = a - \left\lfloor\frac{a}{b}\right\rfloor \cdot b
 $$
 - Assuming coefficients $(x, y)$ for $(a, b)$ , and $(x', y')$ for $(b, a\bmod b)$:
 $$
-\begin{equation}
-
-\end{equation}
+\begin{align}
+&a\cdot x+b\cdot y &= g\tag{1}\\
+&b\cdot x'+(a\bmod b)\cdot y' &= g\\
+\implies\quad &b\cdot x'+\left(a - \left\lfloor\frac{a}{b}\right\rfloor \cdot b\right)\cdot y' &= g\\
+\implies\quad &a\cdot y'+b\cdot\left(x' - y'\cdot\left\lfloor\frac{a}{b}\right\rfloor\right) &= g\tag{2}\\
+\end{align}
 $$
+- Comparing equations $(1)$ and $(2)$:
+$$
+\begin{align}
+x &= y'\\
+y &= x'-y'\cdot\left\lfloor\frac{a}{b}\right\rfloor
+\end{align}
+$$
+### Implementation
+```cpp
+// Recursive
+int gcdExtendedRecursive(int a, int b, int& x, int& y)
+{
+	if (b == 0)
+	{
+		x = 1;
+		y = 0;
+		return a;
+	}
+	int x1, y1;
+	int d = gcd(b, a % b, x1, y1);
+	x = y1;
+	y = x1 - y1*(a/b);
+	return d;
+}
+
+// Iterative
+int gcdExtendedIterative(int a, int b, int& x, int& y)
+{
+	x = 1, y = 0;
+	int x1 = 0, y1 = 1, a1 = a, b1 = b;
+	while (b1)
+	{
+		int q = a1 / b1;
+		tie(x, x1) = make_tuple(x1, x - q*x1);
+		tie(y, y1) = make_tuple(y1, y - q*y1);
+		tie(a1, b1) = make_tuple(b1, a1 - q*b1);
+	}
+	return a1;
+}
+```
