@@ -30,8 +30,6 @@ long long binpow(long long a, long long b) // iterative (faster)
     return res;
 }
 ```
-
-> [!tip] When multiplying two big numbers, $a$ and $b$ modulo $m$, the product may be too big to fit in the data-type. So we use a variation of binary exponentiation to compute $a \cdot b \mod m$.
 ## Applying A Permutation $k$ Times
 Given a sequence of a certain length, apply a given permutation to it $k$ times.
 To do this, raise the permutation to it's $k$-th power using binary exponentiation, and then apply it to the sequence. This takes a time complexity of $O(n\log k)$.
@@ -61,3 +59,6 @@ vector<int> permute(vector<int> seq, vector<int> perm, long long k)
 }
 ```
 > [!tip] This task can be solved more efficiently in linear time by building the permutation graph and considering each cycle independently. You could then compute $k$ modulo the size of the cycle and find the final position for each number which is part of this cycle.
+## Multiplying Big Numbers Modulo $m$
+When multiplying two big numbers, $a$ and $b$ modulo $m$, the product may be too big to fit in the data-type. So we use a variation of binary exponentiation to compute $a \cdot b \pmod m$.
+$$$$
