@@ -46,5 +46,18 @@ vector<int> applyPermutation(vector<int> seq, vector<int> perm)
 	return new_seq;
 }
 
-
+vector<int> permute(vector<int> seq, vector<int> perm, long long k)
+{
+	while (k > 0)
+	{
+		if (k & 1)
+		{
+			seq = applyPermutation(seq, perm);
+		}
+		perm = applyPermutation(perm, perm);
+		k >>= 1;
+	}
+	return seq;
+}
 ```
+> [!tip] This task can be solved more efficiently in linear time by building the permutation graph and considering each cycle independently. You could then compute $k$ modulo the size of the cycle and find the final position for each number which is part of this cycle.
