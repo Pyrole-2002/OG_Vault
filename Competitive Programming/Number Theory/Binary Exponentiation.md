@@ -34,4 +34,11 @@ long long binpow(long long a, long long b) // iterative (faster)
 > [!tip] When multiplying two big numbers, $a$ and $b$ modulo $m$, the product may be too big to fit in the data-type. So we use a variation of binary exponentiation to compute $a \cdot b \mod m$.
 ## Applying A Permutation $k$ Times
 Given a sequence of a certain length, apply a given permutation to it $k$ times.
-To do this, raise the permutation to it's $k$-th power using binary exponentiation, and then apply it to the sequence. This 
+To do this, raise the permutation to it's $k$-th power using binary exponentiation, and then apply it to the sequence. This takes a time complexity of $O(n\log k)$.
+```cpp
+vector<int> applyPermutation(vector<int> seq, vector<int> perm)
+{
+	vector<int> new_seq(seq.size());
+	for()
+}
+```
