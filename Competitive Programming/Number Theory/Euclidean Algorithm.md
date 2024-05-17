@@ -85,3 +85,8 @@ int gcdBinary(int a, int b)
 }
 ```
 # Extended Euclidean Algorithm
+The extended euclidean algorithm also represents the GCD in terms of coefficients of $a$ and $b$ which are $x$ and $y$ respectively.
+$$a\cdot x + b\cdot y = \gcd(a, b)$$
+- Denoting the GCD of $a$ and $b$ with $g$.
+- The euclidean algorithm ends with $b=0$ and $a=g$. For these parameters, $(x, y) = (1, 0)$.
+- We now go backwards to figure out how the coefficients change during the transition of parameters from $(a, b) \text{to} (b, a\bmod b)$.
