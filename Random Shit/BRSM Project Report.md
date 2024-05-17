@@ -1,5 +1,6 @@
 # Team Name
 ##### Name: Aryan Bansal
+Teammates: Ashmit Chamoli, Ishan Kavathekar
 ##### Roll Number: 2021111018
 ## Dataset Introduction
 ###### Source: [Dataset Link](https://archive.ics.uci.edu/dataset/320/student+performance)
@@ -157,3 +158,27 @@ $$H_A: \text{Students who have internet access at home have higher scores (G3) t
 $$H_0: \text{There is no difference in the scores (G3) between students who have internet access at home and students who do not have internet access at home.}$$
 > [!tip] Note
 > I have tested the hypothesis separately for each school, continuing what Ashmit showed in his analysis that the grade distribution of the two schools is different.
+
+###### MS School
+First we select all the samples that belong to MS school. Then we divide it into 2 groups, students who have internet access at home and students who don’t. Let us look at the probability density plot for the target variable G3.
+![[Pasted image 20240508211252.png]]
+We then test for normality and homogeneity using Kolmogorov-Smirnov test and Levene test respectively.
+![[Pasted image 20240508211403.png]]
+Both the distributions are not normal, the variances are homogeneous.
+We can therefore use the Mann-Whitney U test to test the non-directional hypothesis.
+![[Pasted image 20240508211624.png]]
+The test shows that there is no significant difference in the grades distribution between students with access to internet and without access to internet in MS school.
+###### GP School
+Now we select all the samples that belong to GP school. Then we divide it into 2 groups, students who have internet access at home and students who don’t. Let us look at the probability density plot for the target variable G3.
+![[Pasted image 20240508211816.png]]
+We then test for normality and homogeneity using Kolmogorov-Smirnov test and Levene test respectively.
+![[Pasted image 20240508211834.png]]
+Again, both the distributions are not normal, the variances are homogeneous.
+We can therefore use the Mann-Whitney U test to test the non-directional hypothesis.
+![[Pasted image 20240508211903.png]]
+The test shows that there is significant difference between the grades distribution of students with access to internet and without access to internet in GP school.
+We therefore test for the directional hypothesis.
+![[Pasted image 20240508212025.png]]
+This shows that the grades distribution of students with internet is greater than those without internet in GP school.
+
+---
