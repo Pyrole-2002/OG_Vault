@@ -69,3 +69,17 @@ bool findAnySolution(int a, int b, int c, int& x0, int& y0, int& g)
 }
 ```
 #### Getting All Solutions
+We now have $x_0, y_0$ which satisfy he following:
+$$ax_0+by_0=c$$
+We can see that adding $k\cdot \frac{b}{g}$ to $x_0$ while subtracting $k\cdot\frac{a}{g}$ from $y_0$ does not break the equality:
+$$
+a\left(x_0+k\frac{b}{g}\right)+b\left(y_0-k\frac{a}{g}\right)
+= ax_0+by_0 = c
+$$
+From this, we can find all the solutions of the diophantine equation, which are of the form:
+$$
+\begin{align}
+x &= x_0+k\frac{b}{g}\\
+y &= y_0-k\frac{a}{g}
+\end{align}
+$$
