@@ -1,0 +1,13 @@
+A Linear Diophantine Equation (in two variables) is an equation of the general form:
+$$ax+by=c$$
+where $a, b, c$ are given integers and $x, y$ are unknown integers.
+### Degenerate Case
+A degenerate case is when $a=b=0$. Either we have no solutions or infinitely many solutions, depending on whether $c=0$ or not.
+### Analytic Solution
+When $a\ne 0$ and $b\ne 0$, the equation can be equivalently treated as either of the following:
+$$
+\begin{align}
+ax\equiv c\pmod b\\
+by\equiv c\pmod a
+\end{align}
+$$
