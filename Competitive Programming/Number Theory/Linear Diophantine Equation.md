@@ -23,3 +23,17 @@ x &\equiv \left(\frac{c}{g}\right)\left(\frac{a}{g}\right)^{-1}\pmod{b/g}\\
 y &= \frac{c-ax}{b}
 \end{align}
 $$
+### Algorithmic Solution
+To find one solution of the Diophantine Equation with 2 unknowns, we use the [[Euclidean Algorithm#Extended Euclidean Algorithm|Extended Euclidean Algorithm]].
+First, assume that $a$ and $b$ are non-negative:
+$$ax_g+by_g=g$$
+If $c$ is divisible by $g=\gcd(a, b)$, then the diophantine equation has a solution, otherwise it does not have any solution.
+Assuming $c$ is divisible by $g$:
+$$ax_g\cdot\frac{c}{g}+by_g\cdot\frac{c}{g} = c$$
+Therefore, **one of the solutions** of the diophantine equation is:
+$$
+\begin{align}
+x_0 &= x_g\cdot{c}{g}\\
+y_0 &= y_g\cdot{c}{g}
+\end{align}
+$$
