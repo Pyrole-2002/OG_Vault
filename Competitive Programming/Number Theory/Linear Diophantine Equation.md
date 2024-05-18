@@ -11,3 +11,5 @@ ax\equiv c\pmod b\\
 by\equiv c\pmod a
 \end{align}
 $$
+Without loss of generality, assume that $b\ne 0$ and consider the first equation. When $a$ and $b$ are co-prime, the solution to it is given as:
+$$x\equiv ca^{-1}\pmod b$$
