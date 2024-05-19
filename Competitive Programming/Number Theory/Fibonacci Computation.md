@@ -19,6 +19,19 @@ F_n & F_{n-1}
 \end{pmatrix} ^ n
 $$
 Using [[Binary Exponentiation]] in above, we can calculate $F_n$ in $O(\log n)$ time.
+#### Fast Doubling Method
+By expanding the above formula for $n=2k$:
+$$
+\begin{pmatrix}
+F_{n+1} & F_n\\
+F_n & F_{n-1}
+\end{pmatrix}
+=
+\begin{pmatrix}
+1 & 1\\
+1 & 0
+\end{pmatrix} ^ n
+$$
 ### Fibonacci Coding
 According to Zeckendorf's theorem, any natural number $n$ can be uniquely represented as a sum of Fibonacci Numbers:
 $$N = F_{k_1} + F_{k_2} + \dots + F_{k_r}$$
