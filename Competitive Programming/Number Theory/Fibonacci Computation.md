@@ -19,3 +19,7 @@ F_n & F_{n-1}
 \end{pmatrix} ^ n
 $$
 Using [[Binary Exponentiation]] in above, we can calculate $F_n$ in $O(\log n)$ time.
+#### Fibonacci Coding
+According to Zeckendorf's theorem, any natural number $n$ can be uniquely represented as a sum of Fibonacci Numbers:
+$$N = F_{k_1} + F_{k_2} + \dots + F_{k_r}$$
+such that $k_n \ge k_{n+1}+2, k_r \ge 2$, meaning that the representation cannot use two consecutive Fibonacci Numbers. 
