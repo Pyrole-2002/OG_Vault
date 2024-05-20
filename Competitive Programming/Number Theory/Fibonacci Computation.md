@@ -86,5 +86,15 @@ The encoding of any integer $n$ can be done by the following greedy algorithm:
 2. Subtract $F_i$ from $n$ and put a $1$ in the $i-2$ position from left (0-indexed).
 3. Repeat until there is no remainder.
 4. Add a $1$ to the rightmost end.
-### Periodicity
-The Fibonacci sequence modulo $p$ is periodic
+## Periodicity
+The Fibonacci sequence modulo $p$ is periodic.
+The periodic sequence always starts with $F_0,F_1 \equiv 0,1$.
+### Pisano Period
+The pisano period refers to the periodic sequence of Fibonacci numbers taken modulo a positive integer $p$. The length of the repeating sequence of Fibonacci numbers modulo $p$ is called the pisano period of $p$.
+###### Definition
+The Pisano Period $\pi(p)$ is the length of the cycle in the sequence of Fibonacci numbers modulo $p$.
+If the Fibonacci sequence modulo $p$ is given by:
+$$F(n) \mod p$$
+then the Pisano Period $\pi(p)$ is the smallest positive integer $k$ such that:
+$$F(n+k)\equiv F(n)\pmod p$$
+for all integers $n$.
