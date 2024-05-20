@@ -44,6 +44,25 @@ $$
 &F_{2k} = F_{k}(2F_{k+1} - F_k)
 \end{align}
 $$
+Using the above two equation, Fibonacci numbers can be calculated easily:
+```cpp
+pair<int, int> fib(int n) 
+{
+	if (n == 0)
+		return {0, 1};
+	auto p = fib(n >> 1);
+	int a = p.first;
+	int b = p.second;
+	
+	int c = a * (2*b - a);
+	int d = b*b + a*a;
+	if (n & 1)
+		return {d, c+d};
+	else
+		return {c, d};
+}
+```
+The above code returns $F_n$ and $F_{n+1}$ as a pair.
 ### Fibonacci Coding
 According to Zeckendorf's theorem, any natural number $n$ can be uniquely represented as a sum of Fibonacci Numbers:
 $$N = F_{k_1} + F_{k_2} + \dots + F_{k_r}$$
@@ -67,3 +86,5 @@ The encoding of any integer $n$ can be done by the following greedy algorithm:
 2. Subtract $F_i$ from $n$ and put a $1$ in the $i-2$ position from left (0-indexed).
 3. Repeat until there is no remainder.
 4. Add a $1$ to the rightmost end.
+### Periodicity
+The Fibonacci sequence modulo $p$ is periodic
