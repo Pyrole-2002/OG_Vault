@@ -29,5 +29,29 @@ vector<bool> sieveOfEratosthenes(int n)
 - To solve this, we use the idea of the Segmented Sieve.
 - We pre-generate all primes up to $\sqrt R$, and use those to mark all composite numbers in the segment $[L, R]$.
 ```cpp
+vector<bool> segmentedSieve(long long L, long long R)
+{
+    // generate all primes up to sqrt(R)
+    long long lim = sqrt(R);
+    vector<bool> mark(lim + 1, false);
+    vector<long long> primes;
+    for (long long i = 2; i <= lim; i++)
+    {
+        if (!mark[i])
+        {
+            primes.emplace_back(i);
+            for (long long j = i * i; j <= lim; j += i)
+                mark[j] = true;
+        }
+    }
 
+    // create sieve for segment
+    vector<bool> is_prime(R - L + 1, true);
+    for (long long prime : primes)
+        for (long long j = max(prime * prime, (L + prime - 1) / prime * prime); j <= R; j += prime)
+            is_prime[j - L] = false;
+    if (L == 1)
+        is_prime[0] = false;
+    return is_prime;
+}
 ```
