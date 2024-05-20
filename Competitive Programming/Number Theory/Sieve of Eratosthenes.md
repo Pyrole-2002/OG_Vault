@@ -48,8 +48,11 @@ vector<bool> segmentedSieve(long long L, long long R)
     // create sieve for segment
     vector<bool> is_prime(R - L + 1, true);
     for (long long prime : primes)
-        for (long long j = max(prime * prime, (L + prime - 1) / prime * prime); j <= R; j += prime)
+        for (long long j = max(prime*prime, ((L+prime-1)/prime) * prime);
+        j <= R; j += prime)
+        {
             is_prime[j - L] = false;
+        }
     if (L == 1)
         is_prime[0] = false;
     return is_prime;

@@ -3,5 +3,5 @@
   "theme": "obsidian",
   "cssTheme": "Tokyo Night",
   "baseFontSize": 20,
-  "nativeMenus": true
+  "nativeMenus": false
 }
