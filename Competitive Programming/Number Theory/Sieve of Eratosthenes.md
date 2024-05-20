@@ -25,3 +25,9 @@ vector<bool> sieveOfEratosthenes(int n)
 - `long long` is used to ensure $i^2$ doesn't overflow the size of `int`.
 - Start sifting from $i^2$ till $n$, because the numbers below $i^2$ would have been already marked by smaller primes.
 ### Find primes in a range
+- Lets say we need to find all prime numbers in a range $[L, R]$ of small size (range of the order of $10^7$), where $L, R$ may be very large (order of $10^{12}$).
+- To solve this, we use the idea of the Segmented Sieve.
+- We pre-generate all primes up to $\sqrt R$, and use those to mark all composite numbers in the segment $[L, R]$.
+```cpp
+
+```
