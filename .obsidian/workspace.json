@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Competitive Programming/Number Theory/Fibonacci Computation.md",
+                "file": "Competitive Programming/Number Theory/Sieve of Eratosthenes.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Competitive Programming/Number Theory/Fibonacci Computation.md",
+                "file": "Competitive Programming/Number Theory/Sieve of Eratosthenes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Competitive Programming/Number Theory/Fibonacci Computation.md",
+                "file": "Competitive Programming/Number Theory/Sieve of Eratosthenes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Competitive Programming/Number Theory/Fibonacci Computation.md"
+                "file": "Competitive Programming/Number Theory/Sieve of Eratosthenes.md"
               }
             }
           }
@@ -150,9 +150,11 @@
   },
   "active": "5ef71da298d0b9eb",
   "lastOpenFiles": [
-    "Competitive Programming/Number Theory/Linear Diophantine Equation.md",
-    "Competitive Programming/Number Theory/Euclidean Algorithm.md",
     "Competitive Programming/Number Theory/Modular Arithmetic.md",
+    "Competitive Programming/Number Theory/Sieve of Eratosthenes.md",
+    "Competitive Programming/Number Theory/Linear Diophantine Equation.md",
+    "Competitive Programming/Number Theory/Fibonacci Computation.md",
+    "Competitive Programming/Number Theory/Euclidean Algorithm.md",
     "Competitive Programming/Number Theory/Fermat's Little Theorem.md",
     "Competitive Programming/Number Theory/Binary Exponentiation.md",
     "Competitive Programming/STL/Iterators.md",
@@ -185,8 +187,6 @@
     "Competitive Programming/STL/Unordered Multimap.md",
     "Random Shit",
     "Competitive Programming/Tricks.md",
-    "Competitive Programming/Number Theory/Fibonacci Computation.md",
-    "Competitive Programming/STL/Unordered Map.md",
     "Competitive Programming/STL",
     "Competitive Programming/Tricks",
     "Competitive Programming/Number Theory",
