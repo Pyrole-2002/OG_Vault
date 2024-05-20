@@ -23,3 +23,5 @@ vector<bool> sieveOfEratosthenes(int n)
 	return is_prime;
 }
 ```
+- `long long` is used to ensure $i^2$ doesn't overflow the size of `int`.
+- Start sifting from $i^2$ till $n$, because the numbers below $i^2$ would have been already marked by smaller primes.
