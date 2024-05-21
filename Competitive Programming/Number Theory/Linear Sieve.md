@@ -1,0 +1,3 @@
+- Linear Sieve deals with finding all prime numbers in a segment $[2; n]$.
+- The standard way of solving this is to use the [[Sieve of Eratosthenes]], but that has runtime $O(n\log\log n)$.
+- 
