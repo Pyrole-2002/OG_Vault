@@ -26,6 +26,16 @@ bool isPrimeTrial(int n)
 ```cpp
 bool isPrimeFermat(int n, int iter=10)
 {
-	
+	if (n < 4)
+		return n == 2 || n == 3;
+	for (int i = 0; i < iter; i++)
+	{
+		int a = 2 + rand() % (n - 3); // a in [2, n-2]
+		if (binpow(a, n-1, n) != 1)
+			return false;
+	}
+	return true;
 }
 ```
+Use [[Binary Exponentiation]] to efficiently compute  $a^{n-1}\bmod n$.
+## Miller-Rabin Primality Test
