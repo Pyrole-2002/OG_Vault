@@ -29,5 +29,6 @@ pair<vector<int>, vector<int>> linearSieve(int n)
 				break;
 		}
 	}
+	return {lp, pr};
 }
 ```

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Competitive Programming/Number Theory/Linear Sieve.md",
+                "file": "Competitive Programming/Number Theory/Primality Tests.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Competitive Programming/Number Theory/Linear Sieve.md",
+                "file": "Competitive Programming/Number Theory/Primality Tests.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Competitive Programming/Number Theory/Linear Sieve.md",
+                "file": "Competitive Programming/Number Theory/Primality Tests.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Competitive Programming/Number Theory/Linear Sieve.md"
+                "file": "Competitive Programming/Number Theory/Primality Tests.md"
               }
             }
           }
@@ -150,8 +150,9 @@
   },
   "active": "79df2fd0cc56641f",
   "lastOpenFiles": [
-    "Competitive Programming/Number Theory/Sieve of Eratosthenes.md",
     "Competitive Programming/Number Theory/Linear Sieve.md",
+    "Competitive Programming/Number Theory/Primality Tests.md",
+    "Competitive Programming/Number Theory/Sieve of Eratosthenes.md",
     "Competitive Programming/Number Theory/Modular Arithmetic.md",
     "Competitive Programming/Number Theory/Linear Diophantine Equation.md",
     "Competitive Programming/Number Theory/Fibonacci Computation.md",
@@ -185,7 +186,6 @@
     "Competitive Programming/STL/Unordered Set.md",
     "Binary Search Tree.md",
     "Competitive Programming/STL/Unordered Multiset.md",
-    "Competitive Programming/STL/Unordered Multimap.md",
     "Random Shit",
     "Competitive Programming/STL",
     "Competitive Programming/Tricks",
