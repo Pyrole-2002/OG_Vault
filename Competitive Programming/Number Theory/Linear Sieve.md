@@ -5,3 +5,5 @@
 #### Algorithm
 Goal is to calculate Minimum Prime Factor $\text{lp}[i]$ for every $i$ in the segment $[2; n]$. Also store the list of all the found prime numbers in $\text{pr}[]$.
 1. Initialize the values of $\text{lp}[i]$ with zeros, assuming all numbers are prime.
+2. Iterate $i$ through numbers $2$ to $n$:
+	1. 
