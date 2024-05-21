@@ -10,3 +10,5 @@ Goal is to calculate Minimum Prime Factor $\text{lp}[i]$ for every $i$ in the se
 	- If $\text{lp}[i] \ne 0$, $i$ is composite and its minimum prime factor is $\text{lp}[i]$.
 3. Update values of $\text{lp}[]$ for the indexes divisible by $i$.
 	1. Consider the numbers $x_j = i\cdot p_j$, where $p_j$ are all prime numbers less than or equal to $\text{lp}[i]$.
+	2. Update values of $\text{lp}[x_j] = p_j$ for all above $x_j$.
+	
