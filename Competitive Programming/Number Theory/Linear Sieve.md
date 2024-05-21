@@ -11,4 +11,23 @@ Goal is to calculate Minimum Prime Factor $\text{lp}[i]$ for every $i$ in the se
 3. Update values of $\text{lp}[]$ for the indexes divisible by $i$.
 	1. Consider the numbers $x_j = i\cdot p_j$, where $p_j$ are all prime numbers less than or equal to $\text{lp}[i]$.
 	2. Update values of $\text{lp}[x_j] = p_j$ for all above $x_j$.
-	
+```cpp
+pair<vector<int>, vector<int>> linearSieve(int n)
+{
+	vector<int> lp(n + 1), pr;
+	for (int i = 2; i <= n; i++)
+	{
+		if (lp[i] == 0)
+		{
+			lp[i] = i;
+			pr.push_back(i);
+		}
+		for (int j = 0; i * pr[j] <= n; j++)
+		{
+			lp[i * pr[j]] = pr[j];
+			if (pr[j] == lp[i])
+				break;
+		}
+	}
+}
+```
