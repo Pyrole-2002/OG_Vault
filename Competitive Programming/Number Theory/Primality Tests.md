@@ -39,7 +39,7 @@ bool isPrimeFermat(int n, int iter=10)
 ```
 Use [[Binary Exponentiation]] to efficiently compute  $a^{n-1}\bmod n$.
 ## Miller-Rabin Primality Test
-Extends the ideas from Fermat Primality Test.
+Extends the ideas from Fermat Primality Test. Time complexity is $\le O((\ln n)^2)$.
 For an odd number $n$, $n-1$ is even, so we factor out all powers of $2$:
 $$n-1 = 2^s\cdot d$$
 where $d$ is odd.
@@ -67,3 +67,39 @@ holds for some $0\le r\le s-1$
   There are no numbers where all non-trivial bases lie. It is possible to show that at most $\frac{1}{4}$ of the bases can be strong liars.
 - If $n$ is composite, we have a probability of $\ge 75\%$ that a random base will tell us that it is composite.
 - By doing multiple iterations, choosing different random bases, we can tell with very high probability if the number is truly prime or if it is composite.
+```cpp
+bool checkComposite(int n, int a, int d, int s)
+{
+	int x = binpow(a, d, n);
+	if (x == 1 || x == n - 1)
+		return false;
+	for (int i = 1; i < s; i++)
+	{
+		x = x * x % n;
+		if (x == n - 1)
+			return false;
+	}
+	return true;
+}
+
+bool isPrimeMillerRabin(int n, int iter=10)
+{
+	if (n < 4)
+		return n == 2 || n == 3;
+	int d = n - 1, s = 0; // n-1 = 2^s * d
+	while (d & 1 == 0)
+	{
+		d >>= 1;
+		s++;
+	}
+	for (int i = 0; i < iter; i++)
+	{
+		int a = 2 + rand() % (n - 3);
+		if (checkComposite(n, a, d, s))
+			return false;
+	}
+	return true;
+}
+```
+>[!tip] Before doing the Miller-Rabin test, we can test additionally if one of the first few prime numbers is a divisor. 88% of all numbers have a prime factor smaller than 100.
+### Deterministic Version
