@@ -39,3 +39,25 @@ bool isPrimeFermat(int n, int iter=10)
 ```
 Use [[Binary Exponentiation]] to efficiently compute  $a^{n-1}\bmod n$.
 ## Miller-Rabin Primality Test
+Extends the ideas from Fermat Primality Test.
+For an odd number $n$, $n-1$ is even, so we factor out all powers of $2$:
+$$n-1 = 2^s\cdot d$$
+where $d$ is odd.
+This allows us to factorize the equation of Fermat's little theorem:
+$$
+\large{
+\begin{align}
+a^{n-1}&\equiv 1 \bmod n \iff a^{2^sd} - 1\equiv 0 \bmod n\\
+&\iff \left(a^{2^{s-1}d}+1\right)\left(a^{2^{s-1}d}-1\right)\equiv 0 \bmod n\\
+&\iff \left(a^{2^{s-1}d}+1\right)\left(a^{2^{s-2}d}+1\right)\left(a^{2^{s-2}d}-1\right)\equiv 0 \bmod n\\
+&\vdots\\
+&\iff \left(a^{2^{s-1}d}+1\right)\left(a^{2^{s-2}d}+1\right)\cdots\left(a^{2^{0}d}+1\right)\left(a^{2^{0}d}-1\right)\equiv 0 \bmod n
+\end{align}
+}
+$$
+If $n$ is prime, then $n$ has to divide one of these factors.
+For a base $2\le a\le n-2$ we check if either:
+$$\Large a^d\equiv 1\mod n$$
+holds or
+$$\Large a^{2^rd}\equiv -1\mod n$$
+holds for some $0\le r\le s-1$
