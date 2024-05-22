@@ -87,7 +87,7 @@ bool isPrimeMillerRabin(int n, int iter=10)
 	if (n < 4)
 		return n == 2 || n == 3;
 	int d = n - 1, s = 0; // n-1 = 2^s * d
-	while (d & 1 == 0)
+	while ((d & 1) == 0)
 	{
 		d >>= 1;
 		s++;
@@ -103,3 +103,27 @@ bool isPrimeMillerRabin(int n, int iter=10)
 ```
 >[!tip] Before doing the Miller-Rabin test, we can test additionally if one of the first few prime numbers is a divisor. 88% of all numbers have a prime factor smaller than 100.
 ### Deterministic Version
+Miller-Rabin showed that it is possible to make the algorithm deterministic by only checking all bases, time complexity $\le O((\ln n)^2)$.
+Bach later showed that it is only necessary to test all bases $a \le 2(\ln n)^2$.
+However, it turns out that for testing a 32-bit integer, it is only necessary to check the first 4 prime bases. And for testing a 64-bit integer, it is enough to check the first 12 prime bases.
+```cpp
+bool isPrimeDeterministic(int n)
+{
+	if (n < 2)
+		return false;
+	int d = n - 1, s = 0;
+	while ((d & 1) == 0)
+	{
+		d >>= 1;
+		s++;
+	}
+	for (int a : {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37})
+	{
+		if (n == a)
+			return true;
+		if (checkComposite(n, a, d, s))
+			return false;
+	}
+	return true;
+}
+```
