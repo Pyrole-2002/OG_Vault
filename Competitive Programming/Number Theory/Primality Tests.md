@@ -61,3 +61,9 @@ $$\Large a^d\equiv 1\mod n$$
 holds or
 $$\Large a^{2^rd}\equiv -1\mod n$$
 holds for some $0\le r\le s-1$
+- If we find a base $a$ which doesn't satisfy any of the above equalities, then we find a witness for the compositeness of $n$. Therefore, it will be proven that $n$ is not a prime number.
+- It is however possible that the set of equations is satisfied for a composite number. In that case, the base $a$ is called a strong liar.
+  If a base $a$ satisfies any one of the equations, $n$ is only strong probable prime.
+  There are no numbers where all non-trivial bases lie. It is possible to show that at most $\frac{1}{4}$ of the bases can be strong liars.
+- If $n$ is composite, we have a probability of $\ge 75\%$ that a random base will tell us that it is composite.
+- By doing multiple iterations, choosing different random bases, we can tell with very high probability if the number is truly prime or if it is composite.
