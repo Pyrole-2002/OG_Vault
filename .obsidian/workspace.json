@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Competitive Programming/Number Theory/Integer Factorization.md",
+                "file": "Competitive Programming/Number Theory/Sieve of Eratosthenes.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Competitive Programming/Number Theory/Integer Factorization.md",
+                "file": "Competitive Programming/Number Theory/Sieve of Eratosthenes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Competitive Programming/Number Theory/Integer Factorization.md",
+                "file": "Competitive Programming/Number Theory/Sieve of Eratosthenes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Competitive Programming/Number Theory/Integer Factorization.md"
+                "file": "Competitive Programming/Number Theory/Sieve of Eratosthenes.md"
               }
             }
           }
@@ -150,9 +150,9 @@
   },
   "active": "8b964ed79d963d7e",
   "lastOpenFiles": [
+    "Competitive Programming/Number Theory/Integer Factorization.md",
     "Competitive Programming/STL/Pair.md",
     "Competitive Programming/STL/Iterators.md",
-    "Competitive Programming/Number Theory/Integer Factorization.md",
     "Competitive Programming/Number Theory/Primality Tests.md",
     "Competitive Programming/Number Theory/Binary Exponentiation.md",
     "Competitive Programming/Number Theory/Fermat's Little Theorem.md",

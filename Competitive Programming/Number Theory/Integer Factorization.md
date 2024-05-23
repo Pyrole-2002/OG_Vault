@@ -27,34 +27,42 @@ vector<long long> factorTrialDivision(long long n)
 - Simply, we can also ignore all multiples of 5 once the number isn't divisible by 5.
 - Effectively, we ignore all multiples of 2, 3, 5. It can be shown that the remaining numbers form a pattern represented in the below code.
 - It is best to store the skipping strides.
+- If we add more primes, better optimizations will be reached but the skipping stride array will become larger.
 ```cpp
 vector<long long> factorWheel(long long n)
 {
-    vector<long long> factorization;
-    for (int d : {2, 3, 5})
-    {
-        while (n % d == 0)
-        {
-            factorization.emplace_back(d);
-            n /= d;
-        }
-    }
-
-    static array<int, 8> increments = {4, 2, 4, 2, 4, 6, 2, 6};
-    int i = 0;
-    for (long long d = 7; d*d <= n; d += increments[i++])
-    {
-        while (n % d == 0)
-        {
-            factorization.emplace_back(d);
-            n /= d;
-        }
-        if (i == 8) // loop through increments
-            i = 0;
-    }
-
-    if (n > 1)
-        factorization.emplace_back(n);
-    return factorization;
+	vector<long long> factorization;
+	for (int d : {2, 3, 5})
+	{
+		while (n % d == 0)
+		{
+			factorization.emplace_back(d);
+			n /= d;
+		}
+	}
+	
+	static array<int, 8> increments = {4, 2, 4, 2, 4, 6, 2, 6};
+	int i = 0;
+	for (long long d = 7; d*d <= n; d += increments[i++])
+	{
+		while (n % d == 0)
+		{
+			factorization.emplace_back(d);
+			n /= d;
+		}
+		if (i == 8) // loop through increments
+			i = 0;
+	}
+	
+	if (n > 1)
+		factorization.emplace_back(n);
+	return factorization;
 }
+```
+#### Precomputed Primes
+- Extension of the wheel factorization.
+- We only test for prime numbers as divisors.
+- We precompute all prime numbers using [[Sieve of Eratosthenes]] until $\sqrt n$ and test them individually.
+```cpp
+
 ```
