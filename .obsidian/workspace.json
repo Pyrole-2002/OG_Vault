@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Competitive Programming/STL/Pair.md",
+                "file": "Competitive Programming/Number Theory/Integer Factorization.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Competitive Programming/STL/Pair.md",
+                "file": "Competitive Programming/Number Theory/Integer Factorization.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Competitive Programming/STL/Pair.md",
+                "file": "Competitive Programming/Number Theory/Integer Factorization.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Competitive Programming/STL/Pair.md"
+                "file": "Competitive Programming/Number Theory/Integer Factorization.md"
               }
             }
           }
@@ -150,6 +150,7 @@
   },
   "active": "8b964ed79d963d7e",
   "lastOpenFiles": [
+    "Competitive Programming/STL/Pair.md",
     "Competitive Programming/STL/Iterators.md",
     "Competitive Programming/Number Theory/Integer Factorization.md",
     "Competitive Programming/Number Theory/Primality Tests.md",
@@ -175,7 +176,6 @@
     "Competitive Programming/STL/Set.md",
     "Competitive Programming/STL/Queue.md",
     "Competitive Programming/STL/Priority Queue.md",
-    "Competitive Programming/STL/Pair.md",
     "Competitive Programming/STL/Multiset.md",
     "Competitive Programming/STL/Multimap.md",
     "Competitive Programming/STL/Map.md",
