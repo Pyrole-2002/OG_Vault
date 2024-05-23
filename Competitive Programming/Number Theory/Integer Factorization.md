@@ -64,5 +64,24 @@ vector<long long> factorWheel(long long n)
 - We only test for prime numbers as divisors.
 - We precompute all prime numbers using [[Sieve of Eratosthenes]] until $\sqrt n$ and test them individually.
 ```cpp
+vector<long long> primes;
 
+vector<long long> factorPrecomputed(long long n)
+{
+	vector<long long> factorization;
+	for (long long d : primes)
+	{
+		if (d*d > n)
+			break
+		while (n % d == 0)
+		{
+			factorization.emplace_back(d);
+			n /= d;
+		}
+	}
+	if (n > 1)
+		factorization.emplace_back(n);
+	return factorization
+}
 ```
+## Fermat's Factorization Method
