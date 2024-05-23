@@ -12,5 +12,8 @@ advance(ptr, 3); // advances pointer, now pointing to v[0+3]
 auto next_itr = next(ptr, 1); // new pointer returned advanced by 1 position
 auto prev_itr = prev(ptr, 1); // new pointer returned decremented by 1 position
 
+ptr += 1; // avoid using this as this does not work if memory is non-contiguous
+ptr++; // works also for non-contiguous memory alocation
+
 cout << *ptr << '\n'; // *ptr is used to access the value by reference
 ```

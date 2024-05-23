@@ -26,8 +26,8 @@ p1.first;
 p1.second;
 
 // accessing values of pair pointer
-p1->first;
-p1->second;
+p7->first;
+p7->second;
 
 // swap() swaps contents of 2 pairs with same types
 p1.swap(p2);
