@@ -9,3 +9,6 @@ $$\phi(ab) = \phi(a)\cdot\phi(b)$$
 This relation follows from the [[Modular Arithmetic#Chinese Remainder Theorem|Chinese Remainder Theorem]]. It guarantees that for each $0\le x<a$ and each $0\le y<b$, there exists a unique $0\le z<ab$ with $z \equiv x\pmod a$ and $z\equiv y\pmod b$.
 It can be shown that $z$ is coprime to $ab$ if and only if $x$ is coprime to $a$ and $y$ is coprime to $b$.
 Therefore the amount of integers coprime to $ab$ is equal to the product of amounts of $a$ and $b$.
+- In general, for not coprime $a$ and $b$, the equation is:
+$$\phi(ab) = \phi(a)\cdot\phi(b)\cdot\frac{d}{\phi(d)}$$
+where $d=\gcd(a, b)$
