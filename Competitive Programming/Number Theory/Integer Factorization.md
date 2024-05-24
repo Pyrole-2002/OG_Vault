@@ -89,5 +89,17 @@ vector<long long> factorPrecomputed(long long n)
 $$n = \left(\frac{p+q}{2}\right)^2 - \left(\frac{p-q}{2}\right)^2$$
 - Fermat's factorization method tries to exploit this fact by guessing the first square $a^2$, and checking if the remaining part, $b^2 = a^2 - n$, is also a square number. If it is, then we have found the factors $a-b$ and $a+b$ of $n$.
 ```cpp
-
+int factorFermat(int n)
+{
+	int a = ceil(sqrt(n));
+	int b2 = a*a - n;
+	int b = round(sqrt(b2));
+	while (b*b != b2)
+	{
+		a++;
+		b2 = a*a - n;
+		b = round(sqrt(b2));
+	}
+	return a - b;
+}
 ```
