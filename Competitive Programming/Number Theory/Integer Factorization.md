@@ -105,3 +105,5 @@ int factorFermat(int n)
 ```
 - This method can be very fast if the deference between the factors $p$ and $q$ is small. The algorithm runs in time $O(|p-q|)$ complexity.
 - In practice, this method isn't used because once factors become further apart, it is extremely slow.
+---
+https://cp-algorithms.com/algebra/factorization.html

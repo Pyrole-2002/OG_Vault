@@ -40,3 +40,6 @@ int phi(int n)
 	return result;
 }
 ```
+
+---
+https://cp-algorithms.com/algebra/phi-function.html
