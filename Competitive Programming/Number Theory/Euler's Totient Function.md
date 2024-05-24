@@ -1,0 +1,1 @@
+- Euler's Totient Function aka **Phi-Function $\phi(n)$**, counts the number of integers between $1$ and $n$ inclusive, which are coprime to $n$. $1$ is coprime to every number.
