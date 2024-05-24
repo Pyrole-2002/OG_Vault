@@ -12,3 +12,31 @@ Therefore the amount of integers coprime to $ab$ is equal to the product of amou
 - In general, for not coprime $a$ and $b$, the equation is:
 $$\phi(ab) = \phi(a)\cdot\phi(b)\cdot\frac{d}{\phi(d)}$$
 where $d=\gcd(a, b)$
+- Thus using the above properties, we can compute $\phi(n)$ through the factorization of $n$.
+If $n = p_1^{a_1}\cdot p_2^{a_2}\dots p_k^{a_k}$ where $p_i$ are prime factors of $n$:
+$$
+\begin{align}
+\phi(n) &= \phi(p_1^{a_1})\cdot \phi(p_2^{a_2})\dots \phi(p_k^{a_k})\\
+&= (p_1^{a_1} - p_1^{a_1-1})\cdot (p_2^{a_2} - p_2^{a_2-1})\dots (p_k^{a_k} - p_k^{a_k-1})\\
+&= p_1^{a_1}\left(1-\frac{1}{p_1}\right)\cdot p_2^{a_2}\left(1-\frac{1}{p_2}\right)\dots p_k^{a_k}\left(1-\frac{1}{p_k}\right)\\
+&= n\cdot \left(1-\frac{1}{p_1}\right)\cdot \left(1-\frac{1}{p_2}\right)\dots \left(1-\frac{1}{p_k}\right)
+\end{align}
+$$
+```cpp
+int phi(int n)
+{
+	int result = n;
+	for (int i = 2; i*i <= n; i++)
+	{
+		if (n % i == 0)
+		{
+			while (n % i == 0)
+				n /= i;
+			result -= result / i;
+		}
+	}
+	if (n > 1)
+		result -= result / n;
+	return result;
+}
+```
