@@ -85,7 +85,7 @@ vector<long long> factorPrecomputed(long long n)
 }
 ```
 ## Fermat's Factorization Method
-- We can write an odd composite number $n = p\cdot q$ as the difference of two squares $n = a^2 - b^2$.
+- We can write an odd composite number $n = p\cdot q$ as the difference of two squares $n = a^2 - b^2 = (a - b)(a + b)$.
 $$n = \left(\frac{p+q}{2}\right)^2 - \left(\frac{p-q}{2}\right)^2$$
 - Fermat's factorization method tries to exploit this fact by guessing the first square $a^2$, and checking if the remaining part, $b^2 = a^2 - n$, is also a square number. If it is, then we have found the factors $a-b$ and $a+b$ of $n$.
 ```cpp
@@ -103,3 +103,6 @@ int factorFermat(int n)
 	return a - b;
 }
 ```
+- This method can be very fast if the deference between the factors $p$ and $q$ is small. The algorithm runs in time $O(|p-q|)$ complexity.
+- In practice, this method isn't used because once factors become further apart, it is extremely slow.
+## Pollard's $p-1$ Method
