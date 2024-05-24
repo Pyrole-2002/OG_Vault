@@ -85,3 +85,4 @@ vector<long long> factorPrecomputed(long long n)
 }
 ```
 ## Fermat's Factorization Method
+- We can write an odd composite number $n = p\cdot q$ as the difference of two squares $n = a^2 - b^2$.
