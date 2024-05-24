@@ -92,7 +92,7 @@ $$n = \left(\frac{p+q}{2}\right)^2 - \left(\frac{p-q}{2}\right)^2$$
 int factorFermat(int n)
 {
 	int a = ceil(sqrt(n));
-	int b2 = a*a - n;
+	int b2 = a*a - n; // b^2 = a^2 - n
 	int b = round(sqrt(b2));
 	while (b*b != b2)
 	{
