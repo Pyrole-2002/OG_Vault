@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Competitive Programming/Number Theory/Integer Factorization.md",
+                "file": "Competitive Programming/Number Theory/Euler's Totient Function.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Competitive Programming/Number Theory/Integer Factorization.md",
+                "file": "Competitive Programming/Number Theory/Euler's Totient Function.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Competitive Programming/Number Theory/Integer Factorization.md",
+                "file": "Competitive Programming/Number Theory/Euler's Totient Function.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Competitive Programming/Number Theory/Integer Factorization.md"
+                "file": "Competitive Programming/Number Theory/Euler's Totient Function.md"
               }
             }
           }
@@ -150,8 +150,9 @@
   },
   "active": "8b964ed79d963d7e",
   "lastOpenFiles": [
-    "Competitive Programming/Number Theory/Linear Diophantine Equation.md",
     "Competitive Programming/Number Theory/Integer Factorization.md",
+    "Competitive Programming/Number Theory/Euler's Totient Function.md",
+    "Competitive Programming/Number Theory/Linear Diophantine Equation.md",
     "Competitive Programming/Number Theory/Sieve of Eratosthenes.md",
     "Competitive Programming/STL/Pair.md",
     "Competitive Programming/STL/Iterators.md",
@@ -185,7 +186,6 @@
     "Competitive Programming/STL/Array.md",
     "Pasted image 20240506140938.png",
     "Competitive Programming/STL/Unordered Set.md",
-    "Binary Search Tree.md",
     "Random Shit",
     "Competitive Programming/STL",
     "Competitive Programming/Tricks",
