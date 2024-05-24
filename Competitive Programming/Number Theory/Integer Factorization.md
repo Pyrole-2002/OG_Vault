@@ -86,3 +86,8 @@ vector<long long> factorPrecomputed(long long n)
 ```
 ## Fermat's Factorization Method
 - We can write an odd composite number $n = p\cdot q$ as the difference of two squares $n = a^2 - b^2$.
+$$n = \left(\frac{p+q}{2}\right)^2 - \left(\frac{p-q}{2}\right)^2$$
+- Fermat's factorization method tries to exploit this fact by guessing the first square $a^2$, and checking if the remaining part, $b^2 = a^2 - n$, is also a square number. If it is, then we have found the factors $a-b$ and $a+b$ of $n$.
+```cpp
+
+```
