@@ -21,7 +21,7 @@
             }
           },
           {
-            "id": "fa6c2d8e7778718c",
+            "id": "994a2585fde49d7b",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -162,13 +162,13 @@
       "publish:Publish changes...": false
     }
   },
-  "active": "fa6c2d8e7778718c",
+  "active": "994a2585fde49d7b",
   "lastOpenFiles": [
     "Competitive Programming/Number Theory/Modular Arithmetic.md",
+    "Competitive Programming/Number Theory/Euler's Totient Function.md",
     "Competitive Programming/Number Theory/Euclidean Algorithm.md",
     "Competitive Programming/Number Theory/Linear Diophantine Equation.md",
     "Competitive Programming/Number Theory/Divisors.md",
-    "Competitive Programming/Number Theory/Euler's Totient Function.md",
     "Competitive Programming/Number Theory/Integer Factorization.md",
     "Competitive Programming/Number Theory/Primality Tests.md",
     "Competitive Programming/Number Theory/Sieve of Eratosthenes.md",

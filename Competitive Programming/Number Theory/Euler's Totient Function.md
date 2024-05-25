@@ -40,6 +40,24 @@ int phi(int n)
 	return result;
 }
 ```
-
----
-https://cp-algorithms.com/algebra/phi-function.html
+### $\phi(i)$ from $[1; n]$
+If we need $\phi(i)$ for all numbers $[1; n]$, then factorizing all numbers isn't efficient. We therefore use the same idea as [[Sieve of Eratosthenes]].
+We find all prime numbers and then, for each $i$ update the `result` of all $i$ that are divisible by that prime number.
+The time complexity is the same as that of Sieve of Eratosthenes: $O(n\log\log n)$
+```cpp
+vector<int> phiOneToN(int n)
+{
+	vector<int> phi(n + 1);
+	for (int i = 0; i <= n; i++)
+		phi[i] = i;
+	for (int i = 2; i <= n; i++)
+	{
+		if (phi[i] == i)
+		{
+			for (int j = i; j <= n; j += i)
+				phi[j] -= phi[j] / i;
+		}
+	}
+	return phi;
+}
+```
