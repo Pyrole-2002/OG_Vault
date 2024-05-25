@@ -63,3 +63,4 @@ vector<int> modInverseRange(int a, int m) // if m is prime
 	return inv;
 }
 ```
+### Modular Inverse for Array of Numbers
