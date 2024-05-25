@@ -88,3 +88,8 @@ In the case when $m$ is prime, Euler's theorem turns into [[Fermat's Little Theo
 $$a^{m-1}\equiv 1\pmod m$$
 As immediate consequence we also get the equivalence:
 $$a^n\equiv a^{n\bmod\phi(m)}\pmod m$$
+This allows computing $x^n\bmod m$ for very big $n$, especially if $n$ is the result of another computation, as it computes $n$ under a modulo.
+
+---
+
+https://cp-algorithms.com/algebra/phi-function.html

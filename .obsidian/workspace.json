@@ -19,22 +19,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "994a2585fde49d7b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Competitive Programming/Number Theory/Euler's Totient Function.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -100,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Competitive Programming/Number Theory/Euler's Totient Function.md",
+                "file": "Competitive Programming/Number Theory/Modular Arithmetic.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Competitive Programming/Number Theory/Euler's Totient Function.md",
+                "file": "Competitive Programming/Number Theory/Modular Arithmetic.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Competitive Programming/Number Theory/Euler's Totient Function.md"
+                "file": "Competitive Programming/Number Theory/Modular Arithmetic.md"
               }
             }
           }
@@ -163,12 +149,12 @@
       "publish:Publish changes...": false
     }
   },
-  "active": "994a2585fde49d7b",
+  "active": "6220185ccb29f5fb",
   "lastOpenFiles": [
-    "Competitive Programming/Number Theory/Euclidean Algorithm.md",
-    "Competitive Programming/Tricks.md",
     "Competitive Programming/Number Theory/Euler's Totient Function.md",
     "Competitive Programming/Number Theory/Modular Arithmetic.md",
+    "Competitive Programming/Number Theory/Euclidean Algorithm.md",
+    "Competitive Programming/Tricks.md",
     "Competitive Programming/Number Theory/Linear Diophantine Equation.md",
     "Competitive Programming/Number Theory/Divisors.md",
     "Competitive Programming/Number Theory/Integer Factorization.md",
