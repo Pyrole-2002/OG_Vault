@@ -21,3 +21,4 @@ int modInverseExtendedEuclidean(int a, int m)
 	return (x % m + m) % m;
 }
 ```
+### Modular Inverse using [[Binary Exponentiation]]
