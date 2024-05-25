@@ -7,3 +7,4 @@ $$a\cdot x\equiv 1\mod m$$
 Consider the following equation with unknown $x$ and $y$:
 $$ax+my=1$$
 This is a [[Linear Diophantine Equation]] in two variables.
+Since $a$ and $m$ are coprime, $\gcd(a, m) = 1$ fits the equation in [[Euclidean Algorithm#Extended Euclidean Algorithm|Extended Euclidean Algorithm]].
