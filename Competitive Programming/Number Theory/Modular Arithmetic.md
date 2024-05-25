@@ -33,3 +33,33 @@ Multiply both sides of Euler's Theorem equivalence by $a^{-1}$:
 From the above results, we can easily find modular inverse using binary exponentiation which works in $O(\log m)$.
 However, in the case when $m$ is not a prime number, we need to calculate Euler Phi Function, which involves factorization of $m$ (hard). Only if the prime factorization of $m$ is known, then the complexity of this method remains $O(\log m)$.
 ### Modular Inverse using Euclidean Division
+Given a prime modulus $m > a$ (or apply modulo to make it smaller in 1 step), according to Euclidean Division:
+$$m=ka+r$$
+where $k = \left\lfloor\frac{m}{a}\right\rfloor$ and $r=m\bmod a$, then
+$$
+\begin{align}
+& \implies & 0          & \equiv k \cdot a + r   & \mod m \\
+& \iff & r              & \equiv -k \cdot a      & \mod m \\
+& \iff & r \cdot a^{-1} & \equiv -k              & \mod m \\
+& \iff & a^{-1}         & \equiv -k \cdot r^{-1} & \mod m
+\end{align}
+$$
+Note that this does not hold if $m$ is not prime, since the existence of $a^{-1}$ does not imply the existence of $r^{-1}$ in general.
+```cpp
+int modInverse(int a, int m) // if m is prime
+{
+	return a <= 1 ? a : m - (long long)(m/a) * modInverse(m % a) % m;
+}
+```
+The time complexity of this recursion is not known but it is extremely fast.
+Applying this, we can also precompute the modular inverse for every number in the range $[1; m-1]$ in $O(m)$
+```cpp
+vector<int> modInverseRange(int a, int m) // if m is prime
+{
+	vector<int> inv(n);
+	inv[1] = 1;
+	for (int i = 2; i < m; i++)
+		inv[i] = m - (long long)(m/i) * inv[m % i] % m;
+	return inv;
+}
+```
