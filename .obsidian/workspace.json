@@ -33,8 +33,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -100,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Competitive Programming/Number Theory/Euclidean Algorithm.md",
+                "file": "Competitive Programming/Number Theory/Modular Arithmetic.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Competitive Programming/Number Theory/Euclidean Algorithm.md",
+                "file": "Competitive Programming/Number Theory/Modular Arithmetic.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Competitive Programming/Number Theory/Euclidean Algorithm.md"
+                "file": "Competitive Programming/Number Theory/Modular Arithmetic.md"
               }
             }
           }
@@ -162,10 +161,10 @@
       "publish:Publish changes...": false
     }
   },
-  "active": "cdd71552666195c4",
+  "active": "6220185ccb29f5fb",
   "lastOpenFiles": [
-    "Competitive Programming/Number Theory/Modular Arithmetic.md",
     "Competitive Programming/Number Theory/Euclidean Algorithm.md",
+    "Competitive Programming/Number Theory/Modular Arithmetic.md",
     "Competitive Programming/Number Theory/Linear Diophantine Equation.md",
     "Competitive Programming/Number Theory/Divisors.md",
     "Competitive Programming/Number Theory/Euler's Totient Function.md",

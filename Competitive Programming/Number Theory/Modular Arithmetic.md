@@ -8,3 +8,16 @@ Consider the following equation with unknown $x$ and $y$:
 $$ax+my=1$$
 This is a [[Linear Diophantine Equation]] in two variables.
 Since $a$ and $m$ are coprime, $\gcd(a, m) = 1$ fits the equation in [[Euclidean Algorithm#Extended Euclidean Algorithm|Extended Euclidean Algorithm]].
+Taking modulo $m$ on both sides, we get rid of the term $my$:
+$$ax\equiv 1\mod m$$
+Therefore, the modular inverse of $a$ is $x$.
+```cpp
+int modInverseExtendedEuclidean(int a, int m)
+{
+	int x, y;
+	int g = gcdExtendedEuclidean(a, m, x, y);
+	if (g != 1) // No Solution
+		return 0;
+	return (x % m + m) % m;
+}
+```
