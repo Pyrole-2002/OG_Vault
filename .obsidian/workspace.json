@@ -144,7 +144,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -164,9 +165,10 @@
   },
   "active": "994a2585fde49d7b",
   "lastOpenFiles": [
-    "Competitive Programming/Number Theory/Modular Arithmetic.md",
-    "Competitive Programming/Number Theory/Euler's Totient Function.md",
     "Competitive Programming/Number Theory/Euclidean Algorithm.md",
+    "Competitive Programming/Tricks.md",
+    "Competitive Programming/Number Theory/Euler's Totient Function.md",
+    "Competitive Programming/Number Theory/Modular Arithmetic.md",
     "Competitive Programming/Number Theory/Linear Diophantine Equation.md",
     "Competitive Programming/Number Theory/Divisors.md",
     "Competitive Programming/Number Theory/Integer Factorization.md",
@@ -198,7 +200,6 @@
     "Competitive Programming/STL/List.md",
     "Competitive Programming/STL/Deque.md",
     "Competitive Programming/STL/Forward List.md",
-    "Competitive Programming/STL/Array.md",
     "Pasted image 20240506140938.png",
     "Random Shit",
     "Competitive Programming/STL",

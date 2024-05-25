@@ -80,3 +80,11 @@ vector<int> phiDivisorSum(int n)
 	return phi;
 }
 ```
+## Euler's Theorem
+Euler's Theorem states:
+$$a^{\phi(m)}\equiv 1\pmod m$$
+if $a$ and $m$ are coprime.
+In the case when $m$ is prime, Euler's theorem turns into [[Fermat's Little Theorem]]:
+$$a^{m-1}\equiv 1\pmod m$$
+As immediate consequence we also get the equivalence:
+$$a^n\equiv a^{n\bmod\phi(m)}\pmod m$$
