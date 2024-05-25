@@ -45,7 +45,7 @@ If we need $\phi(i)$ for all numbers $[1; n]$, then factorizing all numbers isn'
 We find all prime numbers and then, for each $i$ update the `result` of all $i$ that are divisible by that prime number.
 The time complexity is the same as that of Sieve of Eratosthenes: $O(n\log\log n)$
 ```cpp
-vector<int> phiOneToN(int n)
+vector<int> phiSieve(int n)
 {
 	vector<int> phi(n + 1);
 	for (int i = 0; i <= n; i++)
@@ -58,6 +58,25 @@ vector<int> phiOneToN(int n)
 				phi[j] -= phi[j] / i;
 		}
 	}
+	return phi;
+}
+```
+### Divisor Sum Property
+Established by Gauss:
+$$\large \sum_{d | n}\phi(d) = n$$
+Here the sum is over all positive divisors $d$ of $n$.
+We can use this divisor sum property to compute the totient of all numbers between $1$ and $n$. This implementation has slightly worse time complexity of $O(n\log n)$.
+```cpp
+vector<int> phiDivisorSum(int n)
+{
+	vector<int> phi(n + 1);
+	phi[0] = 0;
+	phi[1] = 1;
+	for (int i = 2; i <= n; i++)
+		phi[i] = i - 1;
+	for (int i = 2; i <= n; i++)
+		for (int j = 2*i; i <= n; j += i)
+			phi[j] -= phi[i];
 	return phi;
 }
 ```
