@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "bd8c821c2fa38176",
+        "id": "79f8a09ab0b5da3b",
         "type": "tabs",
         "children": [
           {
-            "id": "6220185ccb29f5fb",
+            "id": "72a577162d7f0076",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Competitive Programming/Number Theory/Modular Arithmetic.md",
+                "file": "Competitive Programming/Number Theory/Modular Inverse.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Competitive Programming/Number Theory/Modular Arithmetic.md",
+                "file": "Competitive Programming/Number Theory/Modular Inverse.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Competitive Programming/Number Theory/Modular Arithmetic.md",
+                "file": "Competitive Programming/Number Theory/Modular Inverse.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,12 +126,11 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Competitive Programming/Number Theory/Modular Arithmetic.md"
+                "file": "Competitive Programming/Number Theory/Modular Inverse.md"
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -149,13 +148,14 @@
       "publish:Publish changes...": false
     }
   },
-  "active": "6220185ccb29f5fb",
+  "active": "72a577162d7f0076",
   "lastOpenFiles": [
+    "Competitive Programming/Number Theory/Modular Inverse.md",
+    "Competitive Programming/Number Theory/Linear Diophantine Equation.md",
     "Competitive Programming/Number Theory/Euler's Totient Function.md",
-    "Competitive Programming/Number Theory/Modular Arithmetic.md",
+    "Competitive Programming/STL/Vector.md",
     "Competitive Programming/Number Theory/Euclidean Algorithm.md",
     "Competitive Programming/Tricks.md",
-    "Competitive Programming/Number Theory/Linear Diophantine Equation.md",
     "Competitive Programming/Number Theory/Divisors.md",
     "Competitive Programming/Number Theory/Integer Factorization.md",
     "Competitive Programming/Number Theory/Primality Tests.md",
@@ -185,7 +185,6 @@
     "Competitive Programming/STL/Map.md",
     "Competitive Programming/STL/List.md",
     "Competitive Programming/STL/Deque.md",
-    "Competitive Programming/STL/Forward List.md",
     "Pasted image 20240506140938.png",
     "Random Shit",
     "Competitive Programming/STL",
