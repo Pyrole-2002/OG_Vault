@@ -11,3 +11,9 @@ $$a'x\equiv b'\pmod{n'}$$
 in which $a'$ and $n'$ are already coprime. We get $x'$ as solution for $x$. It is clear that $x'$ will also be a solution of the original equation. However, it will not be the only solution. The original equation will have exactly $g$ solutions:
 $$x_i = (x'+in')\pmod{n}\quad \text{for }i=0,1\dots g-1$$
 Therefore, the number of solutions of the linear congruence equation is equal to either $g$ or to $0$.
+### Solution using [[Euclidean Algorithm#Extended Euclidean Algorithm|Extended Euclidean Algorithm]]
+We can rewrite the equation to the following Diophantine Equation:
+$$ax+nk = b$$
+where $x$ and $k$ are unknown integers.
+The method of solving this is described in the article of [[Linear Diophantine Equation]].
+This method is equivalent to the Modular Inverse method.
