@@ -40,3 +40,17 @@ bool isDivisibleByPowerOf2(int n, int k)
 }
 ```
 #### Brian Kernighan's Algorithm
+Using this, we can count the number of bits set.
+The idea is to consider only the set bits of an integer by turning off it's rightmost set bit (after counting it), so the next iteration of the loop considers the next rightmost bit.
+```cpp
+int countSetBits(int n)
+{
+	int count = 0;
+	while (n)
+	{
+		n &= n - 1; // clears the rightmost set bit
+		count++;
+	}
+	return count;
+}
+```
