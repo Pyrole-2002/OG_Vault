@@ -39,3 +39,4 @@ bool isDivisibleByPowerOf2(int n, int k)
 	return !(n & (power_of_2 - 1));
 }
 ```
+#### Brian Kernighan's Algorithm
