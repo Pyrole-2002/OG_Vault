@@ -64,3 +64,10 @@ vector<int> modInverseRange(int a, int m) // if m is prime
 }
 ```
 ### Modular Inverse for Array of Numbers
+Suppose we have an array of invertible numbers $x_1, x_2\dots x_n$. Instead of computing the inverse for every number, we can expand the fraction by the prefix product (excluding itself) and suffix product (excluding itself), and end up only computing a single inverse instead.
+$$
+\begin{align}
+x_i^{-1} = \frac{1}{x_i} &= \frac{\prod\limits_{1}^{i-1}x_j\cdot 1\cdot\prod\limits_{i+1}^{n}x_j}{\prod\limits_{1}^{i-1}x_j\cdot x_i\cdot\prod\limits_{i+1}^{n}x_j}\\
+&= \frac{}{}
+\end{align}
+$$
