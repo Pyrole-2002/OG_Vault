@@ -46,7 +46,7 @@ $$
 $$
 Note that this does not hold if $m$ is not prime, since the existence of $a^{-1}$ does not imply the existence of $r^{-1}$ in general.
 ```cpp
-int modInverse(int a, int m) // if m is prime
+int modInversePrime(int a, int m) // if m is prime
 {
 	return a <= 1 ? a : m - (long long)(m/a) * modInverse(m % a) % m;
 }
@@ -54,7 +54,7 @@ int modInverse(int a, int m) // if m is prime
 The time complexity of this recursion is not known but it is extremely fast.
 Applying this, we can also precompute the modular inverse for every number in the range $[1; m-1]$ in $O(m)$
 ```cpp
-vector<int> modInverseRange(int a, int m) // if m is prime
+vector<int> modInverseRangePrime(int a, int m) // if m is prime
 {
 	vector<int> inv(n);
 	inv[1] = 1;
@@ -68,6 +68,11 @@ Suppose we have an array of invertible numbers $x_1, x_2\dots x_n$. Instead of c
 $$
 \begin{align}
 x_i^{-1} = \frac{1}{x_i} &= \frac{\prod\limits_{1}^{i-1}x_j\cdot 1\cdot\prod\limits_{i+1}^{n}x_j}{\prod\limits_{1}^{i-1}x_j\cdot x_i\cdot\prod\limits_{i+1}^{n}x_j}\\
-&= \frac{}{}
+&= \frac{\text{prefix}_{i-1}\cdot\text{suffix}_{i+1}}{\prod\limits_1^nx_j}\\
+&= \text{prefix}_{i-1}\cdot\text{suffix}_{i+1}\cdot\left(\prod\limits_1^nx_j\right)^{-1}
 \end{align}
 $$
+Therefore, we can just compute the modular inverse for product of all numbers and then multiply it by the prefix product and suffix product excluding the number itself.
+```cpp
+vector<int> modInverseArray(vector<int>)
+```
