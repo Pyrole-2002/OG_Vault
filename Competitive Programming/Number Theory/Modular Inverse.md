@@ -73,5 +73,31 @@ x_i^{-1} = \frac{1}{x_i} &= \frac{\prod\limits_{1}^{i-1}x_j\cdot 1\cdot\prod\lim
 $$
 Therefore, we can just compute the modular inverse for product of all numbers and then multiply it by the prefix product and suffix product excluding the number itself.
 ```cpp
-vector<int> modInverseArray(vector<int>)
+vector<int> modInverseArray(vector<int> a, int m)
+{
+	vector<int> inv(a.size());
+	if (a.size() == 0)
+		return inv;
+	long long prod = 1;
+	for (int i = 0; i < a.size(); i++)
+	{
+		inv[i] = prod;
+		prod = (prod * a[i]) % m;
+	}
+	int x, y;
+	int g = gcdExtendedEuclidean(prod, m, x, y);
+	if (g != 1) // No Solution
+	{
+		for (int i = 0; i < a.size(); i++)
+			inv[i] = -1;
+		return inv;
+	}
+	x = (x % m + m) % m;
+	for (int i = a.size() - 1; i >= 0; i--)
+	{
+		inv[i] = (inv[i] * x) % m;
+		x = (x * a[i]) % m;
+	}
+	return inv;
+}
 ```
