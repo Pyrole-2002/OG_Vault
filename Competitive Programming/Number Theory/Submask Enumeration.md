@@ -21,3 +21,6 @@ for (int m = 0; m < (1<<n); m++)
 }
 ```
 The inner loop executes a total of $O(3^n)$ iterations.
+##### Proof:
+Note that if mask $m$ has $k$ set bits, then it will have $2^k$ submasks. As we have a total of $\binom{n}{k}$ masks with $k$ set bits, the total number of combinations for for all $s$ and $m$ will be:
+$$\sum\limits_{k=0}^{n}\binom{n}{k}\cdot2^k = (1+2)^n = 3^n$$
