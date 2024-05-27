@@ -1,0 +1,2 @@
+## Enumerating All Submasks of a Given Mask
+Given a bitmask $m$, you want to efficiently iterate through all of its submasks, that is, masks $s$ in which only bits that were included in mask $m$ are set.
