@@ -8,4 +8,4 @@ for (int s = m; s; s = (s-1)&m)
 }
 ```
 The above loop iterates all submasks of $m$ without repetition and in descending order.
-Suppose we have a current bitmask $s$, and we want to move on to the next bitmask, by subtracting
+Suppose we have a current bitmask $s$, and we want to move on to the next bitmask, by subtracting $1$ from the mask $s$, we clear the rightmost set bit and set all bits to the right of it. Then we remove all the "extra" $1$ bits that are not included in $m$ and therefore shouldn't be part of submask by taking bitwise AND.
