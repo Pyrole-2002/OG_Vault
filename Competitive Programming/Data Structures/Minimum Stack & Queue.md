@@ -21,3 +21,5 @@ int min = s.top().second;
 ### Method 1
 - We want to add elements at the end and remove them from the front.
 - The disadvantage is that the modified queue will actually not store all the elements.
+- The idea is to only store the elements in the queue that are needed to determine the minimum.
+- The queue is kept in non-decreasing order (head is smallest).
