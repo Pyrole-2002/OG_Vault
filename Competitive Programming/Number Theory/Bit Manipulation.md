@@ -54,3 +54,10 @@ int countSetBits(int n)
 	return count;
 }
 ```
+### Standard Library
+The following operations are supported since C++20:
+- `has_single_bit` : checks if the number is a power of $2$.
+- `bit_ciel` / `bit_floor` : round up/down to the closest power of $2$.
+- `rotl` / `rotr` : rotate the bits in the number.
+- `countl_zero` / `countr_zero` / `countl_one` / `countr_one` : count the leading/trailing zero's/one's.
+- `popcount` : count the number of set bits.
