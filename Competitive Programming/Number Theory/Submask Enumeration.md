@@ -8,4 +8,16 @@ for (int s = m; s; s = (s-1)&m)
 }
 ```
 The above loop iterates all submasks of $m$ without repetition and in descending order.
-Suppose we have a current bitmask $s$, and we want to move on to the next bitmask, by subtracting $1$ from the mask $s$, we clear the rightmost set bit and set all bits to the right of it. Then we remove all the "extra" $1$ bits that are not included in $m$ and therefore shouldn't be part of submask by taking bitwise AND.
+Suppose we have a current bitmask $s$, and we want to move on to the next bitmask, by subtracting $1$ from the mask $s$, we clear the rightmost set bit and set all bits to the right of it. This gives us the largest number less than $s$. Then we remove all the "extra" $1$ bits that are not included in $m$ and therefore shouldn't be part of submask by taking bitwise AND to get the next largest bitmask in descending order.
+### Iterating Through All Masks with their Submasks
+In many problems, we iterate through all bitmasks and for each mask, iterate through all of its submasks:
+```cpp
+for (int m = 0; m < (1<<n); m++)
+{
+	for (int s = m; s; s = (s-1)&m)
+	{
+		// code here
+	}
+}
+```
+The inner loop executes a total of $O(3^n)$ iterations.
