@@ -27,4 +27,31 @@ int min = s.top().second;
 - While removing elements, we only remove the front element if it matches the value we want to remove. If it doesn't match, we do nothing.
 ```cpp
 // Declaration
+deque<int> q;
+
+// Find the minimum
+int min = q.front();
+
+// Add an element
+while (!q.empty() && q.back() > new_elem)
+	q.pop_back();
+q.emplace_back(new_elem);
+
+// Remove an element
+if (!q.empty() && q.front() == rem_elem)
+	q.pop_front();
+```
+### Method 2
+- Modification of method 1.
+- We want to remove elements without knowing which element we have to remove.
+- We do this by storing the index for each element in the queue, and remember how many elements we already have added and removed.
+```cpp
+// Declaration
+deque<pair<int, int>> q;
+int cnt_added = 0, cnt_removed = 0;
+
+// Find the minimum
+int min = q.front().first;
+
+// 
 ```
