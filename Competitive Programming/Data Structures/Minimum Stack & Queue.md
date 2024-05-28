@@ -53,5 +53,15 @@ int cnt_added = 0, cnt_removed = 0;
 // Find the minimum
 int min = q.front().first;
 
-// 
+// Add an element
+while (!q.empty() && q.back().first > new_elem)
+	q.popback();
+q.emplace_back({new_elem, cnt_added});
+cnt_added++;
+
+// Removing an element
+if (!q.empty() && q.front().second == cnt_removed)
+	q.pop_front();
+cnt_removed++;
 ```
+### Method 3
