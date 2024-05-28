@@ -93,8 +93,11 @@ if (s2.empty())
 	{
 		int element = s1.top().first;
 		s1.pop();
+		int min = s2.empty() ? element : min(element, s2.top().second);
+		s2.push({element, min});
 	}
 }
 int rem_elem = s2.top().first;
 s2.pop();
 ```
+#### Finding the Minimum for All Subarrays of Fixed Length
