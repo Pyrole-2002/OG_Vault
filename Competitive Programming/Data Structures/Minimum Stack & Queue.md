@@ -101,3 +101,5 @@ int rem_elem = s2.top().first;
 s2.pop();
 ```
 #### Finding the Minimum for All Subarrays of Fixed Length
+Suppose we are given an array $A$ of length $N$ and a given $M\le N$. We have to find the minimum of each subarray of length $M$ in this array. We need to solve this problem in linear time $O(n)$.
+In the solution, we use any modified queue, we add the first $M$ elements of the array, find and output its minimum
