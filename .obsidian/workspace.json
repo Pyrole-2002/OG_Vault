@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Competitive Programming/Data Structures/Minimum Stack & Queue.md",
+                "file": "Competitive Programming/Sorting/Selection Sort.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Competitive Programming/Data Structures/Minimum Stack & Queue.md",
+                "file": "Competitive Programming/Sorting/Selection Sort.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Competitive Programming/Data Structures/Minimum Stack & Queue.md",
+                "file": "Competitive Programming/Sorting/Selection Sort.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Competitive Programming/Data Structures/Minimum Stack & Queue.md"
+                "file": "Competitive Programming/Sorting/Selection Sort.md"
               }
             }
           }
@@ -150,8 +150,10 @@
   },
   "active": "758e0a4594898a9b",
   "lastOpenFiles": [
-    "Competitive Programming/STL/Queue.md",
+    "Competitive Programming/Data Structures/Sparse Table.md",
+    "Competitive Programming/Sorting/Selection Sort.md",
     "Competitive Programming/Data Structures/Minimum Stack & Queue.md",
+    "Competitive Programming/STL/Queue.md",
     "Competitive Programming/STL/Stack.md",
     "Competitive Programming/Sorting",
     "Competitive Programming/Number Theory/Submask Enumeration.md",
@@ -185,8 +187,6 @@
     "Pasted image 20240508211624.png",
     "Pasted image 20240508211403.png",
     "Pasted image 20240508211252.png",
-    "Competitive Programming/STL/Set.md",
-    "Competitive Programming/STL/Priority Queue.md",
     "Pasted image 20240506140938.png",
     "Random Shit",
     "Competitive Programming/STL",
