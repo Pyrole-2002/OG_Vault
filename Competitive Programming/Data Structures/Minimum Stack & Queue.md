@@ -10,7 +10,7 @@ stack<pair<int, int>> s;
 int new_min = s.empty() ? new_elem : min(new_elem, s.top().second);
 s.emplace({new_elem, new_min});
 
-// Removing an element
+// Remove an element
 int rem_elem = s.top().first;
 s.pop();
 
@@ -59,9 +59,41 @@ while (!q.empty() && q.back().first > new_elem)
 q.emplace_back({new_elem, cnt_added});
 cnt_added++;
 
-// Removing an element
+// Remove an element
 if (!q.empty() && q.front().second == cnt_removed)
 	q.pop_front();
 cnt_removed++;
 ```
 ### Method 3
+- In this method, we actually store all elements and still find the minimum in $O(1)$. We can also remove an element from the front without knowing its value.
+- We will simulate a queue using two stacks.
+- Make two stacks $s_1$ and $s_2$. These stacks will be modified as discussed before so that we can find the minimum in $O(1)$.
+- We now add new elements to the stack $s_1$, and remove elements from the stack $s_2$.
+- If at any time the stack $s_2$ is empty, we move all elements from $s_1$ to $s_2$ (reversing the order of those element).
+- Finally, finding the minimum in the queue involves just finding the minimum of both stacks.
+```cpp
+// Decaration
+stack<pair<int, int>> s1, s2;
+
+// Find the minimum
+int min;
+if (s1.empty() || s2.empty())
+	min = s1.empty() ? s2.top().second : s1.top().second;
+else
+	min = min(s1.top().second, s2.top().second);
+
+// Add an element
+int min = s1.empty() ? new_elem : min(new_elem, s1.top().second);
+s1.emplace({new_elem, min});
+
+// Remove an element
+if (s2.empty())
+{
+	while (!s1.empty())
+	{
+		int element = 
+	}
+}
+int rem_elem = s2.top().first;
+s2.pop();
+```
