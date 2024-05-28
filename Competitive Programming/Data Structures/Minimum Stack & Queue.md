@@ -22,4 +22,9 @@ int min = s.top().second;
 - We want to add elements at the end and remove them from the front.
 - The disadvantage is that the modified queue will actually not store all the elements.
 - The idea is to only store the elements in the queue that are needed to determine the minimum.
-- The queue is kept in non-decreasing order (head is smallest).
+- The queue is kept in non-decreasing order (head/front is smallest).
+- While adding a new element, we remove all elements from the back of the queue that are larger than the new element.
+- While removing elements, we only remove the front element if it matches the value we want to remove. If it doesn't match, we do nothing.
+```cpp
+// Declaration
+```
