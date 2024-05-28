@@ -91,7 +91,8 @@ if (s2.empty())
 {
 	while (!s1.empty())
 	{
-		int element = 
+		int element = s1.top().first;
+		s1.pop();
 	}
 }
 int rem_elem = s2.top().first;
