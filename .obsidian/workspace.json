@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "644f0c2aa1aab507",
+        "id": "f955d07933b54f41",
         "type": "tabs",
         "children": [
           {
-            "id": "cdb1e40208e23d7f",
+            "id": "9afc25edf2bb27b6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Random Shit/Delete.md",
+                "file": "Competitive Programming/Miscellaneous/Longest Subarray with Given Sum K (Positives).md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Random Shit/Delete.md",
+                "file": "Competitive Programming/Miscellaneous/Longest Subarray with Given Sum K (Positives).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Random Shit/Delete.md",
+                "file": "Competitive Programming/Miscellaneous/Longest Subarray with Given Sum K (Positives).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Random Shit/Delete.md"
+                "file": "Competitive Programming/Miscellaneous/Longest Subarray with Given Sum K (Positives).md"
               }
             }
           }
@@ -148,8 +148,10 @@
       "publish:Publish changes...": false
     }
   },
-  "active": "cdb1e40208e23d7f",
+  "active": "9afc25edf2bb27b6",
   "lastOpenFiles": [
+    "Competitive Programming/Miscellaneous/Longest Subarray with Given Sum K (Positives).md",
+    "Competitive Programming/Miscellaneous",
     "Random Shit/Delete.md",
     "Competitive Programming/Number Theory/Binary Exponentiation.md",
     "Competitive Programming/Number Theory/Bit Manipulation.md",
@@ -177,7 +179,6 @@
     "Competitive Programming/Number Theory/Primality Tests.md",
     "Competitive Programming/Number Theory/Sieve of Eratosthenes.md",
     "Competitive Programming/STL/Pair.md",
-    "Competitive Programming/STL/Iterators.md",
     "Pasted image 20240506132646.png",
     "Pasted image 20240506132141.png",
     "Pasted image 20240508212025.png",
