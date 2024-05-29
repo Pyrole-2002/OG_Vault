@@ -1,0 +1,2 @@
+- Follows the divide-and-conquer approach.
+- Works by recursively dividing the input array into smaller subarrays and sorting those subarrays, then merging them back together to obtain the sorted array.
