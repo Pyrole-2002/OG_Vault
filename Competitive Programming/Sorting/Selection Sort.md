@@ -17,5 +17,4 @@ void selectionSort(vector<int>& arr)
 ```
 - Time Complexity: $O(n^2)$
 - Space Complexity: $O(1)$
-- Selection sort is not stable.
 - Selection sort is an in-place algorithm, as it does not require extra space.

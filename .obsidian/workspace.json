@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Competitive Programming/Sorting/Selection Sort.md",
+                "file": "Competitive Programming/Sorting/Insertion Sort.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Competitive Programming/Sorting/Selection Sort.md",
+                "file": "Competitive Programming/Sorting/Insertion Sort.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Competitive Programming/Sorting/Selection Sort.md",
+                "file": "Competitive Programming/Sorting/Insertion Sort.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Competitive Programming/Sorting/Selection Sort.md"
+                "file": "Competitive Programming/Sorting/Insertion Sort.md"
               }
             }
           }
@@ -150,8 +150,10 @@
   },
   "active": "758e0a4594898a9b",
   "lastOpenFiles": [
-    "Competitive Programming/Data Structures/Sparse Table.md",
+    "Competitive Programming/Sorting/Bubble Sort.md",
+    "Competitive Programming/Sorting/Insertion Sort.md",
     "Competitive Programming/Sorting/Selection Sort.md",
+    "Competitive Programming/Data Structures/Sparse Table.md",
     "Competitive Programming/Data Structures/Minimum Stack & Queue.md",
     "Competitive Programming/STL/Queue.md",
     "Competitive Programming/STL/Stack.md",
@@ -176,10 +178,8 @@
     "Competitive Programming/Number Theory/Fermat's Little Theorem.md",
     "Competitive Programming/Number Theory/Linear Sieve.md",
     "Competitive Programming/Number Theory/Fibonacci Computation.md",
-    "Untitled.md",
     "Pasted image 20240506132646.png",
     "Pasted image 20240506132141.png",
-    "Random Shit/BRSM Project Report.md",
     "Pasted image 20240508212025.png",
     "Pasted image 20240508211903.png",
     "Pasted image 20240508211834.png",
