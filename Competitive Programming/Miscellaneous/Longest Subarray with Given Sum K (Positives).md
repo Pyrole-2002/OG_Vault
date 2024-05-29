@@ -34,7 +34,7 @@ int getLongestSubarray(vector<int> a, long long k)
 - Space Complexity: $O(N)$
 ## Method 2 (2 Pointers)
 - We take two pointers `left` and `right`, initially pointing to the index $0$.
-- The `left` will denote the starting index of the subarray and the `right` will denote the ending index.
+- The `left` will denote the starting index of the subarray and the `right` will denote the ending index (both inclusive).
 - Since we want the longest subarray, we move the `right` pointer forward every time adding the element to the overall sum.
 - As soon as the sum of the subarray crosses $k$, we need to move the `left` pointer forward to shrink the size and therefore decrease the sum.
 - We consider the length of the subarray whenever the sum becomes equal to $k$.
