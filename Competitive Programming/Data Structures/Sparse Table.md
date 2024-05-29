@@ -1,0 +1,3 @@
+- Sparse table is a data structure that allows answering range queries.
+- It can answer most range queries in $O(\log n)$, but its true power is answering range minimum queries (or equivalent range maximum queries) in $O(1)$ time.
+- Only drawback is that it can be used only on immutable arrays. The array cannot be changed between two queries. If any element in the array changes, the complete data structure has to be recomputed.

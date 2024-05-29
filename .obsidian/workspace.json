@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "7e8a5aa850aeb49e",
+        "id": "d7d64036e132c756",
         "type": "tabs",
         "children": [
           {
-            "id": "40caa2ea53c7ef57",
+            "id": "b04402c7c367fb69",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Competitive Programming/Miscellaneous/Longest Subarray with Sum K.md",
+                "file": "Competitive Programming/Data Structures/Sparse Table.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Competitive Programming/Miscellaneous/Longest Subarray with Sum K.md",
+                "file": "Competitive Programming/Data Structures/Sparse Table.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Competitive Programming/Miscellaneous/Longest Subarray with Sum K.md",
+                "file": "Competitive Programming/Data Structures/Sparse Table.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Competitive Programming/Miscellaneous/Longest Subarray with Sum K.md"
+                "file": "Competitive Programming/Data Structures/Sparse Table.md"
               }
             }
           }
@@ -148,7 +148,7 @@
       "publish:Publish changes...": false
     }
   },
-  "active": "40caa2ea53c7ef57",
+  "active": "b04402c7c367fb69",
   "lastOpenFiles": [
     "Competitive Programming/Miscellaneous/Longest Subarray with Sum K.md",
     "Competitive Programming/Miscellaneous/Longest Subarray with Sum k (Positives & Negatives).md",
