@@ -150,8 +150,9 @@
   },
   "active": "758e0a4594898a9b",
   "lastOpenFiles": [
-    "Competitive Programming/Sorting/Selection Sort.md",
+    "Competitive Programming/Sorting/Quick Sort.md",
     "Competitive Programming/Sorting/Merge Sort.md",
+    "Competitive Programming/Sorting/Selection Sort.md",
     "Competitive Programming/Sorting/Insertion Sort.md",
     "Competitive Programming/Sorting/Bubble Sort.md",
     "Competitive Programming/Data Structures/Sparse Table.md",
@@ -177,7 +178,6 @@
     "Competitive Programming/STL/Iterators.md",
     "Competitive Programming/Number Theory/Binary Exponentiation.md",
     "Competitive Programming/Number Theory/Fermat's Little Theorem.md",
-    "Competitive Programming/Number Theory/Linear Sieve.md",
     "Pasted image 20240506132646.png",
     "Pasted image 20240506132141.png",
     "Pasted image 20240508212025.png",

@@ -1,0 +1,3 @@
+- Based on the divide-and-conquer algorithm that picks an element as a pivot and partitions the given array around the picked pivot by placing the pivot in its correct position in the sorted array.
+- During partition, the pivot is placed in its correct position in the sorted array by putting all smaller elements to the left of the pivot, and all greater elements to the right of the pivot.
+- There are many different choices for picking pivots which affects the performance of quick sort.
