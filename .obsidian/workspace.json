@@ -4,15 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "e079a7fb2c31c7eb",
+        "id": "644f0c2aa1aab507",
         "type": "tabs",
         "children": [
           {
-            "id": "0ca4c33215d7e3c8",
+            "id": "cdb1e40208e23d7f",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Random Shit/Delete.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Random Shit/Delete.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Random Shit/Delete.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Random Shit/Delete.md"
+              }
             }
           }
         ]
@@ -139,8 +148,11 @@
       "publish:Publish changes...": false
     }
   },
-  "active": "0ca4c33215d7e3c8",
+  "active": "cdb1e40208e23d7f",
   "lastOpenFiles": [
+    "Random Shit/Delete.md",
+    "Competitive Programming/Number Theory/Binary Exponentiation.md",
+    "Competitive Programming/Number Theory/Bit Manipulation.md",
     "Competitive Programming/Sorting/Quick Sort.md",
     "Competitive Programming/Sorting/Bubble Sort.md",
     "Competitive Programming/Sorting/Insertion Sort.md",
@@ -153,7 +165,6 @@
     "Competitive Programming/Sorting",
     "Competitive Programming/Number Theory/Submask Enumeration.md",
     "Competitive Programming/Data Structures",
-    "Competitive Programming/Number Theory/Bit Manipulation.md",
     "Competitive Programming/Number Theory/Linear Congruence Equation.md",
     "Competitive Programming/Number Theory/Modular Inverse.md",
     "Competitive Programming/Number Theory/Euclidean Algorithm.md",
@@ -167,8 +178,6 @@
     "Competitive Programming/Number Theory/Sieve of Eratosthenes.md",
     "Competitive Programming/STL/Pair.md",
     "Competitive Programming/STL/Iterators.md",
-    "Competitive Programming/Number Theory/Binary Exponentiation.md",
-    "Competitive Programming/Number Theory/Fermat's Little Theorem.md",
     "Pasted image 20240506132646.png",
     "Pasted image 20240506132141.png",
     "Pasted image 20240508212025.png",
