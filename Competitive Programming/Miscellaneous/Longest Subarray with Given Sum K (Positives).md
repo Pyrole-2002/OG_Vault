@@ -2,6 +2,34 @@
 ## Method 1 (Hashing)
 - This approach uses a hash map to efficiently find the longest subarray with a sum of $k$.
 - The hash map `pre_sum_map` will store prefix sums and their corresponding indices.
+- Assume the sum of a subarray starting from index $0$ and ending at index $i$ is `sum` $(> k)$. In this subarray, we search for another subarray starting at non-zero index and ending at index $i$ whose sum equals $k$. This means that the sum of the new subarray should be `sum - k`.
+- **Edge Case:** We need to check the map if the prefix sum already exists and if it does, we do not update the index as we need the lowest index possible to get the longest length of subarray.
 ```cpp
-
+int getLongestSubarray(vector<int> a, long long k)
+{
+	int n = a.size();
+	map<long long, int> pre_sum_map;
+	long long sum = 0;
+	int max_len = 0;
+	for (int i = 0; i < n; i++)
+	{
+		// calculate prefix sum till index i
+		sum += a[i];
+		// if prefix sum is k, update max_len
+		if (sum == k)
+			max_len = max(max_len, i + 1);
+		// if prefix sum is not k, check if (sum - k) is present in map
+		long long rem = sum - k;
+		// if (sum - k) is present in map, update max_len
+		if (pre_sum_map.find(rem) != pre_sum_map.end())
+			max_len = max(max_len, i - pre_sum_map[rem]);
+		// Edge Case: if sum is not present in map, add it to map
+		if (pre_sum_map.find(sum) == pre_sum_map.end())
+			pre_sum_map[sum] = i;
+	}
+	return max_len;
+}
 ```
+- Time Complexity: If we are using an [[Unordered Map]], the time complexity will be $O(N)$ but in worst case the complexity becomes $O(N^2)$. If we use [[Map]], the time complexity will be $O(N\log N)$.
+- Space Complexity: $O(N)$
+## Method 2 (2 Pointers)
