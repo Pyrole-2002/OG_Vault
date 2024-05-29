@@ -32,5 +32,5 @@ void quickSort(vector<int>& arr, int l, int r)
 }
 ```
 - Time Complexity: $O(n^2)$ but $\theta(n\log n)$
-- Space Complexity: $O(1)$
+- Space Complexity: $O(n)$ due to the recursive call stack.
 - Quick sort is an in-place algorithm, as it does not require extra space.
