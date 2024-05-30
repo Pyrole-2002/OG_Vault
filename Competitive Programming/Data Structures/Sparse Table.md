@@ -16,7 +16,9 @@ int st[K + 1][MAXN];
 ```
 - Because the range $[j, j+2^i-1]$ of length $2^i$ splits nicely into the ranges $[j, j+2^{i-1}-1]$ and $[j+2^{i-1}, j+2^i-1]$, both of length $2^{i-1}$,  we can generate the table efficiently using dynamic programming:
 ```cpp
+// copy all elements from array into first row of sparse table
 copy(array.begin(), array.end(), st[0]);
+
 for (int i = 1; i <= K; i++)
 	for (int j = 0; j + (1<<i) <= N; j++)
 		st[i][j] = f(st[i-1][j], st[i-1][j+(1<<(i-1))]);
