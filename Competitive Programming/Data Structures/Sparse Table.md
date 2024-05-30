@@ -29,15 +29,25 @@ The function $f$ will depend on the type of query. For range sum queries, it wil
 - We want to find the sum of all values in a range.
 - $f(x, y) = x + y$, where $f$ is the precomputation function.
 ```cpp
+#define MAXN 1000000
+#define K 25
+
 long long f(long long x, long long y)
 {
 	return x + y;
 }
 
-long long st[K + 1][MAXN];
-copy(array.begin(), array.end(), st[0]);
+void precompute(vector<int> array)
+{
+	int N = array.size();
+	long long st[K + 1][MAXN];
+	copy(array.begin(), array.end(), st[0]);
 
-for (int i = 1; i <= K; i++)
-	for (int j = 0; j + (1<<i) <= N; j++)
-		st[i][j] = f(st[i-1][j], st[i-1][j+(1<<(i-1))]);
+	for (int i = 1; i <= K; i++)
+		for (int j = 0; j + (1<<i) <= N; j++)
+			st[i][j] = f(st[i-1][j], st[i-1][j+(1<<(i-1))]);
+}
+```
+- To answer the sum query for the range $[L, R]$, we iterate over all powers of $2$, starting from the biggest one. As soon as $2^i$ is found which is smaller or equal to the length of the range $(R-L+1)$, we process the first part of range $[L, L+2^i-1]$ and continue with the remaining range $[L+2^i, R]$
+```cpp
 ```
