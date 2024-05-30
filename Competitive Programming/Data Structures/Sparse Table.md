@@ -4,3 +4,6 @@
 - Just like binary numbers, any non-negative number can be represented uniquely as a sum of decreasing powers of $2$ (these powers are called summands). For a number $x$, there can be at most $\lceil\log_{2}x\rceil$.
 - By the same logic, any interval can be uniquely represented as a union of intervals with lengths that are decreasing powers of $2$. The union consists of at most $\lceil\log_{2}(\text{len})\rceil$ intervals, where $\text{len}$ is the length of the original interval.
 ### Precomputation
+- We use a 2-dimensional array for storing the answers to the precomputed queries.
+- `st[i][j]` will store the answer for the range $[j, j+2^i-1]$ of length $2^i$.
+- The size of the 2-dimensional array will be $(K+1)\times\text{MAXN}$, where $\text{MAXN}$ is the biggest possible array length we want to handle.
