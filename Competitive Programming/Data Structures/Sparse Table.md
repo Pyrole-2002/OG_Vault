@@ -17,7 +17,7 @@ int st[K + 1][MAXN];
 - Because the range $[j, j+2^i-1]$ of length $2^i$ splits nicely into the ranges $[j, j+2^{i-1}-1]$ and $[j+2^{i-1}, j+2^i-1]$, both of length $2^{i-1}$,  we can generate the table efficiently using dynamic programming:
 ```cpp
 // copy all elements from array into first row of sparse table
-copy(array.begin(), array.end(), st[0]);
+copy(array.begin(), array.end(), st[0]); // intervals of length 1
 
 for (int i = 1; i <= K; i++)
 	for (int j = 0; j + (1<<i) <= N; j++)
@@ -26,3 +26,18 @@ for (int i = 1; i <= K; i++)
 The function $f$ will depend on the type of query. For range sum queries, it will compute the sum. For range minimum queries, it will compute the minimum.
 - Time Complexity: $O(N\log N)$
 ### Range Sum Queries
+- We want to find the sum of all values in a range.
+- $f(x, y) = x + y$, where $f$ is the precomputation function.
+```cpp
+long long f(long long x, long long y)
+{
+	return x + y;
+}
+
+long long st[K + 1][MAXN];
+copy(array.begin(), array.end(), st[0]);
+
+for (int i = 1; i <= K; i++)
+	for (int j = 0; j + (1<<i) <= N; j++)
+		st[i][j] = f(st[i-1][j], st[i-1][j+(1<<(i-1))]);
+```
