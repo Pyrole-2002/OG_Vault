@@ -28,9 +28,11 @@ The function $f$ will depend on the type of query. For range sum queries, it wil
 ### Range Sum Queries
 - We want to find the sum of all values in a range.
 - $f(x, y) = x + y$, where $f$ is the precomputation function.
+- To answer the sum query for the range $[L, R]$, we iterate over all powers of $2$, starting from the biggest one. As soon as $2^i$ is found which is smaller or equal to the length of the range $(R-L+1)$, we process the first part of range $[L, L+2^i-1]$ and continue with the remaining range $[L+2^i, R]$
 ```cpp
 #define MAXN 1000000
 #define K 25
+long long st[K + 1][MAXN];
 
 long long f(long long x, long long y)
 {
@@ -40,14 +42,29 @@ long long f(long long x, long long y)
 void precompute(vector<int> array)
 {
 	int N = array.size();
-	long long st[K + 1][MAXN];
 	copy(array.begin(), array.end(), st[0]);
 
 	for (int i = 1; i <= K; i++)
 		for (int j = 0; j + (1<<i) <= N; j++)
 			st[i][j] = f(st[i-1][j], st[i-1][j+(1<<(i-1))]);
 }
+
+long long query(int L, int R)
+{
+	long long sum = 0;
+	for (int i = K; i >= 0; i--)
+	{
+		if ((1<<i) <= R - L + 1)
+		{
+			sum = f(sum, st[i][L]);
+			L += 1<<i;
+		}
+	}
+	return sum;
+}
 ```
-- To answer the sum query for the range $[L, R]$, we iterate over all powers of $2$, starting from the biggest one. As soon as $2^i$ is found which is smaller or equal to the length of the range $(R-L+1)$, we process the first part of range $[L, L+2^i-1]$ and continue with the remaining range $[L+2^i, R]$
-```cpp
-```
+- Time Complexity: $O(K)$ or $O(\log\text{MAXN})$
+### Range Minimum Queries (RMQ)
+- When computing the minimum of a range, it doesn't matter if we process a value in the range once or twice.
+- Therefore, instead of splitting a range into multiple ranges, we split the range into only two overlapping ranges.
+- The length of these two overlapping ranges will be equal to $\lceil\log_{2}(R-L+1)\rceil$.
