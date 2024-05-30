@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "d7d64036e132c756",
+        "id": "4dfb0a00f5d455a6",
         "type": "tabs",
         "children": [
           {
-            "id": "b04402c7c367fb69",
+            "id": "83a89d14297d5fd6",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -148,22 +148,22 @@
       "publish:Publish changes...": false
     }
   },
-  "active": "b04402c7c367fb69",
+  "active": "83a89d14297d5fd6",
   "lastOpenFiles": [
-    "Competitive Programming/Miscellaneous/Longest Subarray with Sum K.md",
+    "Competitive Programming/Arrays/Longest Subarray with Sum K.md",
+    "Competitive Programming/Data Structures/Sparse Table.md",
     "Competitive Programming/Miscellaneous/Longest Subarray with Sum k (Positives & Negatives).md",
     "Competitive Programming/Sorting/Quick Sort.md",
     "Competitive Programming/Sorting/Selection Sort.md",
     "Competitive Programming/STL/Map.md",
     "Competitive Programming/STL/Unordered Map.md",
-    "Competitive Programming/Miscellaneous",
+    "Competitive Programming/Arrays",
     "Random Shit/Delete.md",
     "Competitive Programming/Number Theory/Binary Exponentiation.md",
     "Competitive Programming/Number Theory/Bit Manipulation.md",
     "Competitive Programming/Sorting/Bubble Sort.md",
     "Competitive Programming/Sorting/Insertion Sort.md",
     "Competitive Programming/Sorting/Merge Sort.md",
-    "Competitive Programming/Data Structures/Sparse Table.md",
     "Competitive Programming/Data Structures/Minimum Stack & Queue.md",
     "Competitive Programming/STL/Queue.md",
     "Competitive Programming/STL/Stack.md",
