@@ -67,4 +67,4 @@ long long query(int L, int R)
 ### Range Minimum Queries (RMQ)
 - When computing the minimum of a range, it doesn't matter if we process a value in the range once or twice.
 - Therefore, instead of splitting a range into multiple ranges, we split the range into only two overlapping ranges.
-- The length of these two overlapping ranges will be equal to $\lceil\log_{2}(R-L+1)\rceil$.
+- The length of these two overlapping ranges will be equal to $\lfloor\log_{2}(R-L+1)\rfloor$.
