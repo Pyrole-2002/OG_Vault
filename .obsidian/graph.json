@@ -1,22 +1,58 @@
 {
   "collapse-filter": false,
   "search": "",
-  "showTags": false,
+  "showTags": true,
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
   "collapse-color-groups": false,
-  "colorGroups": [],
+  "colorGroups": [
+    {
+      "query": "path:\"Competitive Programming/STL\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 14701138
+      }
+    },
+    {
+      "query": "path:\"Competitive Programming/Arrays\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 14725458
+      }
+    },
+    {
+      "query": "path:\"Competitive Programming/Data Structures/Trees\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 11657298
+      }
+    },
+    {
+      "query": "path:\"Competitive Programming/Number Theory\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 5431378
+      }
+    },
+    {
+      "query": "path:\"Competitive Programming/Sorting\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 5431473
+      }
+    }
+  ],
   "collapse-display": false,
   "showArrow": false,
-  "textFadeMultiplier": -1,
-  "nodeSizeMultiplier": 1.75168539325843,
+  "textFadeMultiplier": -2,
+  "nodeSizeMultiplier": 1.99048442906574,
   "lineSizeMultiplier": 3.00404765127927,
   "collapse-forces": false,
   "centerStrength": 0.302423175849465,
   "repelStrength": 9.77392716935156,
   "linkStrength": 1,
   "linkDistance": 254,
-  "scale": 0.4296781010493353,
-  "close": true
+  "scale": 0.3242333051850637,
+  "close": false
 }

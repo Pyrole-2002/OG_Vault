@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#excalidraw",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -129,13 +129,29 @@
                 "file": "Competitive Programming/Data Structures/Trees/Disjoint Set Union.md"
               }
             }
+          },
+          {
+            "id": "267f4f434983ab0c",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          },
+          {
+            "id": "0aaa561ba75ba812",
+            "type": "leaf",
+            "state": {
+              "type": "mermaid-toolbar-view",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -147,13 +163,17 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "publish:Publish changes...": false
+      "publish:Publish changes...": false,
+      "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "21524570555d3a01",
+  "active": "0aaa561ba75ba812",
   "lastOpenFiles": [
-    "Competitive Programming/Data Structures/Sparse Table.md",
+    "Competitive Programming/STL/Forward List.md",
     "Competitive Programming/Data Structures/Trees/Disjoint Set Union.md",
+    "Excalidraw/Drawing 2024-06-01 04.54.28.excalidraw.md",
+    "Excalidraw",
+    "Competitive Programming/Data Structures/Sparse Table.md",
     "Competitive Programming/Data Structures/Trees",
     "Competitive Programming/Tricks.md",
     "Competitive Programming/Number Theory/Bit Manipulation.md",
@@ -180,8 +200,6 @@
     "Competitive Programming/Number Theory/Modular Inverse.md",
     "Competitive Programming/Number Theory/Euclidean Algorithm.md",
     "Competitive Programming/Number Theory/Linear Diophantine Equation.md",
-    "Competitive Programming/Number Theory/Euler's Totient Function.md",
-    "Competitive Programming/STL/Vector.md",
     "Pasted image 20240506132646.png",
     "Pasted image 20240506132141.png",
     "Pasted image 20240508212025.png",
