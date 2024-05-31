@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Competitive Programming/Data Structures/Sparse Table.md",
+                "file": "Competitive Programming/Data Structures/Trees/Disjoint Set Union.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Competitive Programming/Data Structures/Sparse Table.md",
+                "file": "Competitive Programming/Data Structures/Trees/Disjoint Set Union.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Competitive Programming/Data Structures/Sparse Table.md",
+                "file": "Competitive Programming/Data Structures/Trees/Disjoint Set Union.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Competitive Programming/Data Structures/Sparse Table.md"
+                "file": "Competitive Programming/Data Structures/Trees/Disjoint Set Union.md"
               }
             }
           }
@@ -150,8 +150,10 @@
   },
   "active": "21524570555d3a01",
   "lastOpenFiles": [
-    "Competitive Programming/Tricks.md",
     "Competitive Programming/Data Structures/Sparse Table.md",
+    "Competitive Programming/Data Structures/Trees/Disjoint Set Union.md",
+    "Competitive Programming/Data Structures/Trees",
+    "Competitive Programming/Tricks.md",
     "Competitive Programming/Number Theory/Bit Manipulation.md",
     "Competitive Programming/Number Theory/Integer Factorization.md",
     "Competitive Programming/Data Structures/Minimum Stack & Queue.md",
@@ -178,7 +180,6 @@
     "Competitive Programming/Number Theory/Linear Diophantine Equation.md",
     "Competitive Programming/Number Theory/Euler's Totient Function.md",
     "Competitive Programming/STL/Vector.md",
-    "Competitive Programming/Number Theory/Divisors.md",
     "Pasted image 20240506132646.png",
     "Pasted image 20240506132141.png",
     "Pasted image 20240508212025.png",
