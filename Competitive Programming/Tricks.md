@@ -1,3 +1,18 @@
+# Logarithm in Constant Time
+The following is how logarithm can be calculated in constant space and time:
+```cpp
+// C++20 onwards
+int log2_floor(unsigned long i)
+{
+	return bit_width(i) - 1;
+}
+
+// pre C++20
+int log2_floor(unsigned long long i)
+{
+	return i ? __builtin_clzll(1) - __builtin_clzll(i) : -1;
+}
+```
 # Fast I/O
 Add the following lines in the start of `main()`.
 `tie()` ensures the flushing of `std::cout` before `std::cin` accepts an input. Useful for interactive console programs which require the console to be updated constantly but also slows down program for large I/O. `NULL` just returns as a null pointer.

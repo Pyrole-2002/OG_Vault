@@ -68,3 +68,39 @@ long long query(int L, int R)
 - When computing the minimum of a range, it doesn't matter if we process a value in the range once or twice.
 - Therefore, instead of splitting a range into multiple ranges, we split the range into only two overlapping ranges.
 - The length of these two overlapping ranges will be equal to $\lfloor\log_{2}(R-L+1)\rfloor$.
+- Refer to the [[Tricks#Logarithm in Constant Time|Logarithm in Constant Time]] to calculate logarithm quickly.
+- During precomputation: $f(x, y) = \text{min}(x, y)$, where $f$ is the precomputation function.
+```cpp
+#define MAXN 1000000
+#define K 25
+long long st[K + 1][MAXN];
+
+// pre C++20
+int log2_floor(unsigned long long i)
+{
+	return i ? __builtin_clzll(1) - __builtin_clzll(i) : -1;
+}
+
+long long f(long long x, long long y)
+{
+	return min(x, y);
+}
+
+void precompute(vector<int> array)
+{
+	int N = array.size();
+	copy(array.begin(), array.end(), st[0]);
+
+	for (int i = 1; i <= K; i++)
+		for (int j = 0; j + (1<<i) <= N; j++)
+			st[i][j] = f(st[i-1][j], st[i-1][j+(1<<(i-1))]);
+}
+
+long long query(int L, int R)
+{
+    int i = log2_floor(R - L + 1);
+    return f(st[i][L], st[i][R - (1 << i) + 1]);
+}
+
+```
+- Time Complexity: $O(1)$
