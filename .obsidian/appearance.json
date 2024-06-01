@@ -3,5 +3,6 @@
   "theme": "obsidian",
   "cssTheme": "Tokyo Night",
   "baseFontSize": 20,
-  "nativeMenus": false
+  "nativeMenus": false,
+  "monospaceFontFamily": "JetBrainsMono Nerd Font"
 }

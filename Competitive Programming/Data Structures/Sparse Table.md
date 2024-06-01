@@ -101,6 +101,5 @@ long long query(int L, int R)
     int i = log2_floor(R - L + 1);
     return f(st[i][L], st[i][R - (1 << i) + 1]);
 }
-
 ```
 - Time Complexity: $O(1)$

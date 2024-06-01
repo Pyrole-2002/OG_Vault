@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "2f433d87395cba7d",
+        "id": "bb454eacf2c77428",
         "type": "tabs",
         "children": [
           {
-            "id": "21524570555d3a01",
+            "id": "4107afaa79ca6df7",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -151,7 +151,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -167,13 +168,13 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "0aaa561ba75ba812",
+  "active": "4107afaa79ca6df7",
   "lastOpenFiles": [
-    "Competitive Programming/STL/Forward List.md",
+    "Competitive Programming/Data Structures/Sparse Table.md",
     "Competitive Programming/Data Structures/Trees/Disjoint Set Union.md",
+    "Competitive Programming/STL/Forward List.md",
     "Excalidraw/Drawing 2024-06-01 04.54.28.excalidraw.md",
     "Excalidraw",
-    "Competitive Programming/Data Structures/Sparse Table.md",
     "Competitive Programming/Data Structures/Trees",
     "Competitive Programming/Tricks.md",
     "Competitive Programming/Number Theory/Bit Manipulation.md",
