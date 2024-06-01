@@ -139,7 +139,7 @@
             }
           },
           {
-            "id": "0aaa561ba75ba812",
+            "id": "aefec9cf534cf8d2",
             "type": "leaf",
             "state": {
               "type": "mermaid-toolbar-view",
@@ -168,7 +168,7 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "4107afaa79ca6df7",
+  "active": "aefec9cf534cf8d2",
   "lastOpenFiles": [
     "Competitive Programming/Data Structures/Sparse Table.md",
     "Competitive Programming/Data Structures/Trees/Disjoint Set Union.md",
