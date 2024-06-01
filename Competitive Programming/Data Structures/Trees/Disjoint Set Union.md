@@ -11,4 +11,12 @@ In the following image, you can see the representation of such trees:
 In the beginning, every element starts as a singleton set, each vertex is its own tree. Then we combine the set containing element $0$ and the set containing element $1$. Similarly, we combine sets containing elements $2$ and element $3$. Lastly, we combine the set containing element $0$ and element $2$.
 - For the implementation, we will have to maintain an array `parent` that stores a reference to its immediate ancestor in the tree.
 ## Naive Implementation
-- To create a new set, we simply create a tree
+- To create a new set `make_set(v)`, we simply create a tree with root as the vertex $v$, which becomes it's own ancestor.
+- To combine two sets `union_sets(a, b)`, we first find the representative of the set in which $a$ is located, and the representative of the set in which $b$ is located. If the representatives are identical, we have nothing to do and the sets are already merged. Otherwise, we simply specify that one of the representatives is the parent of the other representative, combining the two trees.
+- For finding the representative `find_set(v)`, we simply climb the ancestors of the vertex $v$ until we reach the root (reference to the ancestor leads to itself) using recursion.
+```cpp
+void make_set(int v)
+{
+	parent[v] = v;
+}
+```
