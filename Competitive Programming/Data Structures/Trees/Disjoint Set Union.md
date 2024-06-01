@@ -1,4 +1,6 @@
 - Disjoint Set Union is also known as DSU or Union Find.
 - We are given several elements, each of which is a separate set. A DSU will have an operation to combine any two sets, and it will be able to tell in which set a specific element is.
 - Thus, the basic interface of this data structure consists of three operations:
-	- 
+	- `make_set(v)` : creates a new set consisting of the new element $v$.
+	- `union_sets(a, b)` : merges the set which contains element $a$ and the set which contains the element $b$.
+	- `find_set(v)` : returns the 
