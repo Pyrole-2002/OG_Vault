@@ -7,4 +7,5 @@
 - The DSU data structure allows us to do each of these operations in almost $O(1)$ time.
 - There also exists an alternative structure of DSU which has a slower average complexity of $O(\log n)$, but can be more powerful than the regular DSU.
 In the following image, you can see the representation of such trees:
-![[Pasted image 20240601234100.png]]![[Pasted image 20240601234232.png]]
+![[Pasted image 20240601234100.png|300]]![[Pasted image 20240601234232.png|300]]![[Pasted image 20240601235429.png|200]]
+In the beginning, every element starts as a singleton set, each vertex is its own tree. Then we combine the set containing element
