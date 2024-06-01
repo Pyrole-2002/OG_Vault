@@ -10,3 +10,5 @@ In the following image, you can see the representation of such trees:
 ![[Pasted image 20240601234100.png|300]]![[Pasted image 20240601234232.png|300]]![[Pasted image 20240601235429.png|200]]
 In the beginning, every element starts as a singleton set, each vertex is its own tree. Then we combine the set containing element $0$ and the set containing element $1$. Similarly, we combine sets containing elements $2$ and element $3$. Lastly, we combine the set containing element $0$ and element $2$.
 - For the implementation, we will have to maintain an array `parent` that stores a reference to its immediate ancestor in the tree.
+## Naive Implementation
+- To create a new set, we simply create a tree
