@@ -14,5 +14,14 @@
       ],
       "key": "ArrowDown"
     }
+  ],
+  "editor:delete-paragraph": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "K"
+    }
   ]
 }
