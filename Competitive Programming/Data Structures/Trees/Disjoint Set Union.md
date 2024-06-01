@@ -1,1 +1,4 @@
 - Disjoint Set Union is also known as DSU or Union Find.
+- We are given several elements, each of which is a separate set. A DSU will have an operation to combine any two sets, and it will be able to tell in which set a specific element is.
+- Thus, the basic interface of this data structure consists of three operations:
+	- 
