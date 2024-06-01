@@ -7,3 +7,4 @@
 - The DSU data structure allows us to do each of these operations in almost $O(1)$ time.
 - There also exists an alternative structure of DSU which has a slower average complexity of $O(\log n)$, but can be more powerful than the regular DSU.
 In the following image, you can see the representation of such trees:
+![[temp.png]]
