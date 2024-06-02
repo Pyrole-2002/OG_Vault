@@ -64,4 +64,15 @@ int main()
 - This optimization speeds up `find_set`.
 - If we call `find_set(v)` for some vertex $v$, we actually find the leader $p$ for all vertices that we visit on the path between $v$ and the leader $p$.
 - We will therefore make the paths for all nodes shorter, by setting the parent of each visited vertex directly to $p$.
-In the below image, on the left is a tree, and on the right is the compressed tree after calling `find_set(7)` which shortens the path for all visited nodes.
+In the below image, on the left is a tree, and on the right is the compressed tree after calling `find_set(7)` which shortens the path for all visited nodes $7\to{5}\to{3}\to{2}\to{1}$.
+![[Pasted image 20240602193845.png|400]]![[Pasted image 20240602194242.png]]
+```cpp
+int find_set(int v)
+{
+	if (v == parent[v])
+		return v;
+	return parent[v] = find_set(parent[v]);
+}
+```
+- This modification achieves the time complexity $O(\log n)$ per call on average.
+## Union by size / rank
