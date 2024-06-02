@@ -4,7 +4,6 @@
 	- `make_set(v)` : creates a new set consisting of the new element $v$.
 	- `union_sets(a, b)` : merges the set which contains element $a$ and the set which contains the element $b$.
 	- `find_set(v)` : returns the representative (leader) of the set that contains the element $v$. This leader is an element of the corresponding set. It is selected in each set by the data structure itself and may change after `union_sets(a, b)` is called. This leader can be used to check if two elements are part of the same set or not. $a$ and $b$ are in the exact same set if `find_set(a) == find_set(b)`. Otherwise, they are in different sets.
-		- 
 - The DSU data structure allows us to do each of these operations in almost $O(1)$ time.
 - There also exists an alternative structure of DSU which has a slower average complexity of $O(\log n)$, but can be more powerful than the regular DSU.
 In the following image, you can see the representation of such trees:
@@ -65,4 +64,4 @@ int main()
 - This optimization speeds up `find_set`.
 - If we call `find_set(v)` for some vertex $v$, we actually find the leader $p$ for all vertices that we visit on the path between $v$ and the leader $p$.
 - We will therefore make the paths for all nodes shorter, by setting the parent of each visited vertex directly to $p$.
-In the below image, 
+In the below image, on the left is a tree, and on the right is the compressed tree after calling `find_set(7)` which shortens the path for all visited nodes.
