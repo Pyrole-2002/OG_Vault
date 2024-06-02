@@ -134,4 +134,10 @@ void union_sets(int a, int b)
 - Nearly the same problem appears in [[MST - Kruskal & DSU]].
 ### Search for Connected Components in an Image
 - Let there be an image of $n\times m$ pixels. Initially, all are white, but then few black pixels are drawn. Determine the size of each white connected component in the final image.
-- 
+- Iterate over all white pixels in the image, for each pixel, iterate over it's four neighbors and if the neighbor is white call `union_sets`.
+- We will now have a DSU with $n\cdot m$ nodes corresponding to image pixels.
+- The resulting trees in the DSU are the desired connected components.
+### Painting Subarrays Offline
+- Let there be a set of vertices, and each vertex has an outgoing edge to another vertex. With DSU, we can find the end point to which we get after following all edges from a given starting point in almost constant time.
+- The problem of painting subarrays assumes a segment of length $L$, each element initially has the color $0$. We have to repaint the subarray $[l, r]$ with the color $c$ for each query $(l, r, c)$. At the end, we want to find the final color of each cell. Assume that we know all queries in advance (offline task).
+- For the solution, 
