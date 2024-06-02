@@ -146,5 +146,6 @@ void union_sets(int a, int b)
 - To quickly iterate over all unpainted cells, we use the DSU. We find the left-most unpainted cell inside of a segment, repaint it, and with the pointer we move to the next empty cell to the right.
 - We use DSU with path compression, but we cannot use union by rank because it is important who becomes the leader after union. Time complexity will be $O(\log n)$ per union.
 ```cpp
-
+for (int i = 0; i <= L; i++)
+	make_set(i);
 ```
