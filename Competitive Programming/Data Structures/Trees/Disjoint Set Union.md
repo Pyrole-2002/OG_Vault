@@ -125,3 +125,10 @@ void union_sets(int a, int b)
 	}
 }
 ```
+- If we only use union by rank without path compression, operations work in nearly $O(\log n)$.
+- If we combine both path compression and union by rank, we will reach nearly constant time operations.
+- Time Complexity is $O(\alpha(n))$ on average, where $\alpha(n)$ is the Inverse Ackermann Function, which grows very slowly. It doesn't exceed $4$ for approximately $n < 10^{600}$.
+## Linking By Index / Coin-Flip Linking
+- We assign each set a random value called the index, and we attach the set with the smaller index to the one with the larger one.
+- It is likely that a bigger set will have a bigger index than the smaller set, therefore, this operation is closely related to union by size, and also has the same time complexity.
+- 
