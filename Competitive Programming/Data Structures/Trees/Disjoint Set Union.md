@@ -75,4 +75,53 @@ int find_set(int v)
 }
 ```
 - This modification achieves the time complexity $O(\log n)$ per call on average.
-## Union by size / rank
+## Union by rank
+- In this optimization, we change the `union_set` operation.
+- We change which tree gets attaches to the other one. In the naive implementation, the second tree always got attached to the first one. This can lead to trees containing chains of length $O(n)$.
+- We popularly use two heuristics:
+	1. Using the size of the trees as rank.
+	2. Using the depth of the tree as rank.
+- We attach the tree with the lower rank to the one with the higher rank.
+###### Union By Size
+```cpp
+void make_set(int v)
+{
+	parent[v] = v;
+	size[v] = 1;
+}
+
+void union_sets(int a, int b)
+{
+	a = find_set(a);
+	b = find_set(b);
+	if (a != b)
+	{
+		if (size[a] < size[b])
+			swap(a, b);
+		parent[b] = a;
+		size[a] += size[b]; // update only for leader
+	}
+}
+```
+###### Union by Depth of Tree
+```cpp
+void make_set(int v)
+{
+	parent[v] = v;
+	rank[v] = 0;
+}
+
+void union_sets(int a, int b)
+{
+	a = find_set(a);
+	b = find_set(b);
+	if (a != b)
+	{
+		if (rank[a] < rank[b])
+			swap(a, b);
+		parent[b] = a;
+		if (rank[a] == rank[b])
+			rank[a]++; // update only for leader
+	}
+}
+```
