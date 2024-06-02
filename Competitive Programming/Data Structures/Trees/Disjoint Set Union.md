@@ -140,4 +140,11 @@ void union_sets(int a, int b)
 ### Painting Subarrays Offline
 - Let there be a set of vertices, and each vertex has an outgoing edge to another vertex. With DSU, we can find the end point to which we get after following all edges from a given starting point in almost constant time.
 - The problem of painting subarrays assumes a segment of length $L$, each element initially has the color $0$. We have to repaint the subarray $[l, r]$ with the color $c$ for each query $(l, r, c)$. At the end, we want to find the final color of each cell. Assume that we know all queries in advance (offline task).
-- For the solution, 
+- For the solution, we make a DSU, which for each cell stores a link to the next unpainted cell. Therefore, initially each cell points to itself.
+- After painting one requested repaint of a segment, all cells from that segment will point to the cell after the segment.
+- Consider the queries in reverse order. This way when we execute a query, we only have to paint exactly the unpainted cells in the subarray $[l, r]$. All other cells already contain their final color.
+- To quickly iterate over all unpainted cells, we use the DSU. We find the left-most unpainted cell inside of a segment, repaint it, and with the pointer we move to the next empty cell to the right.
+- We use DSU with path compression, but we cannot use union by rank because it is important who becomes the leader after union. Time complexity will be $O(\log n)$ per union.
+```cpp
+
+```
