@@ -161,3 +161,4 @@ for (int i = m-1; i >= 0; i--)
 }
 ```
 - However, we can use union by rank, if we store the next unpainted cell in an additional array `end[]`. Then we can merge two sets into one ranked according to their heuristics and obtain the solution in$O(\alpha(n))$.
+### Support Distances up to Representative
