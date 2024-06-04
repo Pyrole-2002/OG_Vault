@@ -162,4 +162,6 @@ for (int i = m-1; i >= 0; i--)
 ```
 - However, we can use union by rank, if we store the next unpainted cell in an additional array `end[]`. Then we can merge two sets into one ranked according to their heuristics and obtain the solution in$O(\alpha(n))$.
 ### Support Distances up to Representative
-- 
+- If we want to maintain the distance between a vertex and the representative of its set, without path compression, the distance is just the number of recursive calls. This will be inefficient.
+- To do path compression, we store the distance to the leader as additional information for each node.
+- We use an array of pairs for `parent[]` and the function `find_set` now returns two numbers, the leader of the set and the distance to it.
