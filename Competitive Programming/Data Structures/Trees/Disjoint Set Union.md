@@ -156,7 +156,7 @@ for (int i = m-1; i >= 0; i--)
 	for (int v = find_set(l); v <= r; v = find_set(v))
 	{
 		answer[v] = c;
-		parent[v] = v + 1;
+		parent[v] = v + 1; 
 	}
 }
 ```

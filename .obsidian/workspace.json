@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ede5f9602cf881b1",
+        "id": "bc55580f73d0e8f4",
         "type": "tabs",
         "children": [
           {
-            "id": "da3d2bcf4ac3ce83",
+            "id": "948f4cba10cacfa0",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -168,12 +168,14 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "da3d2bcf4ac3ce83",
+  "active": "948f4cba10cacfa0",
   "lastOpenFiles": [
+    "Competitive Programming/Number Theory/Euclidean Algorithm.md",
+    "Competitive Programming/Number Theory/Euler's Totient Function.md",
+    "Competitive Programming/Data Structures/Trees/Disjoint Set Union.md",
     "attachments/Pasted image 20240602194242.png",
     "attachments/Pasted image 20240602193845.png",
     "Competitive Programming/STL/Vector.md",
-    "Competitive Programming/Data Structures/Trees/Disjoint Set Union.md",
     "Competitive Programming/Arrays/Longest Subarray with Sum K.md",
     "attachments/Pasted image 20240601235429.png",
     "attachments/Pasted image 20240601234232.png",
@@ -208,10 +210,8 @@
     "Competitive Programming/Number Theory/Submask Enumeration.md",
     "Competitive Programming/Data Structures",
     "Competitive Programming/Number Theory/Linear Congruence Equation.md",
-    "Competitive Programming/Number Theory/Modular Inverse.md",
     "Pasted image 20240506132646.png",
     "Pasted image 20240506132141.png",
-    "Pasted image 20240508212025.png",
     "Random Shit",
     "Competitive Programming/STL",
     "Competitive Programming/Tricks",
