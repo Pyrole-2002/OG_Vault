@@ -197,3 +197,9 @@ void union_sets(int a, int b)
 	}
 }
 ```
+### Support the Parity of Path Length / Checking Bipartiteness Online
+- In the same way as computing path length to leader, it is possible to maintain the parity of the length of the path before it.
+- Lets say we have an empty graph, it can have edges added to it and we have to answer the queries whether the connected component containing a certain vertex is bipartite.
+- To solve this, we make a DSU for storing of the components and store the parity of the path up to the leader for each vertex.
+- Thus, we can quickly check if adding an edge leads to a violation of the bipartiteness or not. If the ends of the edge lie in the same connected component and have the same parity length to the leader, then adding this edge will produce a cycle of odd length, and the component will lose the bipartiteness property.
+- If we add an edge $(a, b)$ that connected two connected components into one, then when we attach one tree to another, we need to adjust the parity.
