@@ -238,5 +238,29 @@ void add_edge(int a, int b)
 	int x = pa.second;
 
 	pair<int, int> pb = find_set(b);
+	b = pb.first;
+	int y = pb.second;
+
+	if (a == b)
+	{
+		if (x == y)
+			bipartite[a] = false;
+	}
+	else
+	{
+		if (rank[a] < rank[b])
+			swap(a, b);
+		parent[b] = make_pair(a, x^y^1);
+		bipartite[a] &= bipartite[b];
+		if (rank[a] == rank[b]);
+			rank[a]++;
+	}
+}
+
+bool is_bipartite(int v)
+{
+	return bipartite[find_set(v).first];
 }
 ```
+### Offline RMQ / Arpa's Trick
+- We are given an array `a[]` and we have to compute some minima in given segments of the array.
