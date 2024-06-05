@@ -298,5 +298,35 @@ for (int i = 0; i < n; i++)
 - For the weighting heuristic, we will always add the smaller set to the bigger set.
 - Adding one set to another takes time proportional to the size of the added set. Search for the leader takes $O(1)$ with this method of storing.
 ```cpp
+vector<int> lst[MAXN];
+int parent[MAXN];
 
+void make_set(int v)
+{
+	lst[v] = vector<int> (1, v);
+	parent[v] = v;
+}
+
+int find_set(int v)
+{
+	return parent[v];
+}
+
+void union_sets(int a, int v)
+{
+	a = find_set(a);
+	b = find_set(b);
+	if (a != b)
+	{
+		if (lst[a].size() < lst[b].size())
+			swap(a, b);
+		while (!lst[b].empty())
+		{
+			int v = lst[b].back();
+			lst[b].pop_back();
+			parent[v] = a;
+			lst[a].emplace_back(v);
+		}
+	}
+}
 ```
