@@ -203,4 +203,40 @@ void union_sets(int a, int b)
 - To solve this, we make a DSU for storing of the components and store the parity of the path up to the leader for each vertex.
 - Thus, we can quickly check if adding an edge leads to a violation of the bipartiteness or not. If the ends of the edge lie in the same connected component and have the same parity length to the leader, then adding this edge will produce a cycle of odd length, and the component will lose the bipartiteness property.
 - If we add an edge $(a, b)$ that connected two connected components into one, then when we attach one tree to another, we need to adjust the parity.
-- Following is a formula which computes the parity issued to the leader of the set that will get attached to another set. Let $x$ be the parity of the path length from vertex $a$ up to its leader $A$, and $y$ be the parity of the path length from vertex $b$ up to its leader $B$, and $t$ be the desired parity that we have to assign to $B$ after the merge.
+- We can create a formula which computes the parity issued to the leader of the set that will get attached to another set. Let $x$ be the parity of the path length from vertex $a$ up to its leader $A$, and $y$ be the parity of the path length from vertex $b$ up to its leader $B$, and $t$ be the desired parity that we have to assign to $B$ after the merge.
+- Regardless of how many joins we perform, the parity of edges is carried from one leader to another. The path contains three parts:
+	1. From $B$ to $b$
+	2. From $b$ to $a$, which is connected by one edge and has parity $1$
+	3. From $a$ to $A$
+$$
+t = x \oplus y\oplus 1
+$$
+- Here we also store in the array `bipartite[]` whether it is still bipartite or not.
+```cpp
+void make_set(int v)
+{
+	parent[v] = make_pair(v, 0);
+	rank[v] = 0;
+	bipartite[v] = true;
+}
+
+pair<int, int> find_set(int v)
+{
+	if (v != parent[v].first)
+	{
+		int parity = parent[v].second;
+		parent[v] = find_set(parent[v].first);
+		parent[v].second ^= parity;
+	}
+	return parent[v];
+}
+
+void add_edge(int a, int b)
+{
+	pair<int, int> pa = find_set(a);
+	a = pa.first;
+	int x = pa.second;
+
+	pair<int, int> pb = find_set(b);
+}
+```
