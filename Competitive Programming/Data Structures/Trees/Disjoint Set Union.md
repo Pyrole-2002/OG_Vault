@@ -295,3 +295,8 @@ for (int i = 0; i < n; i++)
 ### Storing the DSU in a Set List
 - An alternative way of storing the DSU is preservation of each set in the form of an explicitly stores list of its elements. At the same time, each element also stores the reference to the representative of its set.
 - The use of a weighting heuristic can significantly reduce the asymptotic complexity to $O(m+n\log n)$ to perform $m$ queries on the $n$ elements.
+- For the weighting heuristic, we will always add the smaller set to the bigger set.
+- Adding one set to another takes time proportional to the size of the added set. Search for the leader takes $O(1)$ with this method of storing.
+```cpp
+
+```
