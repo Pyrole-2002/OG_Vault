@@ -264,3 +264,5 @@ bool is_bipartite(int v)
 ```
 ### Offline RMQ / Arpa's Trick
 - We are given an array `a[]` and we have to compute some minima in given segments of the array.
+- We iterate over the array and when we are at the $i^\text{th}$ element, we will answer all queries $(L, R)$ where $R = i$.
+- We will keep a DSU using the first $i$ elements. The parent of an element is the next smaller element to the right of it.
