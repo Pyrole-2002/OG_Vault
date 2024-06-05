@@ -266,3 +266,32 @@ bool is_bipartite(int v)
 - We are given an array `a[]` and we have to compute some minima in given segments of the array.
 - We iterate over the array and when we are at the $i^\text{th}$ element, we will answer all queries $(L, R)$ where $R = i$.
 - We will keep a DSU using the first $i$ elements. The parent of an element is the next smaller element to the right of it.
+- Then using this structure, the answer to a query will be the `a[find_set(L)]`, the smallest number to the right of $L$.
+- We need to know all the queries beforehand (offline).
+- `container[i]` contains all queries with $R = i$.
+```cpp
+struct Query
+{
+	int L, R, idx;
+};
+vector<int> answer;
+vector<vector<Query>> container;
+```
+- This is know as Arpa's Trick.
+```cpp
+stack<int> s;
+for (int i = 0; i < n; i++)
+{
+	while (!s.empty() && a[s.top()] > a[i])
+	{
+		parent[s.top()] = i;
+		s.pop();
+	}
+	s.push(i);
+	for (Query q : container[i])
+		answer[q.idx] = a[find_set(q.L)];
+}
+```
+### Storing the DSU in a Set List
+- An alternative way of storing the DSU is preservation of each set in the form of an explicitly stores list of its elements. At the same time, each element also stores the reference to the representative of its set.
+- The use of a weighting heuristic can significantly reduce the asymptotic complexity to $O(m+n\log n)$ to perform $m$ queries on the $n$ elements.
