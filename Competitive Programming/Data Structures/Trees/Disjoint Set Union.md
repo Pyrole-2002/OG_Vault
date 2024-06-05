@@ -165,3 +165,35 @@ for (int i = m-1; i >= 0; i--)
 - If we want to maintain the distance between a vertex and the representative of its set, without path compression, the distance is just the number of recursive calls. This will be inefficient.
 - To do path compression, we store the distance to the leader as additional information for each node.
 - We use an array of pairs for `parent[]` and the function `find_set` now returns two numbers, the leader of the set and the distance to it.
+```cpp
+void make_set(int v)
+{
+	parent[v] = make_pair(v, 0);
+	rank[v] = 0;
+}
+
+pair<int, int> find_set(int v)
+{
+	if (v != parent[v].first)
+	{
+		int len = parent[v].second;
+		parent[v] = find_set(parent[v].first);
+		parent[v].second += len;
+	}
+	return parent[v];
+}
+
+void union_sets(int a, int b)
+{
+	a = find_set(a).first;
+	b = find_set(b).first;
+	if (a != b)
+	{
+		if (rank[a] < rank[b])
+			swap(a, b);
+		parent[b] = make_pair(a, 1);
+		if (rank[a] == rank[b])
+			rank[a]++;
+	}
+}
+```
