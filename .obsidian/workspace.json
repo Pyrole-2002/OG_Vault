@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "bc55580f73d0e8f4",
+        "id": "743880f3dad66264",
         "type": "tabs",
         "children": [
           {
-            "id": "948f4cba10cacfa0",
+            "id": "6a97ad72159c9d23",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Competitive Programming/Data Structures/Trees/Disjoint Set Union.md",
+                "file": "Competitive Programming/Arrays/Dutch National Flag Algorithm.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Competitive Programming/Data Structures/Trees/Disjoint Set Union.md",
+                "file": "Competitive Programming/Arrays/Dutch National Flag Algorithm.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Competitive Programming/Data Structures/Trees/Disjoint Set Union.md",
+                "file": "Competitive Programming/Arrays/Dutch National Flag Algorithm.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Competitive Programming/Data Structures/Trees/Disjoint Set Union.md"
+                "file": "Competitive Programming/Arrays/Dutch National Flag Algorithm.md"
               }
             }
           },
@@ -168,15 +168,19 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "948f4cba10cacfa0",
+  "active": "6a97ad72159c9d23",
   "lastOpenFiles": [
+    "Competitive Programming/Arrays/Longest Subarray with Sum K.md",
+    "Competitive Programming/Arrays/Dutch National Flag Algorithm.md",
+    "Competitive Programming/Graphs/Traversal/BFS.md",
+    "Competitive Programming/Data Structures/Trees/Disjoint Set Union.md",
+    "Competitive Programming/Graphs/Traversal",
+    "Competitive Programming/Graphs",
     "Competitive Programming/Number Theory/Euclidean Algorithm.md",
     "Competitive Programming/Number Theory/Euler's Totient Function.md",
-    "Competitive Programming/Data Structures/Trees/Disjoint Set Union.md",
     "attachments/Pasted image 20240602194242.png",
     "attachments/Pasted image 20240602193845.png",
     "Competitive Programming/STL/Vector.md",
-    "Competitive Programming/Arrays/Longest Subarray with Sum K.md",
     "attachments/Pasted image 20240601235429.png",
     "attachments/Pasted image 20240601234232.png",
     "attachments/Pasted image 20240601234100.png",
@@ -207,14 +211,10 @@
     "Competitive Programming/STL/Queue.md",
     "Competitive Programming/STL/Stack.md",
     "Competitive Programming/Sorting",
-    "Competitive Programming/Number Theory/Submask Enumeration.md",
     "Competitive Programming/Data Structures",
-    "Competitive Programming/Number Theory/Linear Congruence Equation.md",
     "Pasted image 20240506132646.png",
     "Pasted image 20240506132141.png",
     "Random Shit",
-    "Competitive Programming/STL",
-    "Competitive Programming/Tricks",
-    "Competitive Programming/Number Theory"
+    "Competitive Programming/STL"
   ]
 }
