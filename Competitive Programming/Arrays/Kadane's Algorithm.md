@@ -3,16 +3,26 @@
 - After each update of `sum`, we compare it to the maximum value of `sum` encountered till now and update this maximum value.
 - If at any point, `sum` becomes negative, we reset `sum` to $0$ and continue adding it.
 ```cpp
-long long maxSumKadane(vector<long long> arr)
+long long maxSumKadane(vector<int> arr)
 {
 	long long n = arr.size();
 	long long max_sum = LONG_MIN; // maximum sum
 	long long sum = 0;
+	int start, end;
 	for (int i = 0; i < n; i++)
 	{
+		if (sum == 0)
+			start = i; // start of the subarray
 		sum += arr[i];
-		max = max(max_sum, sum);
-		sum = max(0, sum);
+		if (sum > max_sum)
+		{
+			max_sun = sum;
+			
+		}
+		sum = max(0ll, sum);
 	}
+	return max_sum;
 }
 ```
+- Time Complexity: $O(N)$
+- Space Complexity: $O(1)$
