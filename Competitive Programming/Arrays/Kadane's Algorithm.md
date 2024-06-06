@@ -8,15 +8,16 @@ long long maxSumKadane(vector<int> arr)
 	long long n = arr.size();
 	long long max_sum = LONG_MIN; // maximum sum
 	long long sum = 0;
-	int start, end;
+	int temp_start, start, end;
 	for (int i = 0; i < n; i++)
 	{
 		if (sum == 0)
-			start = i; // start of the subarray
+			temp_start = i; // start of the subarray
 		sum += arr[i];
 		if (sum > max_sum)
 		{
 			max_sum = sum;
+			start = temp_start;
 			end = i;
 		}
 		sum = max(0ll, sum);
