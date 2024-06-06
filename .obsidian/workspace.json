@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Competitive Programming/Arrays/Moore's Voting Algorithm.md",
+                "file": "Competitive Programming/Arrays/Kadane's Algorithm.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#excalidraw",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Competitive Programming/Arrays/Moore's Voting Algorithm.md",
+                "file": "Competitive Programming/Arrays/Kadane's Algorithm.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Competitive Programming/Arrays/Moore's Voting Algorithm.md",
+                "file": "Competitive Programming/Arrays/Kadane's Algorithm.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Competitive Programming/Arrays/Moore's Voting Algorithm.md"
+                "file": "Competitive Programming/Arrays/Kadane's Algorithm.md"
               }
             }
           },
@@ -157,7 +157,6 @@
   "left-ribbon": {
     "hiddenItems": {
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -165,19 +164,21 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "publish:Publish changes...": false,
-      "mermaid-tools:Open Mermaid Toolbar": false
+      "mermaid-tools:Open Mermaid Toolbar": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
   "active": "6a97ad72159c9d23",
   "lastOpenFiles": [
-    "Competitive Programming/Arrays/Dutch National Flag Algorithm.md",
-    "Competitive Programming/Arrays/Moore's Voting Algorithm.md",
+    "Competitive Programming/Number Theory/Euclidean Algorithm.md",
+    "Competitive Programming/Arrays/Kadane's Algorithm.md",
     "Competitive Programming/Arrays/Longest Subarray with Sum K.md",
+    "Competitive Programming/Arrays/Moore's Voting Algorithm.md",
+    "Competitive Programming/Arrays/Dutch National Flag Algorithm.md",
     "Competitive Programming/Graphs/Traversal/BFS.md",
     "Competitive Programming/Data Structures/Trees/Disjoint Set Union.md",
     "Competitive Programming/Graphs/Traversal",
     "Competitive Programming/Graphs",
-    "Competitive Programming/Number Theory/Euclidean Algorithm.md",
     "Competitive Programming/Number Theory/Euler's Totient Function.md",
     "attachments/Pasted image 20240602194242.png",
     "attachments/Pasted image 20240602193845.png",
@@ -209,7 +210,6 @@
     "Competitive Programming/Sorting/Bubble Sort.md",
     "Competitive Programming/Sorting/Insertion Sort.md",
     "Competitive Programming/Sorting/Merge Sort.md",
-    "Competitive Programming/STL/Queue.md",
     "Competitive Programming/Sorting",
     "Competitive Programming/Data Structures",
     "Pasted image 20240506132646.png",
