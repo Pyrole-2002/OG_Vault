@@ -16,11 +16,15 @@ long long maxSumKadane(vector<int> arr)
 		sum += arr[i];
 		if (sum > max_sum)
 		{
-			max_sun = sum;
-			
+			max_sum = sum;
+			end = i;
 		}
 		sum = max(0ll, sum);
 	}
+	// Optional: print the subarray
+	for (int i = start; i <= end; i++)
+		cout << arr[i] << " ";
+	cout << endl;
 	return max_sum;
 }
 ```
