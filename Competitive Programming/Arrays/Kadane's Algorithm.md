@@ -1,2 +1,2 @@
 > [!tip] Given an integer array, find the contiguous subarray (containing at least one number) which has the largest sum. Return the sum and print the subarray.
-- 
+- A subarray with a sum less than $0$ will always reduce our answer, so this type of subarray cannot be a part of the subarray with maximum sum.
