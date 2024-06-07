@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Competitive Programming/Arrays/Kadane's Algorithm.md",
+                "file": "Competitive Programming/Arrays/Pascal's Triangle.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Competitive Programming/Arrays/Kadane's Algorithm.md",
+                "file": "Competitive Programming/Arrays/Pascal's Triangle.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Competitive Programming/Arrays/Kadane's Algorithm.md",
+                "file": "Competitive Programming/Arrays/Pascal's Triangle.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Competitive Programming/Arrays/Kadane's Algorithm.md"
+                "file": "Competitive Programming/Arrays/Pascal's Triangle.md"
               }
             }
           },
@@ -170,8 +170,10 @@
   },
   "active": "6a97ad72159c9d23",
   "lastOpenFiles": [
-    "Competitive Programming/Arrays/Moore's Voting Algorithm.md",
+    "attachments/Pasted image 20240607182351.png",
     "Competitive Programming/Arrays/Kadane's Algorithm.md",
+    "Competitive Programming/Arrays/Pascal's Triangle.md",
+    "Competitive Programming/Arrays/Moore's Voting Algorithm.md",
     "Competitive Programming/Number Theory/Euclidean Algorithm.md",
     "Competitive Programming/Arrays/Longest Subarray with Sum K.md",
     "Competitive Programming/Arrays/Dutch National Flag Algorithm.md",
@@ -208,8 +210,6 @@
     "Random Shit/Delete.md",
     "Competitive Programming/Number Theory/Binary Exponentiation.md",
     "Competitive Programming/Sorting/Bubble Sort.md",
-    "Competitive Programming/Sorting/Insertion Sort.md",
-    "Competitive Programming/Sorting/Merge Sort.md",
     "Competitive Programming/Sorting",
     "Competitive Programming/Data Structures",
     "Pasted image 20240506132646.png",
