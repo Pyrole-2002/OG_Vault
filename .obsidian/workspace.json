@@ -21,12 +21,12 @@
             }
           },
           {
-            "id": "d08cb54484aa6e6d",
+            "id": "f39e39640315a4bd",
             "type": "leaf",
             "state": {
               "type": "release-notes",
               "state": {
-                "currentVersion": "1.6.2"
+                "currentVersion": "1.6.3"
               }
             }
           }
@@ -179,7 +179,7 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "d08cb54484aa6e6d",
+  "active": "f39e39640315a4bd",
   "lastOpenFiles": [
     "Competitive Programming/Arrays/Pascal's Triangle.md",
     "attachments/Pasted image 20240607182351.png",
