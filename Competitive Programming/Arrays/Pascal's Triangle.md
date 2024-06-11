@@ -24,7 +24,11 @@ int nCr(int n, int r)
 	}
 	return res;
 }
+```
+## Printing an Element
+> [!tip] Given the row number $r$ and column number $c$, print the corresponding element in Pascal's Triangle.
 
+```cpp
 int pascalTriangle(int r, int c)
 {
 	return nCr(r - 1, c - 1;)
@@ -32,3 +36,5 @@ int pascalTriangle(int r, int c)
 ```
 Time Complexity: $O(c)$ where $c$ is column number.
 Space Complexity: $O(1)$
+## Printing a Row
+> [!tip] Given the row number $r$, print the corresponding row in Pascal's Triangle.
