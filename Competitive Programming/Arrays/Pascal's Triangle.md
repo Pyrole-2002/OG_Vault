@@ -37,7 +37,7 @@ int pascalTriangleElement(int r, int c)
 Time Complexity: $O(c)$ where $c$ is column number.
 Space Complexity: $O(1)$
 ## Finding a Row
-> [!tip] Given the row number $r$, print the corresponding row in Pascal's Triangle.
+> [!tip] Given the row number $r$, return the corresponding row in Pascal's Triangle.
 
 ```cpp
 vector<int> pascalTriangleRow(int r)
@@ -58,3 +58,18 @@ Time Complexity: $O(r)$ where $r$ is row number.
 Space Complexity: $O(1)$
 
 ## Finding the Entire Triangle
+> [!tip] Given the row number $r$, return the corresponding Pascal's Triangle up till that row.
+
+```cpp
+vector<vector<int>> pascalTriangle(int n)
+{
+	vector<vector<int>> ans;
+	for (int row = 1; row <= n; row+)
+	{
+		ans.emplace_back(pascalTriangleRow(row));
+	}
+	return ans;
+}
+```
+Time Complexity: $O(n^2)$
+Space Complexity: $O(1)$
