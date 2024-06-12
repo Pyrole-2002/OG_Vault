@@ -74,5 +74,26 @@ int getLongestSubarray(vector<int> a, long long k)
 > [!tip] Given an array containing both positive and negative integers, find the length of the longest subarray that has sum equal to $0$.
 - We store the prefix sum of every element, and if prefix sums at 2 different elements become same, the subarray between the elements will have zero sum.
 ```cpp
-int getLongestSubarrayZero()
+int getLongestSubarrayZero(vector<int> a)\
+{
+	int n = a.size();
+	unordered_map<int, int> mp; // sum, index
+	int max_len = 0, sum = 0;
+	for (int i = 0; i < n; i++)
+	{
+		sum += a[i];
+		if (sum == 0)
+			max_len = i + 1;
+		else
+		{
+			if (mp.find(sum) != mp.end())
+				max_len = max(max_len, i - mp[sum]);
+			else
+				mp[sum] = i;
+		}
+	}
+	return max_len;
+}
 ```
+- Time Complexity: $O(N)$
+- Space Complexity: $O(N)$
