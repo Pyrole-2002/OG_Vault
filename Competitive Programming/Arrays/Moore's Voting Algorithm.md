@@ -47,3 +47,50 @@ int majorityElement(vector<int> v)
 	- If current element is `el1` or `el2`, increase `cnt1` or `cnt2` by $1$ respectively.
 	- Otherwise, decrease `cnt1` and `cnt2` by $1$.
 - The values of `el1` and `el2` are the expected answers. Run another loop to manually check if their frequencies are greater than $\frac{N}{3}$.
+```cpp
+vector<int> majorityElement(vector<int> v)
+{
+	int n = v.size();
+	int cnt1 = 0, cnt2 = 0;
+	int el1, el2;
+	for (int i = 0; i < n; i++)
+	{
+		if (cnt1 == 0 && el2 != v[i])
+		{
+			cnt1++;
+			el1 = v[i];
+		}
+		else if (cnt2 == 0 && el1 != v[i])
+		{
+			cnt2++;
+			el2 = v[i];
+		}
+		else if (el1 == v[i])
+			cnt1++;
+		else if (el2 == v[i])
+			cnt2++;
+		else
+		{
+			cnt1--;
+			cnt2--;
+		}
+	}
+	vector<int> ans;
+	cnt1 = 0;
+	cnt2 = 0;
+	for (int i = 0; i < n; i++)
+	{
+		if (v[i] == el1)
+			cnt1++;
+		else if (v[i] == el2)
+			cnt2++;
+	}
+	if (cnt1 > n / 3)
+		ans.push_back(el1);
+	if (cnt2 > n / 3)
+		ans.push_back(el2);
+	return ans;
+}
+```
+- Time Complexity: $O(2\times N)$
+- Space Complexity: $O(1)$

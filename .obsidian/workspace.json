@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Competitive Programming/Arrays/Moore's Voting Algorithm.md",
+                "file": "Competitive Programming/Arrays/Longest Subarray with Sum K.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Competitive Programming/Arrays/Moore's Voting Algorithm.md",
+                "file": "Competitive Programming/Arrays/Longest Subarray with Sum K.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Competitive Programming/Arrays/Moore's Voting Algorithm.md",
+                "file": "Competitive Programming/Arrays/Longest Subarray with Sum K.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Competitive Programming/Arrays/Moore's Voting Algorithm.md"
+                "file": "Competitive Programming/Arrays/Longest Subarray with Sum K.md"
               }
             }
           },
@@ -170,6 +170,7 @@
   },
   "active": "748a2bc848c3364f",
   "lastOpenFiles": [
+    "Competitive Programming/Arrays/Moore's Voting Algorithm.md",
     "Competitive Programming/Arrays/Pascal's Triangle.md",
     "Competitive Programming/Graphs/Traversal/BFS.md",
     "Competitive Programming/Number Theory/Binary Exponentiation.md",
@@ -177,7 +178,6 @@
     "Competitive Programming/Number Theory/Integer Factorization.md",
     "attachments/Pasted image 20240607182351.png",
     "Competitive Programming/Arrays/Kadane's Algorithm.md",
-    "Competitive Programming/Arrays/Moore's Voting Algorithm.md",
     "Competitive Programming/Number Theory/Euclidean Algorithm.md",
     "Competitive Programming/Arrays/Longest Subarray with Sum K.md",
     "Competitive Programming/Arrays/Dutch National Flag Algorithm.md",
