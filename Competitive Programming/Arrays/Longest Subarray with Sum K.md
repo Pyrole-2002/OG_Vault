@@ -1,5 +1,5 @@
 ## Positives Only
-> [!tip] Given an array with only non-negative values and a sum $k$, we need to print the length of the longest subarray that sums to $k$.
+> [!tip] Given an array with only non-negative values and a sum $k$, we need to return the length of the longest subarray that sums to $k$.
 ### Method 1 (Hashing)
 - This approach uses a hash map to efficiently find the longest subarray with a sum of $k$.
 - The hash map `pre_sum_map` will store prefix sums and their corresponding indices.
@@ -62,10 +62,14 @@ int getLongestSubarray(vector<int> a, long long k)
 	return max_len;
 }
 ```
-- Time Complexity: $O(2N)$
+- Time Complexity: $O(2\times N)$
 - Space Complexity: $O(1)$
 ---
 ## Positives & Negatives
-> [!tip] Given an array and a sum $k$, we need to print the length of the longest subarray that sums to $k$.
+> [!tip] Given an array with both positive and negative integers and a sum $k$, we need to return the length of the longest subarray that sums to $k$.
 - We again use hash map to store the prefix sums and corresponding indices.
 - The algorithm and code is exactly same as [[Longest Subarray with Sum K#Method 1 (Hashing)|Method 1 (Hashing)]].
+---
+## $k = 0$
+> [!tip] Given an array containing both positive and negative integers, find the length of the longest subarray that has sum equal to $0$.
+- 
