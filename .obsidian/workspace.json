@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Competitive Programming/Arrays/Longest Subarray with Sum K.md",
+                "file": "Competitive Programming/Graphs/Traversal/BFS.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Competitive Programming/Arrays/Longest Subarray with Sum K.md",
+                "file": "Competitive Programming/Graphs/Traversal/BFS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Competitive Programming/Arrays/Longest Subarray with Sum K.md",
+                "file": "Competitive Programming/Graphs/Traversal/BFS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Competitive Programming/Arrays/Longest Subarray with Sum K.md"
+                "file": "Competitive Programming/Graphs/Traversal/BFS.md"
               }
             }
           },
@@ -170,16 +170,18 @@
   },
   "active": "14dce7dc84534bac",
   "lastOpenFiles": [
+    "Competitive Programming/Data Structures/Sparse Table.md",
+    "Competitive Programming/Data Structures/Minimum Stack & Queue.md",
+    "Competitive Programming/Arrays/Kadane's Algorithm.md",
+    "Competitive Programming/Arrays/Longest Subarray with Sum K.md",
     "Competitive Programming/Graphs/Traversal/BFS.md",
     "Competitive Programming/Data Structures/Trees/Disjoint Set Union.md",
-    "Competitive Programming/Arrays/Longest Subarray with Sum K.md",
     "Competitive Programming/Arrays/Moore's Voting Algorithm.md",
     "Competitive Programming/Arrays/Pascal's Triangle.md",
     "Competitive Programming/Number Theory/Binary Exponentiation.md",
     "Competitive Programming/Number Theory/Sieve of Eratosthenes.md",
     "Competitive Programming/Number Theory/Integer Factorization.md",
     "attachments/Pasted image 20240607182351.png",
-    "Competitive Programming/Arrays/Kadane's Algorithm.md",
     "Competitive Programming/Number Theory/Euclidean Algorithm.md",
     "Competitive Programming/Arrays/Dutch National Flag Algorithm.md",
     "Competitive Programming/Graphs/Traversal",
@@ -196,13 +198,11 @@
     "temp.png",
     "Competitive Programming/Data Structures/Trees/temp.png",
     "Excalidraw/Drawing 2024-06-01 04.54.28.excalidraw.md",
-    "Competitive Programming/Data Structures/Sparse Table.md",
     "Competitive Programming/STL/Forward List.md",
     "Excalidraw",
     "Competitive Programming/Data Structures/Trees",
     "Competitive Programming/Tricks.md",
     "Competitive Programming/Number Theory/Bit Manipulation.md",
-    "Competitive Programming/Data Structures/Minimum Stack & Queue.md",
     "Competitive Programming/Miscellaneous/Longest Subarray with Sum k (Positives & Negatives).md",
     "Competitive Programming/Sorting/Quick Sort.md",
     "Competitive Programming/Sorting/Selection Sort.md",
