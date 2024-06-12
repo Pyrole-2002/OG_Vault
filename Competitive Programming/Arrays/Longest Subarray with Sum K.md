@@ -72,4 +72,4 @@ int getLongestSubarray(vector<int> a, long long k)
 ---
 ## $k = 0$
 > [!tip] Given an array containing both positive and negative integers, find the length of the longest subarray that has sum equal to $0$.
-- 
+- We store the prefix sum of every element, and if prefix sums at 2 different elements become same, the subarray between the elements will have zero sum.
