@@ -41,3 +41,9 @@ int majorityElement(vector<int> v)
 ## Extended Voting Algorithm
 > [!tip] Given an array of $N$ integers, write an algorithm to return the elements that occurs more than $\frac{N}{3}$ times in the given array.
 - Keep a note of 4 variable `cnt1`, `cnt2`, `el1` and `el2`.
+- Traverse through the array:
+	- If `cnt1` is $0$ and current element is not `el2`, store the current element as `el1` and increase `cnt1` to $1$.
+	- If `cnt2` is $0$ and current element is not `el1`, store the current element as `el2` and increase `cnt2` to $1$.
+	- If current element is `el1` or `el2`, increase `cnt1` or `cnt2` by $1$ respectively.
+	- Otherwise, decrease `cnt1` and `cnt2` by $1$.
+- The values of `el1` and `el2` are the expected answers. Run another loop to manually check if their frequencies are greater than $\frac{N}{3}$.
