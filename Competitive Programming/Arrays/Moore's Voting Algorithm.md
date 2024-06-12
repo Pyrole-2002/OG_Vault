@@ -38,3 +38,5 @@ int majorityElement(vector<int> v)
 ```
 - Time Complexity: $O(2\times N)$
 - Space Complexity: $O(1)$
+## Extended Voting Algorithm
+> [!tip] Given an array of $N$ integers, write an algorithm to return the elements that occurs more than $\frac{N}{3}$ times in the given array.
