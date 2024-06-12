@@ -1,1 +1,5 @@
+- The path found by BFS to any node is the shortest path to that node, i.e. the path that contains the smallest number of edges in an unweighted graph.
+- Time Complexity: $O(n+m)$, where $n$ is the number of vertices and $m$ is the number of edges.
+- The algorithm takes as input an unweighted graph and the source vertex $s$. The graph may be directed or undirected.
+- Create a queue $q$ which will contain the vertices to be processed and a boolean array `used[]` which indicates for each vertex if it has been visited or not.
 - 
