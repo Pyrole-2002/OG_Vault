@@ -56,8 +56,8 @@ int main()
 	{
 		int u, v;
 		cin >> u >> v;
-		adj[u].push_back(v);
-		adj[v].push_back(u); // remove this line if the graph is directed
+		adj[u].emplace_back(v);
+		adj[v].emplace_back(u); // remove this line if the graph is directed
 	}
 
 		return 0;
