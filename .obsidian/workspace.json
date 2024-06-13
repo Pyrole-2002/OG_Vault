@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "4d063946f9f9f979",
+        "id": "09bd4611a511e1c5",
         "type": "tabs",
         "children": [
           {
-            "id": "f05ab58526b6bea5",
+            "id": "c65e5e178807bba6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Competitive Programming/Arrays/Pascal's Triangle.md",
+                "file": "Competitive Programming/Graphs/Traversal/BFS.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Competitive Programming/Arrays/Pascal's Triangle.md",
+                "file": "Competitive Programming/Graphs/Traversal/BFS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Competitive Programming/Arrays/Pascal's Triangle.md",
+                "file": "Competitive Programming/Graphs/Traversal/BFS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Competitive Programming/Arrays/Pascal's Triangle.md"
+                "file": "Competitive Programming/Graphs/Traversal/BFS.md"
               }
             }
           },
@@ -168,14 +168,15 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "f05ab58526b6bea5",
+  "active": "c65e5e178807bba6",
   "lastOpenFiles": [
+    "Competitive Programming/Graphs/Graphs Representation.md",
+    "Competitive Programming/Graphs/Traversal/BFS.md",
+    "Competitive Programming/Arrays/Dutch National Flag Algorithm.md",
+    "Competitive Programming/Arrays/Pascal's Triangle.md",
     "Competitive Programming/Arrays/Moore's Voting Algorithm.md",
     "Competitive Programming/Arrays/Longest Subarray with Sum K.md",
     "Competitive Programming/Arrays/Kadane's Algorithm.md",
-    "Competitive Programming/Arrays/Dutch National Flag Algorithm.md",
-    "Competitive Programming/Graphs/Traversal/BFS.md",
-    "Competitive Programming/Graphs/Graphs Representation.md",
     "attachments/Pasted image 20240613132654.png",
     "attachments/Pasted image 20240613132451.png",
     "attachments/Pasted image 20240613032852.png",
@@ -185,7 +186,6 @@
     "Competitive Programming/Data Structures/Sparse Table.md",
     "Competitive Programming/Data Structures/Minimum Stack & Queue.md",
     "Competitive Programming/Data Structures/Trees/Disjoint Set Union.md",
-    "Competitive Programming/Arrays/Pascal's Triangle.md",
     "Competitive Programming/Number Theory/Binary Exponentiation.md",
     "Competitive Programming/Number Theory/Sieve of Eratosthenes.md",
     "Competitive Programming/Number Theory/Integer Factorization.md",

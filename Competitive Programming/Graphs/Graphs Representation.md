@@ -40,7 +40,7 @@ int main()
 - Space Complexity: $O(V^2)$
 - For weighted graphs, instead of updating the adjacency matrix value to $1$, we update it to the corresponding weight of the edge `adj[u][v] = wt`.
 #### Adjacency List
-An adjacency list takes very less space compared to adjacency matrix. We associate with each node a list of nodes adjacent to it. We create an array of vector of integers.
+An adjacency list takes very less space compared to adjacency matrix. We associate with each node a list of nodes adjacent to it. We create an array of [[Vector]] of integers.
 For directed graphs, if there is an edge between $u$ and $v$, it means the edge only goes from $u$ to $v$. This means $v$ is the neighbor of $u$ but vice versa is not true.
 ```cpp
 int main()
