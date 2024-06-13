@@ -15,3 +15,6 @@ The two most commonly used representations for graphs are:
 - Adjacency List
 #### Adjacency Matrix
 An adjacency matrix of a graph is a 2-D array of size $n\times n$, where $n$ is the number of nodes in the graph. Here `adj[i][j] = 1` if the edge $(v_{i},v_{j})$ is in the set of edge and `adj[i][j] = 0` if there is no such edge.
+```cpp
+
+```
