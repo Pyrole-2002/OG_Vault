@@ -3,4 +3,6 @@ Breadth First Search is a basic searching algorithm on [[Graphs Representation|G
 - Time Complexity: $O(V+E)$, where $V$ is the number of vertices and $E$ is the number of edges.
 - The algorithm takes as input an unweighted graph and the source vertex $s$. The graph may be directed or undirected.
 - Create a queue $q$ which will contain the vertices to be processed and a boolean array `used[]` which indicates for each vertex if it has been visited or not.
-- 
+- Initially, push the source $s$ to the queue and set `used[s] = true`, and for all other vertices $v$ set `used[v] = false`.
+- Then loop until the queue is empty and in each iteration, pop a vertex from the queue. Iterate through all the edges going out of this vertex and if some of these edges go to vertices that are not already visited, mark them as visited and place them in the queue.
+- When the queue becomes empty, we would have traversed all vertices reachable from source $s$, with each vertex reached in the shortest possible way.
