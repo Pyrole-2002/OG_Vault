@@ -41,6 +41,13 @@
         "a": 1,
         "rgb": 5431473
       }
+    },
+    {
+      "query": "path:\"Competitive Programming/Graphs\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 5395168
+      }
     }
   ],
   "collapse-display": false,
@@ -48,11 +55,11 @@
   "textFadeMultiplier": -2,
   "nodeSizeMultiplier": 1.99048442906574,
   "lineSizeMultiplier": 3.00404765127927,
-  "collapse-forces": false,
+  "collapse-forces": true,
   "centerStrength": 0.302423175849465,
   "repelStrength": 9.77392716935156,
   "linkStrength": 1,
   "linkDistance": 254,
-  "scale": 0.3242333051850637,
-  "close": false
+  "scale": 0.4296780962417945,
+  "close": true
 }

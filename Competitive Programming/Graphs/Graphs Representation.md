@@ -36,7 +36,32 @@ int main()
 		return 0;
 }
 ```
-Time Complexity: $O(N)$
-Space Complexity: $O(N^2)$
+- Time Complexity: $O(V)$
+- Space Complexity: $O(V^2)$
+- For weighted graphs, instead of updating the adjacency matrix value to $1$, we update it to the corresponding weight of the edge `adj[u][v] = wt`.
 #### Adjacency List
-- 
+An adjacency list takes very less space compared to adjacency matrix. We associate with each node a list of nodes adjacent to it. We create an array of vector of integers.
+For directed graphs, if there is an edge between $u$ and $v$, it means the edge only goes from $u$ to $v$. This means $v$ is the neighbor of $u$ but vice versa is not true.
+```cpp
+int main()
+{
+	ios::sync_with_stdio(false);
+	cin.tie(NULL);
+
+	int n, m;
+	cin >> n >> m;
+	// adjacency list
+	vector<int> adj[n + 1];
+	for (int i = 0; i < m; i++)
+	{
+		int u, v;
+		cin >> u >> v;
+		adj[u].push_back(v);
+		adj[v].push_back(u); // remove this line if the graph is directed
+	}
+
+		return 0;
+}
+```
+- Space Complexity: $O(2\times E)$ for undirected graphs and $O(E)$ for directed graphs.
+- For weighted graphs, instead of storing just the node number, we store pairs of node and weight, `vector<pair<int, int>> adj[n + 1]`.
