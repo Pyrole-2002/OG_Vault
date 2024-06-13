@@ -16,5 +16,26 @@ The two most commonly used representations for graphs are:
 #### Adjacency Matrix
 An adjacency matrix of a graph is a 2-D array of size $n\times n$, where $n$ is the number of nodes in the graph. Here `adj[i][j] = 1` if the edge $(v_{i},v_{j})$ is in the set of edge and `adj[i][j] = 0` if there is no such edge.
 ```cpp
+int main()
+{
+	ios::sync_with_stdio(false);
+	cin.tie(NULL);
 
+	int n, m;
+	cin >> n >> m;
+	// adjacency matrix
+	int adj[n+1][n+1];
+	for (int i = 0; i < m; i++)
+	{
+		int u, v;
+		cin >> u >> v;
+		adj[u][v] = 1;
+		adj[v][u] = 1; // remove this line if the graph is directed
+	}
+
+		return 0;
+}
 ```
+Time Complexity: $O(N)$
+Space Complexity: $O(N^2)$
+#### Adjacency List
