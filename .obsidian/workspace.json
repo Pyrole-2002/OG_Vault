@@ -19,17 +19,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "3c64eeb724e268cc",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -95,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Competitive Programming/Graphs/Traversal/DFS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Competitive Programming/Graphs/Traversal/DFS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -132,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Competitive Programming/Graphs/Traversal/DFS.md"
+              }
             }
           },
           {
@@ -173,7 +168,7 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "3c64eeb724e268cc",
+  "active": "c65e5e178807bba6",
   "lastOpenFiles": [
     "Competitive Programming/Graphs/Traversal/DFS.md",
     "Competitive Programming/Graphs/Traversal/BFS.md",
