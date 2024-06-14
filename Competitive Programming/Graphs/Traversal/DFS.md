@@ -12,3 +12,4 @@ We perform DFS and classify the encountered edges using the following rules:
 - **Forward Edge:** If $v$ is a descendant of $u$, then edge $(u, v)$ is a forward edge. In other words, if we already visited and exited $v$ and `entry[u] < entry[v]` then the edge $(u, v)$ forms a forward edge.
 - **Cross Edge:** If $v$ is neither an ancestor nor descendant of $u$, then edge $(u, v)$ is a cross edge. In other words, if we already visited and exited $v$ and `entry[u] > entry[v]` then edge $(u, v)$ is a cross edge.
 > [!tip] Let $G$ be an undirected Graph. Then, performing a DFS upon $G$ will classify every encountered edge as either a tree edge or back edge, forward and cross edges only exist in directed graphs.
+- It is often useful to compute the entry and exit times and vertex color. We color all vertices with the color $0$ if we haven't visited them, with the color $1$ if we visited them, and with the color $2$ if we already exited the vertex.
