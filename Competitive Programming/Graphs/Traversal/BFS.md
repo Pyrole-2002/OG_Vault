@@ -8,7 +8,7 @@ Breadth First Search is a basic searching algorithm on [[Graphs Representation|G
 - When the queue becomes empty, we would have traversed all vertices reachable from source $s$, with each vertex reached in the shortest possible way.
 - We can also calculate the lengths of the shortest paths in `d[]` and to retrieve these shortest paths we maintain `p[]` which stores the parent of each vertex in that path.
 ```cpp
-void BFS(vector<vector<int>> adj, int n, int s, vector<int> &d, vector<int> &p)
+pair<vector<int>, vector<int>> BFS(vector<vector<int>> adj, int n, int s)
 {
 	queue<int> q;
 	vector<bool> visited(n, false);
@@ -31,5 +31,6 @@ void BFS(vector<vector<int>> adj, int n, int s, vector<int> &d, vector<int> &p)
 			}
 		}
 	}
+	return {d, p};
 }
 ```
