@@ -1,6 +1,7 @@
 Depth First Search is a basic searching algorithm on [[Graphs Representation|Graphs]].
 - DFS finds the lexicographical first path in the graph from a source vertex $s$ to each vertex.
 - Time Complexity: $O(V+E)$
+- Space Complexity: $O(V)$
 - The idea is to go as deep into the graph as possible and backtrack once we are at a vertex without any unvisited adjacent vertices.
 ### Classification of Edges
 We classify the edges of a graph $G$, using the entry and exit time of the end nodes $u$ and $v$ of the edge $(u,v)$.
@@ -13,3 +14,19 @@ We perform DFS and classify the encountered edges using the following rules:
 - **Cross Edge:** If $v$ is neither an ancestor nor descendant of $u$, then edge $(u, v)$ is a cross edge. In other words, if we already visited and exited $v$ and `entry[u] > entry[v]` then edge $(u, v)$ is a cross edge.
 > [!tip] Let $G$ be an undirected Graph. Then, performing a DFS upon $G$ will classify every encountered edge as either a tree edge or back edge, forward and cross edges only exist in directed graphs.
 - It is often useful to compute the entry and exit times and vertex color. We color all vertices with the color $0$ if we haven't visited them, with the color $1$ if we visited them, and with the color $2$ if we already exited the vertex.
+```cpp
+vector<int> color, time_in, time_out;
+int timer = 0;
+
+pair<vector<int>, vector<int>> DFS(vector<vector<int>> adj, int n, int vertex)
+{
+	time_in[vertex] = timer++;
+	color[vertex] = 1; // entering
+	for (int u : adj[vertex])
+		if (color[u] == 0) // not visited
+			DFS(adj, n, u);
+	color[vertex] = 2; // exiting
+	time_out[vertex] = timer++;
+}
+```
+- Remember to resize the global vectors before calling the DFS function.
