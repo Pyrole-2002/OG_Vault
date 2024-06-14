@@ -34,3 +34,13 @@ pair<vector<int>, vector<int>> BFS(vector<vector<int>> adj, int n, int s)
 	return {d, p};
 }
 ```
+- To display the shortest path from source to vertex, first perform BFS and retrieve the parent array, use to print the shortest path:
+```cpp
+void printPath(vector<int> p, int u)
+{
+	if (u == -1)
+		return;
+	printPath(p, p[u]);
+	cout << u << " ";
+}
+```
