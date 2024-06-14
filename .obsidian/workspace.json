@@ -13,14 +13,23 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Competitive Programming/Graphs/Traversal/BFS.md",
+                "file": "Competitive Programming/Graphs/Traversal/DFS.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
+          },
+          {
+            "id": "3c64eeb724e268cc",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +95,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Competitive Programming/Graphs/Traversal/BFS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +111,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Competitive Programming/Graphs/Traversal/BFS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,9 +132,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Competitive Programming/Graphs/Traversal/BFS.md"
-              }
+              "state": {}
             }
           },
           {
@@ -168,10 +173,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "c65e5e178807bba6",
+  "active": "3c64eeb724e268cc",
   "lastOpenFiles": [
-    "Competitive Programming/Graphs/Graphs Representation.md",
+    "Competitive Programming/Graphs/Traversal/DFS.md",
     "Competitive Programming/Graphs/Traversal/BFS.md",
+    "Competitive Programming/Graphs/Graphs Representation.md",
     "Competitive Programming/Arrays/Dutch National Flag Algorithm.md",
     "Competitive Programming/Arrays/Pascal's Triangle.md",
     "Competitive Programming/Arrays/Moore's Voting Algorithm.md",
