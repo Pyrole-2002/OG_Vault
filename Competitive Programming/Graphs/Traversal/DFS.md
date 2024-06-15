@@ -3,6 +3,18 @@ Depth First Search is a basic searching algorithm on [[Graphs Representation|Gra
 - Time Complexity: $O(V+E)$
 - Space Complexity: $O(V)$
 - The idea is to go as deep into the graph as possible and backtrack once we are at a vertex without any unvisited adjacent vertices.
+- Below is the simplest implementation of DFS:
+```cpp
+vector<bool> visited;
+
+void DFS(vector<vector<int>> adj, int vertex)
+{
+	visited[vertex] = true;
+	for (int i : adj[vertex])
+		if (!visited[i])
+			DFS(adj, i);
+}
+```
 ### Classification of Edges
 We classify the edges of a graph $G$, using the entry and exit time of the end nodes $u$ and $v$ of the edge $(u,v)$.
 We perform DFS and classify the encountered edges using the following rules:
@@ -18,13 +30,13 @@ We perform DFS and classify the encountered edges using the following rules:
 vector<int> color, time_in, time_out;
 int timer = 0;
 
-pair<vector<int>, vector<int>> DFS(vector<vector<int>> adj, int n, int vertex)
+void DFS(vector<vector<int>> adj, int vertex)
 {
 	time_in[vertex] = timer++;
 	color[vertex] = 1; // entering
 	for (int u : adj[vertex])
 		if (color[u] == 0) // not visited
-			DFS(adj, n, u);
+			DFS(adj, u);
 	color[vertex] = 2; // exiting
 	time_out[vertex] = timer++;
 }
