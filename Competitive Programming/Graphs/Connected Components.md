@@ -1,3 +1,4 @@
 > [!tip] Given an undirected graph $G$ with $V$ nodes and $E$ edges, find in it all the connected components, i.e. several groups of vertices such that within a group each vertex can be reached from another and no path exists between different groups.
 - We can use [[DFS]] or [[BFS]]. We will do a series of rounds of DFS.
-- The first round will start from first node and all nodes n the first connected component
+- The first round will start from first node and all nodes in the first connected component will be traversed. Then we traverse the first unvisited node of the remaining nodes and run DFS on it thus finding the second connected component. Repeat the process until all nodes are visited.
+- 
