@@ -22,7 +22,7 @@
       }
     },
     {
-      "query": "path:\"Competitive Programming/Data Structures/Trees\"  ",
+      "query": "path:\"Competitive Programming/Data Structures\"  ",
       "color": {
         "a": 1,
         "rgb": 11657298
@@ -55,11 +55,11 @@
   "textFadeMultiplier": -2,
   "nodeSizeMultiplier": 1.99048442906574,
   "lineSizeMultiplier": 3.00404765127927,
-  "collapse-forces": true,
+  "collapse-forces": false,
   "centerStrength": 0.302423175849465,
-  "repelStrength": 9.77392716935156,
-  "linkStrength": 1,
+  "repelStrength": 10.6403140652498,
+  "linkStrength": 0.752944361716529,
   "linkDistance": 254,
   "scale": 0.4296780962417945,
-  "close": true
+  "close": false
 }

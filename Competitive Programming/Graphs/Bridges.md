@@ -1,0 +1,2 @@
+- We are given an undirected graph. A bridge is defined as an edge which, when removed, makes the graph disconnected (increases the number of [[Connected Components]]). We will find all bridges in a given graph.
+- The algorithm is based on [[DFS]] and has time complexity $O(V+E)$.
