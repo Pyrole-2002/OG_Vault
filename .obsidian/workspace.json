@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Competitive Programming/Graphs/Traversal/DFS.md",
+                "file": "Competitive Programming/Graphs/Connected Components.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Competitive Programming/Graphs/Traversal/DFS.md",
+                "file": "Competitive Programming/Graphs/Connected Components.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Competitive Programming/Graphs/Traversal/DFS.md",
+                "file": "Competitive Programming/Graphs/Connected Components.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Competitive Programming/Graphs/Traversal/DFS.md"
+                "file": "Competitive Programming/Graphs/Connected Components.md"
               }
             }
           },
@@ -170,8 +170,9 @@
   },
   "active": "c65e5e178807bba6",
   "lastOpenFiles": [
-    "Competitive Programming/Graphs/Traversal/BFS.md",
     "Competitive Programming/Graphs/Traversal/DFS.md",
+    "Competitive Programming/Graphs/Connected Components.md",
+    "Competitive Programming/Graphs/Traversal/BFS.md",
     "Competitive Programming/Graphs/Graphs Representation.md",
     "Competitive Programming/Arrays/Dutch National Flag Algorithm.md",
     "Competitive Programming/Arrays/Pascal's Triangle.md",
@@ -210,7 +211,6 @@
     "Competitive Programming/Sorting/Quick Sort.md",
     "Competitive Programming/Sorting/Selection Sort.md",
     "Competitive Programming/STL/Map.md",
-    "Competitive Programming/STL/Unordered Map.md",
     "Competitive Programming/Arrays",
     "Competitive Programming/Sorting",
     "Competitive Programming/Data Structures",
