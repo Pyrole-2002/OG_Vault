@@ -19,22 +19,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "1542545634473a6f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Competitive Programming/Graphs/Traversal/DFS.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -100,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Competitive Programming/Graphs/Traversal/DFS.md",
+                "file": "Competitive Programming/Graphs/Connected Components.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Competitive Programming/Graphs/Traversal/DFS.md",
+                "file": "Competitive Programming/Graphs/Connected Components.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Competitive Programming/Graphs/Traversal/DFS.md"
+                "file": "Competitive Programming/Graphs/Connected Components.md"
               }
             }
           },
@@ -182,10 +168,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "1542545634473a6f",
+  "active": "c65e5e178807bba6",
   "lastOpenFiles": [
-    "Competitive Programming/Graphs/Connected Components.md",
     "Competitive Programming/Graphs/Traversal/DFS.md",
+    "Competitive Programming/Graphs/Connected Components.md",
     "Competitive Programming/Graphs/Traversal/BFS.md",
     "Competitive Programming/Graphs/Graphs Representation.md",
     "Competitive Programming/Arrays/Dutch National Flag Algorithm.md",
