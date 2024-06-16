@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Competitive Programming/Graphs/Bridges.md",
+                "file": "Competitive Programming/Graphs/Traversal/DFS.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Competitive Programming/Graphs/Bridges.md",
+                "file": "Competitive Programming/Graphs/Traversal/DFS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Competitive Programming/Graphs/Bridges.md",
+                "file": "Competitive Programming/Graphs/Traversal/DFS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Competitive Programming/Graphs/Bridges.md"
+                "file": "Competitive Programming/Graphs/Traversal/DFS.md"
               }
             }
           },
@@ -170,8 +170,8 @@
   },
   "active": "77e4656bc7612423",
   "lastOpenFiles": [
-    "Competitive Programming/Number Theory/Euclidean Algorithm.md",
     "Competitive Programming/Graphs/Bridges.md",
+    "Competitive Programming/Number Theory/Euclidean Algorithm.md",
     "Competitive Programming/Number Theory/Euler's Totient Function.md",
     "Competitive Programming/Number Theory/Fermat's Little Theorem.md",
     "Competitive Programming/Number Theory/Fibonacci Computation.md",
