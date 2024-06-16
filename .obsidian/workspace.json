@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Competitive Programming/Graphs/Traversal/DFS.md",
+                "file": "Competitive Programming/Graphs/Bridges.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Competitive Programming/Graphs/Traversal/DFS.md",
+                "file": "Competitive Programming/Graphs/Bridges.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Competitive Programming/Graphs/Traversal/DFS.md",
+                "file": "Competitive Programming/Graphs/Bridges.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Competitive Programming/Graphs/Traversal/DFS.md"
+                "file": "Competitive Programming/Graphs/Bridges.md"
               }
             }
           },
@@ -170,6 +170,7 @@
   },
   "active": "77e4656bc7612423",
   "lastOpenFiles": [
+    "Competitive Programming/Graphs/Traversal/DFS.md",
     "Competitive Programming/Graphs/Bridges.md",
     "Competitive Programming/Number Theory/Euclidean Algorithm.md",
     "Competitive Programming/Number Theory/Euler's Totient Function.md",
@@ -191,7 +192,6 @@
     "Competitive Programming/Sorting/Insertion Sort.md",
     "Competitive Programming/Sorting/Bubble Sort.md",
     "Competitive Programming/Graphs/Connected Components.md",
-    "Competitive Programming/Graphs/Traversal/DFS.md",
     "Competitive Programming/Graphs/Traversal/BFS.md",
     "Competitive Programming/Graphs/Graphs Representation.md",
     "Competitive Programming/Arrays/Dutch National Flag Algorithm.md",

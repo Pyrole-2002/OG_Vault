@@ -11,3 +11,5 @@ $$
 \text{low}[to], & \text{for all $to$ for which $(v, to)$ is a tree edge}
 \end{cases}
 $$
+- Now, there is a back edge from vertex $v$ or one of its descendants to one of its ancestors iff vertex $v$ has a child $to$ for which `low[to] <= tin[v]`. If `low[to] = tin[v]`, the back edge comes directly to $v$, otherwise it comes to one of the ancestors of $v$.
+- Thus, the current edge $(v, to)$ in the DFS tree is a bridge iff `low[to] > tin[v]`.
