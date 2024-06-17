@@ -13,3 +13,12 @@ $$
 $$
 - Now, there is a back edge from vertex $v$ or one of its descendants to one of its ancestors iff vertex $v$ has a child $to$ for which `low[to] <= tin[v]`. If `low[to] = tin[v]`, the back edge comes directly to $v$, otherwise it comes to one of the ancestors of $v$.
 - Thus, the current edge $(v, to)$ in the DFS tree is a bridge iff `low[to] > tin[v]`.
+##### Implementation
+The implementation distinguishes three cases: when we go down the edge in DFS tree, when we find a back edge to an ancestor of the vertex and when we return to a parent of the vertex.
+- `visited[to] = false` : the edge is part of DFS tree
+- `visited[to] = true && to != parent` : the edge is back edge to one of its ancestors
+- `to = parent` : the edge leads back to parent in DFS tree
+For the cases of multiple edges, we need to be careful when ignoring the edge from the parent. We will add a flag `parent_skipped` which will ensure we only skip the parent once.
+```cpp
+
+```
