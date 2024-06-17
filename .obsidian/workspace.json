@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Competitive Programming/Graphs/Bridges.md",
+                "file": "Competitive Programming/Graphs/Articulation Points.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Competitive Programming/Graphs/Bridges.md",
+                "file": "Competitive Programming/Graphs/Articulation Points.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Competitive Programming/Graphs/Bridges.md"
+                "file": "Competitive Programming/Graphs/Articulation Points.md"
               }
             }
           },
@@ -187,10 +187,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "f9e38e74bd873655",
+  "active": "77e4656bc7612423",
   "lastOpenFiles": [
-    "Competitive Programming/Graphs/Articulation Points.md",
     "Competitive Programming/Graphs/Bridges.md",
+    "Competitive Programming/Graphs/Articulation Points.md",
     "Competitive Programming/Graphs/Connected Components.md",
     "Competitive Programming/Graphs/Graphs Representation.md",
     "Competitive Programming/Graphs/Traversal/DFS.md",
