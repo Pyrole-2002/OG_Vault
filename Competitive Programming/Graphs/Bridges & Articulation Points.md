@@ -59,3 +59,14 @@ vector<pair<int, int>> findBridges(vector<vector<int>> adj, int n)
 ```
 ## Finding Bridges Online
 https://cp-algorithms.com/graph/bridge-searching-online.html
+
+# Articulation Points
+- We are given an undirected graph. An articulation point (or cut vertex) is defined as a vertex which, when removed along with its edges, makes the graph disconnected (increases the number of [[Connected Components]]). We will find all articulation points in a given graph.
+- The algorithm is mostly same as that for finding bridges
+- Pick an arbitrary vertex of the graph `root` and run DFS from it.
+- At any point in DFS, when we are at vertex `v != root`, if the current edge $(v, to)$ is such that none of its vertices $to$ or it's descendants in the DFS traversal has a back edge to any of ancestors of $v$, then $v$ is an articulation point. Otherwise, $v$ is not an articulation point.
+- The case where `v == root` is an articulation point iff this vertex has more than one child in the DFS tree.
+##### Implementation
+```cpp
+
+```
