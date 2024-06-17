@@ -20,5 +20,42 @@ The implementation distinguishes three cases: when we go down the edge in DFS tr
 - `to = parent` : the edge leads back to parent in DFS tree
 For the cases of multiple edges, we need to be careful when ignoring the edge from the parent. We will add a flag `parent_skipped` which will ensure we only skip the parent once.
 ```cpp
+vector<bool> visited;
+vector<int> tin, low;
+int timer;
 
+void dfs(vector<vector<int>> adj, vector<pair<int, int>> &bridges, int v, int p = -1)
+{
+	visited[v] = true;
+	tin[v] = low[v] = timer++;
+	for (int to : adj[v])
+	{
+		if (to == p)
+			continue;
+		if (visited[to])
+			low[v] = min(low[v], tin[to]);
+		else
+		{
+			dfs(adj, bridges, to, v);
+			low[v] = min(low[v], low[to]);
+			if (low[to] > tin[v])
+				bridges.emplace_back(v, to);
+		}
+	}
+}
+
+vector<pair<int, int>> findBridges(vector<vector<int>> adj, int n)
+{
+	timer = 0;
+	visited.assign(n, false);
+	tin.assign(n, -1);
+	low.assign(n, -1);
+	vector<pair<int, int>> bridges;
+	for (int i = 0; i < n; i++)
+		if (!visited[i])
+			dfs(adj, bridges, i);
+	return bridges;
+}
 ```
+## Finding Bridges Online
+https://cp-algorithms.com/graph/bridge-searching-online.html
