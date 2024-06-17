@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "2d3a61abc91060d6",
+        "id": "c691be54c5dbd12e",
         "type": "tabs",
         "children": [
           {
-            "id": "f9e38e74bd873655",
+            "id": "414066e3991a50e9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Competitive Programming/Graphs/Bridges & Articulation Points.md",
+                "file": "Competitive Programming/Graphs/Connected Components.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Competitive Programming/Graphs/Bridges & Articulation Points.md",
+                "file": "Competitive Programming/Graphs/Connected Components.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Competitive Programming/Graphs/Bridges & Articulation Points.md",
+                "file": "Competitive Programming/Graphs/Connected Components.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Competitive Programming/Graphs/Bridges & Articulation Points.md"
+                "file": "Competitive Programming/Graphs/Connected Components.md"
               }
             }
           },
@@ -168,10 +168,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "f9e38e74bd873655",
+  "active": "414066e3991a50e9",
   "lastOpenFiles": [
-    "Competitive Programming/Graphs/Articulation Points.md",
     "Competitive Programming/Graphs/Bridges & Articulation Points.md",
+    "Competitive Programming/Graphs/Articulation Points.md",
     "Competitive Programming/Graphs/Connected Components.md",
     "Competitive Programming/Graphs/Graphs Representation.md",
     "Competitive Programming/Graphs/Traversal/DFS.md",

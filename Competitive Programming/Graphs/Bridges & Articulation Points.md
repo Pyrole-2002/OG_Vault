@@ -68,5 +68,44 @@ https://cp-algorithms.com/graph/bridge-searching-online.html
 - The case where `v == root` is an articulation point iff this vertex has more than one child in the DFS tree.
 ##### Implementation
 ```cpp
+vector<bool> visited;
+vector<int> tin, low;
+int timer;
 
+void dfs(vector<vector<int>> adj, vector<int> &cut_points, int v, int p = -1)
+{
+	visited[v] = true;
+	tin[v] = low[v] = timer++;
+	int children = 0;
+	for (int to : adj[v])
+	{
+		if (to == p)
+			continue;
+		if (visited[to])
+			low[v] = min(low[v], tin[to]);
+		else
+		{
+			dfs(adj, cut_points, to, v);
+			low[v] = min(low[v], low[to]);
+			if (low[to] >= tin[v] && p != -1)
+				cut_points.push_back(v);
+			children++;
+		}
+	}
+	if (p == -1 && children > 1)
+		cut_points.push_back(v);
+}
+
+vector<int> findCutPoints(vector<vector<int>> adj, int n)
+{
+	timer = 0;
+	visited.assign(n, false);
+	tin.assign(n, -1);
+	low.assign(n, -1);
+	vector<int> cut_points;
+	for (int i = 0; i < n; i++)
+		if (!visited[i])
+			dfs(adj, cut_points, i);
+	return cut_points;
+}
 ```
