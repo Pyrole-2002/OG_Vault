@@ -1,0 +1,3 @@
+- We are given an undirected graph. An articulation point (or cut vertex) is defined as a vertex which, when removed along with its edges, makes the graph disconnected (increases the number of [[Connected Components]]). We will find all articulation points in a given graph.
+- The algorithm is based on [[DFS]] and has time complexity $O(V+E)$.
+- Pick an arbitrary vertex of the graph `root` and run DFS from it.

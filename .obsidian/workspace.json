@@ -21,6 +21,25 @@
             }
           }
         ]
+      },
+      {
+        "id": "2d3a61abc91060d6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f9e38e74bd873655",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Competitive Programming/Graphs/Bridges.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -86,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Competitive Programming/Graphs/Articulation Points.md",
+                "file": "Competitive Programming/Graphs/Bridges.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Competitive Programming/Graphs/Articulation Points.md",
+                "file": "Competitive Programming/Graphs/Bridges.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Competitive Programming/Graphs/Articulation Points.md"
+                "file": "Competitive Programming/Graphs/Bridges.md"
               }
             }
           },
@@ -168,12 +187,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "77e4656bc7612423",
+  "active": "f9e38e74bd873655",
   "lastOpenFiles": [
+    "Competitive Programming/Graphs/Articulation Points.md",
+    "Competitive Programming/Graphs/Bridges.md",
     "Competitive Programming/Graphs/Connected Components.md",
     "Competitive Programming/Graphs/Graphs Representation.md",
-    "Competitive Programming/Graphs/Bridges.md",
-    "Competitive Programming/Graphs/Articulation Points.md",
     "Competitive Programming/Graphs/Traversal/DFS.md",
     "Competitive Programming/Number Theory/Euclidean Algorithm.md",
     "Competitive Programming/Number Theory/Euler's Totient Function.md",
