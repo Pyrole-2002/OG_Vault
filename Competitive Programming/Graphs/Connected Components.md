@@ -39,4 +39,4 @@ where $\mapsto$ means existence of the path from first vertex to the second.
 - Strongly connected components do not intersect each other and it is a partition of all graph vertices.
 - Thus we can give a definition of condensation graph $G^\text{SCC}$ as a graph containing every strongly connected component as one vertex.
 - Each vertex of the condensation graph corresponds to the SCC of graph $G$. There is an oriented edge between two vertices $C_{i}$ and $C_{j}$ of the condensation graph iff there are two vertices $u\in C_{i},\ v\in C_{j}$ such that there is an edge initial graph $(u, v)$.
-- Condensation graph is acyclic.
+- Condensation graph is acyclic. Supp
