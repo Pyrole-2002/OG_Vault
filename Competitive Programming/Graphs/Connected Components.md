@@ -30,9 +30,12 @@ vector<vector<int>> connectedComponents(vector<vector<int>> adj)
 	return components;
 }
 ```
+## Condensation Graph
 **Strongly Connected Component:** is a maximal subset of vertices $C$ such that any two vertices of this subset are reachable from each other. For any $u, v\in C$:
 $$
 u\mapsto v,  v\mapsto u
 $$
 where $\mapsto$ means existence of the path from first vertex to the second.
 - Strongly connected components do not intersect each other and it is a partition of all graph vertices.
+- Thus we can give a definition of condensation graph $G^\text{SCC}$ as a graph containing every strongly connected component as one vertex.
+- Each vertex of the condensation graph corresponds to the SCC of SCC of graph $G$.
