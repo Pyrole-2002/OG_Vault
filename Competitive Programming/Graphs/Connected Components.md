@@ -35,3 +35,4 @@ $$
 u\mapsto v,  v\mapsto u
 $$
 where $\mapsto$ means existence of the path from first vertex to the second.
+- Strongly connected components do not intersect each other and it is a partition of all graph vertices.
