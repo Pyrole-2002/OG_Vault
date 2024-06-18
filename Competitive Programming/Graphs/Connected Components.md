@@ -43,4 +43,7 @@ where $\mapsto$ means existence of the path from first vertex to the second.
 - Condensation graph is acyclic. Suppose there is an edge between $C$ and $C'$, then there can't be an edge from $C'$ to $C$.
 ### Kosaraju Algorithm
 - Based on [[DFS]] with time complexity $O(V+E)$.
+- We start at each vertex of the graph and run a DFS from every non-visited vertex. For each vertex we keep track of exit time `tout[v]`.
+- The exit time `tout[C]` from the SCC $C$ is the maximum of values `tout[v]` for all $v\in C$. Similarly, the entry time `tin[C]` from SCC $C$ is the minimum of values `tin[v]` for all $v\in C$.
+- Let $C$ and $C'$ be two different SCC and there be an edge $(C, C')$ in the condensation graph between these two nodes. Then `tout[C] > tout[C']`.
 - 
