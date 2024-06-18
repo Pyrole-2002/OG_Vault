@@ -30,3 +30,8 @@ vector<vector<int>> connectedComponents(vector<vector<int>> adj)
 	return components;
 }
 ```
+**Strongly Connected Component:** is a maximal subset of vertices $C$ such that any two vertices of this subset are reachable from each other. For any $u, v\in C$:
+$$
+u\mapsto v,  v\mapsto u
+$$
+where $\mapsto$ means existence of the path from first vertex to the second.
