@@ -42,3 +42,5 @@ where $\mapsto$ means existence of the path from first vertex to the second.
 - Each vertex of the condensation graph corresponds to the SCC of graph $G$. There is an oriented edge between two vertices $C_{i}$ and $C_{j}$ of the condensation graph iff there are two vertices $u\in C_{i},\ v\in C_{j}$ such that there is an edge in initial graph $(u, v)$.
 - Condensation graph is acyclic. Suppose there is an edge between $C$ and $C'$, then there can't be an edge from $C'$ to $C$.
 ### Kosaraju Algorithm
+- Based on [[DFS]] with time complexity $O(V+E)$.
+- 
