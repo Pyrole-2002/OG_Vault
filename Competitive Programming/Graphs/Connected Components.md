@@ -42,7 +42,7 @@ where $\mapsto$ means existence of the path from first vertex to the second.
 - Each vertex of the condensation graph corresponds to the SCC of graph $G$. There is an oriented edge between two vertices $C_{i}$ and $C_{j}$ of the condensation graph iff there are two vertices $u\in C_{i},\ v\in C_{j}$ such that there is an edge in initial graph $(u, v)$.
 - Condensation graph is acyclic. Suppose there is an edge between $C$ and $C'$, then there can't be an edge from $C'$ to $C$.
 ### Kosaraju Algorithm
-- Based on [[DFS]] with time complexity $O(V+E)$.
+- Based on [[DFS]] with time complexity $O(V+E)$ as it uses two DFS.
 - We start at each vertex of the graph and run a DFS from every non-visited vertex. For each vertex we keep track of exit time `tout[v]`.
 - The exit time `tout[C]` from the SCC $C$ is the maximum of values `tout[v]` for all $v\in C$. Similarly, the entry time `tin[C]` from SCC $C$ is the minimum of values `tin[v]` for all $v\in C$.
 - Let $C$ and $C'$ be two different SCC and there be an edge $(C, C')$ in the condensation graph between these two nodes. Then `tout[C] > tout[C']`. Depending on difference between `tin[C]` and `tin[C']`:
@@ -52,5 +52,5 @@ where $\mapsto$ means existence of the path from first vertex to the second.
 - Consider transposed graph $G^T$ which is received from $G$ by reversing the direction of each edge. This graph will have the same SCC as initial graph. Moreover, the condensation graph $G^\text{SCC}$ will also get transposed. Thus, there will be no edges from out root component to other components.
 - For visiting the whole root SCC containing $v$, it is enough to run search from $v$ in graph $G^T$. This will visit all vertices of this SCC and only them. We can now proceed with the same method as done with $G$ but run it on $G^T$.
 ##### Implementation
-1. Run sequence of DFS of $G$ which will return vertices with increasing `tout`.
-2. Build $G^T$. Run series of DFS in the order determined by 
+1. Run sequence of DFS of $G$ which will return vertices with increasing tout, we store this in `order`.
+2. Build $G^T$. Run series of DFS in the order determined by `order` (in decreasing order of tout). Every set of vertices, reached after the next search will be the next SCC.
