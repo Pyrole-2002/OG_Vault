@@ -54,3 +54,4 @@ where $\mapsto$ means existence of the path from first vertex to the second.
 ##### Implementation
 1. Run sequence of DFS of $G$ which will return vertices with increasing tout, we store this in `order`.
 2. Build $G^T$. Run series of DFS in the order determined by `order` (in decreasing order of tout). Every set of vertices, reached after the next search will be the next SCC.
+We can compare the algorithm to that of [[Topological Sort]]. Step 1 of Kosaraju represents reversed topological sort of $G$. Also Kosaraju generates SCC by decreasing order of their exit times, thus it generates vertices of condensation graph in topological sort order.
