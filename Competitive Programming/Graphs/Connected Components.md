@@ -118,13 +118,6 @@ int main()
 			component.clear();
 		}
 
-	for (auto comp : scc)
-	{
-		for (auto v : comp)
-			cout << v + 1 << " ";
-		cout << "\n";
-	}
-
 	return 0;
 }
 ```
