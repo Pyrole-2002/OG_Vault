@@ -1,3 +1,3 @@
 - A strong orientation of an undirected graph is an assignment of a direction to each edge that makes it a [[Connected Components#Kosaraju Algorithm|Strongly Connected Component]].
 - This cannot be done to every graph. For example, a graph containing a [[Bridges & Articulation Points|Bridge]] can't be strongly oriented as it will become crossable in only one direction.
-- Consider a [[DFS]] through a bridgeless connected graph. Clearly, we will each vertex.
+- Consider a [[DFS]] through a bridgeless connected graph. Clearly, we will each vertex. Since there are no bridges, 
