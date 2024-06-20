@@ -55,3 +55,76 @@ where $\mapsto$ means existence of the path from first vertex to the second.
 1. Run sequence of DFS of $G$ which will return vertices with increasing tout, we store this in `order`.
 2. Build $G^T$. Run series of DFS in the order determined by `order` (in decreasing order of tout). Every set of vertices, reached after the next search will be the next SCC.
 We can compare the algorithm to that of [[Topological Sort]]. Step 1 of Kosaraju represents reversed topological sort of $G$. Also Kosaraju generates SCC by decreasing order of their exit times, thus it generates vertices of condensation graph in topological sort order.
+```cpp
+vector<bool> visited;
+vector<int> order, component;
+vector<vector<int>> adj, adj_rev;
+int n;
+
+void dfs1(int v)
+{
+	visited[v] = true;
+	for (auto u : adj[v])
+		if (!visited[u])
+			dfs1(u);
+	order.push_back(v); // order of vertices in reverse postorder
+}
+
+void dfs2(int v)
+{
+	visited[v] = true;
+	component.push_back(v);
+	for (auto u : adj_rev[v])
+		if (!visited[u])
+			dfs2(u);
+}
+
+int main()
+{
+	ios::sync_with_stdio(false);
+	cin.tie(NULL);
+
+	int m;
+	cin >> n >> m;
+	adj.resize(n);
+	adj_rev.resize(n);
+	for (int i = 0; i < m; i++)
+	{
+		int u, v;
+		cin >> u >> v;
+		adj[u - 1].emplace_back(v - 1);
+		adj_rev[v - 1].emplace_back(u - 1);
+	}
+
+	visited.assign(n, false);
+	order.clear();
+	component.clear();
+
+// First DFS to get the order of vertices in reverse postorder
+	for (int i = 0; i < n; i++)
+		if (!visited[i])
+			dfs1(i);
+
+	visited.assign(n, false);
+	reverse(order.begin(), order.end());
+	vector<vector<int>> scc;
+
+// Second DFS to get the strongly connected components
+	for (auto v : order)
+		if (!visited[v])
+		{
+			dfs2(v);
+			scc.push_back(component);
+			component.clear();
+		}
+
+	for (auto comp : scc)
+	{
+		for (auto v : comp)
+			cout << v + 1 << " ";
+		cout << "\n";
+	}
+
+	return 0;
+}
+```
