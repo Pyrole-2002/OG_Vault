@@ -121,3 +121,30 @@ int main()
 	return 0;
 }
 ```
+##### Condensation Graph Implementation
+```cpp
+	vector<int> roots(n, 0), root_nodes; // roots[i] is the root node to the scc to which i belongs
+	vector<vector<int>> condensation(n);
+// Second DFS to get the strongly connected components and condensation graph
+	for (auto v : order)
+		if (!visited[v])
+		{
+			dfs2(v);
+			int root = component.front(); // root of the component
+			for (auto u : component)
+				roots[u] = root;
+			root_nodes.push_back(root); // add the root to the list of roots
+			scc.push_back(component);
+			component.clear();
+		}
+
+// Construct the condensation graph
+	for (int v = 0; v < n; v++)
+		for (auto u : adj[v])
+		{
+			int root_v = roots[v], root_u = roots[u];
+			if (root_v != root_u)
+				condensation[root_v].push_back(root_u);
+		}
+```
+Here, we select the root of each component as the first node in its list. This node will represent it's entire SCC in the condensation graph. `condensation` is the adjacency list of the `root_nodes`. We can traverse on `condensation` as our graph using only those nodes belonging to `root_nodes`.

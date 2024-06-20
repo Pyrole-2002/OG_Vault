@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Competitive Programming/Graphs/Connected Components.md",
+                "file": "Competitive Programming/Graphs/Strong Orientation.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Competitive Programming/Graphs/Connected Components.md",
+                "file": "Competitive Programming/Graphs/Strong Orientation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Competitive Programming/Graphs/Connected Components.md",
+                "file": "Competitive Programming/Graphs/Strong Orientation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Competitive Programming/Graphs/Connected Components.md"
+                "file": "Competitive Programming/Graphs/Strong Orientation.md"
               }
             }
           },
@@ -170,9 +170,11 @@
   },
   "active": "414066e3991a50e9",
   "lastOpenFiles": [
+    "Competitive Programming/Graphs/Strong Orientation.md",
+    "Competitive Programming/Graphs/Connected Components.md",
+    "Competitive Programming/Number Theory/Divisors.md",
     "Competitive Programming/Graphs/Bridges & Articulation Points.md",
     "Competitive Programming/Graphs/Articulation Points.md",
-    "Competitive Programming/Graphs/Connected Components.md",
     "Competitive Programming/Graphs/Graphs Representation.md",
     "Competitive Programming/Graphs/Traversal/DFS.md",
     "Competitive Programming/Number Theory/Euclidean Algorithm.md",
@@ -194,8 +196,6 @@
     "Competitive Programming/Sorting/Merge Sort.md",
     "Competitive Programming/Sorting/Insertion Sort.md",
     "Competitive Programming/Sorting/Bubble Sort.md",
-    "Competitive Programming/Graphs/Traversal/BFS.md",
-    "Competitive Programming/Arrays/Dutch National Flag Algorithm.md",
     "attachments/Pasted image 20240613132654.png",
     "attachments/Pasted image 20240613132451.png",
     "attachments/Pasted image 20240613032852.png",
