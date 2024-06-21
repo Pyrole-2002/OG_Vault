@@ -9,5 +9,70 @@
 - Since we were only allowed to orient edges and not remove them, we can orient the bridges arbitrarily.
 #### Implementation
 ```cpp
+int n;
+vector<vector<pair<int, int>>> adj;
+vector<pair<int, int>> edges;
+vector<bool> edge_used;
+vector<int> tin, low;
+int timer;
+string orient;
+int bridge_cnt;
+
+void findBridges(int v)
+{
+	timer = 0;
+	low[v] = tin[v] = timer++;
+	for (auto p : adj[v])
+	{
+		if (edge_used[p.second])
+			continue;
+		edge_used[p.second] = true;
+		orient[p.second] = (v == edges[p.second].first) ? '>' : '<'; // dir is from v to nv
+		int nv = p.first; // neighbour vertex
+		if (tin[nv] == -1)
+		{
+			findBridges(nv);
+			low[v] = min(low[v], low[nv]);
+			if (low[nv] > tin[v]) // bridge between v and nv
+				bridge_cnt++;
+		}
+		else
+			low[v] = min(low[v], tin[nv]);
+	}
+}
+
+int main()
+{
+	ios::sync_with_stdio(false);
+	cin.tie(NULL);
+
+	int m;
+	cin >> n >> m;
+	adj.resize(n);
+	for (int i = 0; i < m; i++)
+	{
+		int u, v;
+		cin >> u >> v;
+		adj[u - 1].emplace_back(v - 1, i);
+		adj[v - 1].emplace_back(u - 1, i);
+		edges.emplace_back(u - 1, v - 1);
+	}
+
+	tin.assign(n, -1);
+	low.assign(n, -1);
+	edge_used.assign(m, false);
+	orient.resize(m);
+	bridge_cnt = 0;
+
+	int num_components = 0;
+	for (int v = 0; v < n; v++)
+		if (tin[v] == -1)
+		{
+			findBridges(v);
+			num_components++;
+		}
+
+		return 0;
+}
 
 ```
