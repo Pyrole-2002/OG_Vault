@@ -6,3 +6,7 @@ d[v] = \infty\quad \forall\quad v\ne s
 $$
 - We also maintain a boolean array $u$ which stores for each vertex $v$ whether it's marked. Initially, all vertices are unmarked.
 - Dijkstra's Algorithm runs for $n$ iterations. At each iteration, a vertex $v$ is chosen as unmarked vertex which has least value of $d$.
+- The selected vertex $v$ is marked, from $v$ relaxations are performed where all edges of the form $(v, to)$ are considered and for each vertex $to$, the algorithm tries to improve the value $d[to]$. If the length of the current edge is $len$, then relaxation is:
+$$
+d[to] = \min(d[to,\ d[v]+len])
+$$
