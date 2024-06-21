@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Competitive Programming/Graphs/Shortest Paths/Dijkstra.md",
+                "file": "Competitive Programming/Graphs/Shortest Paths/Dijkstra's Algorithm.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Competitive Programming/Graphs/Shortest Paths/Dijkstra.md",
+                "file": "Competitive Programming/Graphs/Shortest Paths/Dijkstra's Algorithm.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Competitive Programming/Graphs/Shortest Paths/Dijkstra.md",
+                "file": "Competitive Programming/Graphs/Shortest Paths/Dijkstra's Algorithm.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Competitive Programming/Graphs/Shortest Paths/Dijkstra.md"
+                "file": "Competitive Programming/Graphs/Shortest Paths/Dijkstra's Algorithm.md"
               }
             }
           },
@@ -170,7 +170,7 @@
   },
   "active": "bcb53dca54853591",
   "lastOpenFiles": [
-    "Competitive Programming/Graphs/Shortest Paths/Dijkstra.md",
+    "Competitive Programming/Graphs/Shortest Paths/Dijkstra's Algorithm.md",
     "Competitive Programming/Graphs/Shortest Paths",
     "Competitive Programming/Graphs/Strong Orientation.md",
     "Competitive Programming/Graphs/Bridges & Articulation Points.md",
