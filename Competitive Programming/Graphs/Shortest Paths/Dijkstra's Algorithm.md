@@ -10,3 +10,12 @@ $$
 $$
 d[to] = \min(d[to,\ d[v]+len])
 $$
+- After all the edges are considered, the current iteration ends. After $n$ iterations, all vertices will be marked, and the algorithm terminates.
+- The found values of $d[v]$ are the lengths of shortest paths from $s$ to all vertices $v$.
+### Restoring Shortest Paths
+- If we want to know not only the lengths of the shortest paths but the paths themselves, we will maintain an array of predecessors $p$ in which for each vertex $v \ne s$, $p[v]$ is the penultimate vertex in the shortest path from $s$ to $v$.
+- We use the fact that if we take the shortest path to some vertex $v$ and remove $v$ from this path, we'll get a path ending in at vertex $p[v]$, and this path will be the shortest for the vertex $p[v]$.
+- For each successful relaxation, when for some selected vertex $v$, there is an improvement in the distance to some vertex $to$, we update the predecessor vertex for $to$ with the vertex $v$.
+$$
+p[to] = v
+$$
