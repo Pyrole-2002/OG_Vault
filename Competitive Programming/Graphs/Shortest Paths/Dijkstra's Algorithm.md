@@ -5,4 +5,4 @@ $$
 d[v] = \infty\quad \forall\quad v\ne s
 $$
 - We also maintain a boolean array $u$ which stores for each vertex $v$ whether it's marked. Initially, all vertices are unmarked.
-- Dijkstra's Algorithm runs for $n$ iterations.
+- Dijkstra's Algorithm runs for $n$ iterations. At each iteration, a vertex $v$ is chosen as unmarked vertex which has least value of $d$.
