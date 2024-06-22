@@ -19,3 +19,6 @@ $$
 $$
 p[to] = v
 $$
+#### Implementation
+- For the simplest implementation, on each iteration vertex search requires $O(n)$ time and each relaxation can be performed in $O(1)$. Asymptotic time complexity becomes $O(V^2 + E)$.
+- This complexity is optimal for dense graphs where $E\approx V^2$. However, in sparse graphs where $E$ is much smaller than maximum number of edges $V^2$, the problem can be solved in $O(n\log n+m)$. This will be discussed in future section.
