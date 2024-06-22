@@ -72,7 +72,7 @@ int main()
 			num_components++;
 		}
 
-		return 0;
+	return 0;
 }
 
 ```
