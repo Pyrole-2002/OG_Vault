@@ -1,4 +1,4 @@
-- We have a weighted graph with $n$ vertices and $m$ edges. The weights of all edges are non-negative. We are given a starting vertex $s$. We will then find the lengths of the shortest paths from a starting vertex $s$ to all other vertices. This problem is also called single-source shortest paths problem.
+- We have a weighted [[Graphs Representation|Graph]] with $n$ vertices and $m$ edges. The weights of all edges are non-negative. We are given a starting vertex $s$. We will then find the lengths of the shortest paths from a starting vertex $s$ to all other vertices. This problem is also called single-source shortest paths problem.
 - Create an array $d$ where for each vertex $v$ we store the current length of the shortest path from $s$ to $v$ in `d[v]`.
 - Initially, `d[s] = 0`, and for all other vertices this length equals infinity.
 $$
@@ -22,3 +22,45 @@ $$
 #### Implementation
 - For the simplest implementation, on each iteration vertex search requires $O(n)$ time and each relaxation can be performed in $O(1)$. Asymptotic time complexity becomes $O(V^2 + E)$.
 - This complexity is optimal for dense graphs where $E\approx V^2$. However, in sparse graphs where $E$ is much smaller than maximum number of edges $V^2$, the problem can be solved in $O(n\log n+m)$. This will be discussed in future section.
+```cpp
+int n;
+vector<vector<pair<int, int>>> adj;
+vector<int> d, p;
+vector<bool> visited;
+
+void dijkstra(int s)
+{
+	d[s] = 0;
+	for (int i = 0; i < n; i++)
+	{
+		int v = -1; // vertex with min distance
+		for (int j = 0; j < n; j++)
+			if (!visited[j] && (v == -1 || d[j] < d[v]))
+				v = j;
+		if (d[v] == INF)
+			break; // unreachable vertices
+		visited[v] = true;
+		for (auto edge : adj[v])
+		{
+			int to = edge.first;
+			int len = edge.second;
+			if (d[v] + len < d[to])
+			{
+				d[to] = d[v] + len;
+				p[to] = v;
+			}
+		}
+	}
+}
+
+vector<int> restorePath(int s, int t)
+{
+	vector<int> path;
+	for (int v = t; v != s; v = p[v])
+		path.push_back(v);
+	path.push_back(s);
+	reverse(path.begin(), path.end());
+	return path;
+}
+```
+## Dijkstra on Sparse Graphs
