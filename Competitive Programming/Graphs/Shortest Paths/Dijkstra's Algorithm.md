@@ -70,3 +70,33 @@ vector<int> restorePath(int s, int t)
 - We will use data structures that perform both types of operations to give us a total time complexity of $O(n\log n + m\log n) \approx O(m\log n)$
 ### [[Set]] Implementation
 - Since we need to store vertices ordered by their values $d$, it is convenient to store actual pairs with the distance and the index of the vertex. As a result in a set, pairs are automatically sorted by their distances.
+- We no longer need the `visited[]` array because we use the set to store that information.
+```cpp
+int n;
+vector<vector<pair<int, int>>> adj;
+vector<int> d, p;
+
+void dijkstra(int s)
+{
+	d[s] = 0;
+	set<pair<int, int>> q;
+	q.insert({0, s});
+	while (!q.empty())
+	{
+		int v = q.begin()->second;
+		q.erase(q.begin());
+		for (auto edge : adj[v])
+		{
+			int to = edge.first;
+			int len = edge.second;
+			if (d[v] + len < d[to])
+			{
+				q.erase({d[to], to});
+				d[to] = d[v] + len;
+				p[to] = v;
+				q.insert({d[to], to});
+			}
+		}
+	}
+}
+```
