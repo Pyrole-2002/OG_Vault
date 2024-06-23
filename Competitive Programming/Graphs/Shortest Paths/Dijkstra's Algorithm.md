@@ -100,3 +100,39 @@ void dijkstra(int s)
 	}
 }
 ```
+### [[Priority Queue]] Implementation
+- The main difference between set and priority queue implementation is that we cannot remove elements from priority queue (heaps can support that operation).
+- Therefore, we don't delete the old pair from the queue. As a result a vertex can appear multiple times with different distance in the queue at the same time. Among these pairs we only consider the first element equal to the corresponding value in $d$, all other pairs are old.
+- In the modification, at the beginning of each iteration, after extracting the next pair, we check if it is an important pair or if it is already an old and handled pair. Without this check, the complexity will increase up to $O(V\times E)$.
+- By default priority queue sorts elements in descending order. Either we sort the elements in ascending order or store the negated distances in it.
+```cpp
+int n;
+vector<vector<pair<int, int>>> adj;
+vector<int> d, p;
+
+void dijkstra(int s)
+{
+	d[s] = 0;
+	priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> q;
+	q.push({0, s});
+	while (!q.empty())
+	{
+		int v = q.top().second;
+		int d_v = q.top().first;
+		q.pop();
+		if (d_v != d[v]) // Skip if outdated
+			continue;
+		for (auto edge : adj[v])
+		{
+			int to = edge.first;
+			int len = edge.second;
+			if (d[v] + len < d[to])
+			{
+				d[to] = d[v] + len;
+				p[to] = v;
+				q.push({d[to], to});
+			}
+		}
+	}
+}
+```

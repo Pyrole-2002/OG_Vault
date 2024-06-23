@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Competitive Programming/Graphs/Shortest Paths/Dijkstra's Algorithm.md",
+                "file": "Competitive Programming/Graphs/Shortest Paths/Bellman-Ford Algorithm.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Competitive Programming/Graphs/Shortest Paths/Dijkstra's Algorithm.md",
+                "file": "Competitive Programming/Graphs/Shortest Paths/Bellman-Ford Algorithm.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Competitive Programming/Graphs/Shortest Paths/Dijkstra's Algorithm.md",
+                "file": "Competitive Programming/Graphs/Shortest Paths/Bellman-Ford Algorithm.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Competitive Programming/Graphs/Shortest Paths/Dijkstra's Algorithm.md"
+                "file": "Competitive Programming/Graphs/Shortest Paths/Bellman-Ford Algorithm.md"
               }
             }
           },
@@ -171,6 +171,7 @@
   "active": "bcb53dca54853591",
   "lastOpenFiles": [
     "Competitive Programming/Graphs/Shortest Paths/Dijkstra's Algorithm.md",
+    "Competitive Programming/Graphs/Shortest Paths/Bellman-Ford Algorithm.md",
     "Competitive Programming/STL/Set.md",
     "Competitive Programming/Graphs/Bridges & Articulation Points.md",
     "Competitive Programming/Graphs/Connected Components.md",
@@ -196,7 +197,6 @@
     "Competitive Programming/Data Structures/Sparse Table.md",
     "Competitive Programming/Sorting/Selection Sort.md",
     "Competitive Programming/Sorting/Quick Sort.md",
-    "Competitive Programming/Sorting/Merge Sort.md",
     "attachments/Pasted image 20240613132654.png",
     "attachments/Pasted image 20240613132451.png",
     "attachments/Pasted image 20240613032852.png",
