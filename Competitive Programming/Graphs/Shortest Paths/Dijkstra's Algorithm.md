@@ -64,3 +64,4 @@ vector<int> restorePath(int s, int t)
 }
 ```
 ## Dijkstra on Sparse Graphs
+- In the simplest implementation
