@@ -67,4 +67,6 @@ vector<int> restorePath(int s, int t)
 - In the simplest implementation, there are two operations, finding the unmarked vertex with smallest $d$ and the time of relaxation. The first operation is performed $O(V)$ times and requires $O(V)$ per operation, while the second operation is performed $O(E)$ times and requires $O(1)$ per operation making the overall complexity $O(V^2 + E)$.
 - To improve the complexity for sparse graphs when $E$ is much smaller than $V^2$, we need to improve the complexity of the first operation without affecting the second significantly.
 - The most efficient data structure for this is the **Fibonacci Heap** which allows the first operation to run in $O(\log V)$ and the second operation in $O(1)$. The overall complexity becomes $O(V\log V + E)$. However, they are very complex to implement and also have a large hidden constant.
-- 
+- We will use data structures that perform both types of operations to give us a total time complexity of $O(n\log n + m\log n) \approx O(m\log n)$
+### [[Set]] Implementation
+- Since we need to store vertices ordered by their values $d$, it is convenient to store actual pairs with the distance and the index of the vertex. As a result in a set, pairs are automatically sorted by their distances.
