@@ -63,8 +63,7 @@ void bellmanFord(int v)
 ```cpp
 int n;
 vector<Edge> edges;
-vector<int> d, p;
-vector<int> cycle;
+vector<int> d, p, cycle;
 
 void bellmanFord(int v)
 {
