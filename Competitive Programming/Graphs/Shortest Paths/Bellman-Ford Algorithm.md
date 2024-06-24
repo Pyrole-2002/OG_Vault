@@ -107,5 +107,54 @@ void bellmanFord(int v)
 - The worst case time complexity of this algorithm is $O(VE)$ which is the same as that of Bellman-Ford but in practice its average complexity is around $O(E)$.
 - There is no reason to put a vertex in the queue if it is already in.
 ```cpp
+void SPFA(int v)
+{
+	d.resize(n, INF);
+	p.resize(n, -1);
+	vector<int> cnt(n, 0); // number of times a vertex is in the queue
+	vector<bool> in_queue(n, false); // whether a vertex is in the queue or not
+	queue<int> q;
 
+	d[v] = 0;
+	q.push(v);
+	in_queue[v] = true;
+	while (!q.empty())
+	{
+		int u = q.front();
+		q.pop();
+		in_queue[u] = false;
+		for (auto e : edges)
+		{
+			if (e.a == u) // only outgoing edges from u
+			{
+				if (d[e.b] > d[u] + e.cost)
+				{
+					d[e.b] = d[u] + e.cost;
+					p[e.b] = u;
+					if (!in_queue[e.b])
+					{
+						q.push(e.b);
+						in_queue[e.b] = true;
+						cnt[e.b]++;
+						if (cnt[e.b] > n) // negative cycle detected
+						{
+							cycle.resize(n);
+							int x = e.b;
+							for (int j = 0; j < n; j++)
+								x = p[x];
+							for (int j = 0; j < n; j++)
+							{
+								x = p[x];
+								cycle[j] = x;
+								if (x == e.b)
+									break;
+							}
+							return;
+						}
+					}
+				}
+			}
+		}
+	}
+}
 ```
