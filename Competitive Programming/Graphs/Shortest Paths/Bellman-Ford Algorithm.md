@@ -7,6 +7,9 @@
 ## Proof
 - Note that for all unreachable vertices $u$, the algorithm works correctly as the $d[u]$ remains $\infty$.
 - To Prove: After the execution of $i_{\text{th}}$ phase, the algorithm correctly finds all shortest paths whose number of edges doesn't exceed $i$.
+- Consider an arbitrary vertex $a$ to which there is a path from the starting vertex $v$, and consider a shortest path to it $(p_{0}=v, \dots, p_{k}=a)$.
+- Before the first phase, the shortest path to $p_{0}$ was found correctly. During first phase, the edge $(p_{0}, p_{1})$ has been checked and the distance to the vertex $p_{1}$ was found correctly. Repeating this $k$ times will find the distance to the vertex $p_{k}$ correctly.
+- Any shortest path can't have more than $n-1$ edges..
 ##### Simplest Implementation
 ```cpp
 int n;
@@ -51,3 +54,4 @@ void bellmanFord(int v)
 	}
 }
 ```
+### Negative Cycles
