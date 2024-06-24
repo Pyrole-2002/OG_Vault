@@ -21,3 +21,26 @@ void bellmanFord(int v)
 ```
 ##### Better Implementation
 - To speed up this algorithm, we keep a flag to tell whether relaxation happened in the current phase or not, if in any phase relaxation had no change, the algorithm can be stopped.
+```cpp
+int n;
+vector<Edge> edges;
+vector<int> d;
+
+void bellmanFord(int v)
+{
+	d[v] = 0;
+	bool flag = false;
+	for (int i = 0; i < n - 1; i++)
+	{
+		for (auto e : edges)
+			if (d[e.a] < INF && d[e.a] + e.cost < d[e.b])
+			{
+				d[e.b] = d[e.a] + e.cost;
+				flag = true;
+			}
+		if (!flag)
+			break;
+	}
+}
+```
+### Retrieving Paths
