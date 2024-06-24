@@ -20,4 +20,4 @@ void bellmanFord(int v)
 }
 ```
 ##### Better Implementation
-- 
+- To speed up this algorithm, we keep a flag to tell whether relaxation happened in the current phase or not, if in any phase relaxation had no change, the algorithm can be stopped.
