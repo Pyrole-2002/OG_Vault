@@ -55,3 +55,7 @@ void bellmanFord(int v)
 }
 ```
 ### Negative Cycles
+- If there is a negative cycle reachable from $v$, the distances to the vertices in this cycle should be $-\infty$.
+- To check for these, we run the algorithm for one more phase after phase $n-1$ and if this relaxation changes any value in $d$, this means the graph contains a negative cycle reachable from $v$.
+- To retrieve this cycle as a sequence of vertices contained in it, we remember the last vertex $x$ for which there was a relaxation in the $n_{\text{th}}$ phase. This will either lie in a negative weight cycle or is reachable from it.
+- To get the vertices that are guaranteed to lie in a negative cycle, starting from vertex $x$, pass through to the predecessors $n$ times. We will get the vertex $y$ which in the cycle is the earliest reachable from source.
