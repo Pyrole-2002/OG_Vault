@@ -6,7 +6,7 @@
 - We check if $a$ is less than $\infty$ to skip the edges where path to $a$ has not yet been found.
 ## Proof
 - Note that for all unreachable vertices $u$, the algorithm works correctly as the $d[u]$ remains $\infty$.
-- 
+- To Prove: After the execution of $i_{\text{th}}$ phase, the algorithm correctly finds all shortest paths whose number of edges doesn't exceed $i$.
 ##### Simplest Implementation
 ```cpp
 int n;
