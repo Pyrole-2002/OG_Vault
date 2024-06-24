@@ -4,6 +4,7 @@
 - The algorithm consists of phases, each phase scans through all edges of the graph, and the algorithm tries to produce relaxation along each edge $(a, b)$ having weight $c$. Relaxation attempts to improve the value of $d[b]$ using value of $d[a]+c$.
 - $n-1$ phases of relaxation are sufficient to correctly calculate the lengths of all shortest paths in the graph. For unreachable vertices, $d$ remains $\infty$.
 - We check if $a$ is less than $\infty$ to skip the edges where path to $a$ has not yet been found.
+- Time Complexity: $O(VE)$
 ## Proof
 - Note that for all unreachable vertices $u$, the algorithm works correctly as the $d[u]$ remains $\infty$.
 - To Prove: After the execution of $i_{\text{th}}$ phase, the algorithm correctly finds all shortest paths whose number of edges doesn't exceed $i$.
@@ -59,3 +60,53 @@ void bellmanFord(int v)
 - To check for these, we run the algorithm for one more phase after phase $n-1$ and if this relaxation changes any value in $d$, this means the graph contains a negative cycle reachable from $v$.
 - To retrieve this cycle as a sequence of vertices contained in it, we remember the last vertex $x$ for which there was a relaxation in the $n_{\text{th}}$ phase. This will either lie in a negative weight cycle or is reachable from it.
 - To get the vertices that are guaranteed to lie in a negative cycle, starting from vertex $x$, pass through to the predecessors $n$ times. We will get the vertex $y$ which in the cycle is the earliest reachable from source.
+```cpp
+int n;
+vector<Edge> edges;
+vector<int> d, p;
+vector<int> cycle;
+
+void bellmanFord(int v)
+{
+	d.resize(n, INF);
+	p.resize(n, -1);
+	int x;
+	d[v] = 0;
+	bool flag = false;
+	for (int i = 0; i < n; i++)
+	{
+		x = -1; // to check if there is a negative cycle
+		for (auto e : edges)
+			if (d[e.a] < INF && d[e.a] + e.cost < d[e.b])
+			{
+				d[e.b] = d[e.a] + e.cost;
+				p[e.b] = e.a;
+				flag = true;
+				x = e.b;
+			}
+		if (!flag)
+			break;
+	}
+	if (x != -1) // negative cycle
+	{
+		int y = x;
+		for (int i = 0; i < n; i++)
+			y = p[y];
+		for (int cur = y;; cur = p[cur])
+		{
+			cycle.emplace_back(cur);
+			if (cur == y && cycle.size() > 1)
+				break;
+		}
+		reverse(cycle.begin(), cycle.end());
+	}
+}
+```
+# Shortest Path Faster Algorithm (SPFA)
+- SPFA is an improvement of the Bellman-Ford Algorithm which takes advantage of the fact that not all attempts at relaxation will work.
+- We create a queue containing only the vertices that were relaxed but still could further relax their neighbors. Whenever we relax some neighbor, we put it in the queue.
+- The worst case time complexity of this algorithm is $O(VE)$ which is the same as that of Bellman-Ford but in practice its average complexity is around $O(E)$.
+- There is no reason to put a vertex in the queue if it is already in.
+```cpp
+
+```
