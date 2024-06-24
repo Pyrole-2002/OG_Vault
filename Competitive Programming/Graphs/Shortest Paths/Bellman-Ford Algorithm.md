@@ -4,6 +4,9 @@
 - The algorithm consists of phases, each phase scans through all edges of the graph, and the algorithm tries to produce relaxation along each edge $(a, b)$ having weight $c$. Relaxation attempts to improve the value of $d[b]$ using value of $d[a]+c$.
 - $n-1$ phases of relaxation are sufficient to correctly calculate the lengths of all shortest paths in the graph. For unreachable vertices, $d$ remains $\infty$.
 - We check if $a$ is less than $\infty$ to skip the edges where path to $a$ has not yet been found.
+## Proof
+- Note that for all unreachable vertices $u$, the algorithm works correctly as the $d[u]$ remains $\infty$.
+- 
 ##### Simplest Implementation
 ```cpp
 int n;
@@ -12,6 +15,7 @@ vector<int> d;
 
 void bellmanFord(int v)
 {
+	d.resize(n, INF);
 	d[v] = 0;
 	for (int i = 0; i < n - 1; i++)
 		for (auto e : edges)
@@ -21,13 +25,16 @@ void bellmanFord(int v)
 ```
 ##### Better Implementation
 - To speed up this algorithm, we keep a flag to tell whether relaxation happened in the current phase or not, if in any phase relaxation had no change, the algorithm can be stopped.
+- We can modify the algorithm so it allows to reconstruct the shortest paths.
 ```cpp
 int n;
 vector<Edge> edges;
-vector<int> d;
+vector<int> d, p;
 
 void bellmanFord(int v)
 {
+	d.resize(n, INF);
+	p.resize(n, -1);
 	d[v] = 0;
 	bool flag = false;
 	for (int i = 0; i < n - 1; i++)
@@ -36,6 +43,7 @@ void bellmanFord(int v)
 			if (d[e.a] < INF && d[e.a] + e.cost < d[e.b])
 			{
 				d[e.b] = d[e.a] + e.cost;
+				p[e.b] = e.a;
 				flag = true;
 			}
 		if (!flag)
@@ -43,4 +51,3 @@ void bellmanFord(int v)
 	}
 }
 ```
-### Retrieving Paths
