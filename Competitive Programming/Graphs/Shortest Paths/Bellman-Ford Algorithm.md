@@ -3,7 +3,7 @@
 - First assume that the graph contains no negative weight cycle. We create a distance array $d$ of size $V-1$, which after completion of the algorithm will contain the answer to the problem. Initialize `d[v] = 0`, and all other elements of $d$ to $\infty$.
 - The algorithm consists of phases, each phase scans through all edges of the graph, and the algorithm tries to produce relaxation along each edge $(a, b)$ having weight $c$. Relaxation attempts to improve the value of $d[b]$ using value of $d[a]+c$.
 - $n-1$ phases of relaxation are sufficient to correctly calculate the lengths of all shortest paths in the graph. For unreachable vertices, $d$ remains $\infty$.
-- We check if $a$ is less than $\infty$ because the graph contains negative weights.
+- We check if $a$ is less than $\infty$ to skip the edges where path to $a$ has not yet been found.
 ##### Simplest Implementation
 ```cpp
 int n;
@@ -19,3 +19,5 @@ void bellmanFord(int v)
 				d[e.b] = min(d[e.b], d[e.a] + e.cost);
 }
 ```
+##### Better Implementation
+- 
