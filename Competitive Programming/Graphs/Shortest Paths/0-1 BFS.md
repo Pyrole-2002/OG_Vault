@@ -1,0 +1,1 @@
+- It is well-known that we can find the shortest paths between a single source and all other vertices in $O(E)$ using [[BFS]] in an unweighted graph.

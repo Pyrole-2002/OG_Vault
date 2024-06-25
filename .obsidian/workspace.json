@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Competitive Programming/Graphs/Shortest Paths/Bellman-Ford Algorithm.md",
+                "file": "Competitive Programming/Graphs/Shortest Paths/0-1 BFS.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Competitive Programming/Graphs/Shortest Paths/Bellman-Ford Algorithm.md",
+                "file": "Competitive Programming/Graphs/Shortest Paths/0-1 BFS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Competitive Programming/Graphs/Shortest Paths/Bellman-Ford Algorithm.md",
+                "file": "Competitive Programming/Graphs/Shortest Paths/0-1 BFS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Competitive Programming/Graphs/Shortest Paths/Bellman-Ford Algorithm.md"
+                "file": "Competitive Programming/Graphs/Shortest Paths/0-1 BFS.md"
               }
             }
           },
@@ -170,6 +170,7 @@
   },
   "active": "e8317685c746f02a",
   "lastOpenFiles": [
+    "Competitive Programming/Graphs/Shortest Paths/0-1 BFS.md",
     "Competitive Programming/Graphs/Shortest Paths/Bellman-Ford Algorithm.md",
     "Competitive Programming/Graphs/Shortest Paths/Dijkstra's Algorithm.md",
     "Competitive Programming/STL/Set.md",
@@ -196,7 +197,6 @@
     "Competitive Programming/Data Structures/Minimum Stack & Queue.md",
     "Competitive Programming/Data Structures/Sparse Table.md",
     "Competitive Programming/Sorting/Selection Sort.md",
-    "Competitive Programming/Sorting/Quick Sort.md",
     "attachments/Pasted image 20240613132654.png",
     "attachments/Pasted image 20240613132451.png",
     "attachments/Pasted image 20240613032852.png",
