@@ -5,3 +5,33 @@
 - We know that $d[v]\le d[u]\le d[v]+1$ for each $u\in Q$. This is because we only add vertices with equal distances or with distance plus one to the queue during each iteration.
 - Assume there exists a $u$ in the queue with $d[u]-d[v] > 1$, then $u$ must have been inserted in the queue via a different vertex $t$ with $d[t]\ge d[u]-1>d[v]$. However, this is impossible since the algorithm iterates over the vertices in increasing order.
 - We don't need a priority queue because of simple structure. We use a normal queue and append new vertices at the beginning if the corresponding edge has weight $0(d[u] = d[v])$ or at the end if the edge has weight $1 (d[u] = d[v]+1)$. This way, the queue remains sorted all the time.
+```cpp
+int n;
+vector<vector<pair<int, int>>> adj;
+vector<int> d;
+
+void BFS01(int s)
+{
+	d[s] = 0;
+	deque<int> q;
+	q.emplace_front(s);
+	while (!q.empty())
+	{
+		int u = q.front();
+		q.pop_front();
+		for (auto edge : adj[u])
+		{
+			int v = edge.first;
+			int w = edge.second;
+			if (d[u] + w < d[v])
+			{
+				d[v] = d[u] + w;
+				if (w == 0)
+					q.emplace_front(v);
+				else
+					q.emplace_back(v);
+			}
+		}
+	}
+}
+```
