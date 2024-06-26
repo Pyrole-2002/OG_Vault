@@ -3,3 +3,5 @@
 - However, if the weight of each edge is either $0$ or $1$, then we can use BFS to solve the single source shortest path problem in $O(E)$.
 - In Dijkstra's Algorithm, using queue implementation, we can see that the distances between the source $s$ and two other vertices in the queue differ by at most one.
 - We know that $d[v]\le d[u]\le d[v]+1$ for each $u\in Q$. This is because we only add vertices with equal distances or with distance plus one to the queue during each iteration.
+- Assume there exists a $u$ in the queue with $d[u]-d[v] > 1$, then $u$ must have been inserted in the queue via a different vertex $t$ with $d[t]\ge d[u]-1>d[v]$. However, this is impossible since the algorithm iterates over the vertices in increasing order.
+- 
