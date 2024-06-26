@@ -13,6 +13,11 @@
 - Any shortest path can't have more than $n-1$ edges..
 ##### Simplest Implementation
 ```cpp
+struct Edge
+{
+	int a, b, cost;
+};
+
 int n;
 vector<Edge> edges;
 vector<int> d;
@@ -31,6 +36,11 @@ void bellmanFord(int v)
 - To speed up this algorithm, we keep a flag to tell whether relaxation happened in the current phase or not, if in any phase relaxation had no change, the algorithm can be stopped.
 - We can modify the algorithm so it allows to reconstruct the shortest paths.
 ```cpp
+struct Edge
+{
+	int a, b, cost;
+};
+
 int n;
 vector<Edge> edges;
 vector<int> d, p;
@@ -61,6 +71,11 @@ void bellmanFord(int v)
 - To retrieve this cycle as a sequence of vertices contained in it, we remember the last vertex $x$ for which there was a relaxation in the $n_{\text{th}}$ phase. This will either lie in a negative weight cycle or is reachable from it.
 - To get the vertices that are guaranteed to lie in a negative cycle, starting from vertex $x$, pass through to the predecessors $n$ times. We will get the vertex $y$ which in the cycle is the earliest reachable from source.
 ```cpp
+struct Edge
+{
+	int a, b, cost;
+};
+
 int n;
 vector<Edge> edges;
 vector<int> d, p, cycle;
@@ -107,6 +122,15 @@ void bellmanFord(int v)
 - The worst case time complexity of this algorithm is $O(VE)$ which is the same as that of Bellman-Ford but in practice its average complexity is around $O(E)$.
 - There is no reason to put a vertex in the queue if it is already in.
 ```cpp
+struct Edge
+{
+	int a, b, cost;
+};
+
+int n;
+vector<Edge> edges;
+vector<int> d, p, cycle;
+
 void SPFA(int v)
 {
 	d.resize(n, INF);
