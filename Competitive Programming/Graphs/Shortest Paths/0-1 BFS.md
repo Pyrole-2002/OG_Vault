@@ -35,3 +35,5 @@ void BFS01(int s)
 	}
 }
 ```
+## Dial's Algorithm
+We can extend this further if we allow the weights of the edges to be even bigger. If every edge in the graph has $wt\le k$, then the distances of vertices in the queue will differ by at most $k$ from the distance of $v$ to the source. So we can keep $k+1$ buckets for the vertices in the queue, and whenever the bucket corresponding to the smallest distance gets empty, we make a cyclic shift to get the bucket with the next higher distance.
