@@ -14,5 +14,39 @@
 - We will use the array $m$ to store in which set each vertex is.
 #### Implementation
 ```cpp
+int n;
+vector<vector<pair<int, int>>> adj;
+vector<int> d, p;
 
+void dEsopoPape(int v0)
+{
+	d[v0] = 0;
+	vector<int> m(n, 2);
+	deque<int> q;
+	q.push_back(v0);
+
+	while (!q.empty())
+	{
+		int u = q.front();
+		q.pop_front();
+		m[u] = 0;
+		for (auto e : adj[u])
+			if (d[e.first] > d[u] + e.second)
+			{
+				d[e.first] = d[u] + e.second;
+				p[e.first] = u;
+				if (m[e.first] == 2)
+				{
+					m[e.first] = 1;
+					q.push_back(e.first);
+				}
+				else if (m[e.first] == 0)
+				{
+					m[e.first] = 1;
+					q.push_front(e.first);
+				}
+			}
+	}
+}
 ```
+The algorithm performs very fast in most cases however there exist cases for which the algorithm takes exponential time making it unsuitable in the worst case.
