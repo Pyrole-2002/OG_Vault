@@ -1,4 +1,4 @@
-- Given a weighted graph $G$ with $n$ vertices, we will find the length of the shortest path $d_{ij}$ between each pair of vertices $i$ and $j$.
+- Given a weighted [[Graphs Representation|graph]] $G$ with $n$ vertices, we will find the length of the shortest path $d_{ij}$ between each pair of vertices $i$ and $j$.
 - The graph can have negative weights but no negative cycles should exist. This algorithm can be used to detect the presence of negative cycles. The graph has a negative cycle if at the end of the algorithm, the distance from a vertex $v$ to itself is negative.
 - The idea is to partition the process of finding the shortest path between any two vertices to several incremental phases.
 - The matrix of distances is $d$ and the vertices are numbered from $1$ to $n$.
@@ -13,5 +13,31 @@ d_{\text{new}}[i][j] = \min(d[i][j],\ d[i][k]+d[k][j])
 $$
 - The time complexity of this algorithm is $O(V^3)$.
 ```cpp
+int n;
+vector<vector<pair<int, int>>> adj;
+vector<vector<int>> d, p;
 
+void floydWarshall()
+{
+	for (int i = 0; i < n; i++)
+	{
+		d[i][i] = 0;
+		for (auto u : adj[i])
+		{
+			d[i][u.first] = u.second;
+			p[i][u.first] = i;
+		}
+	}
+	for (int k = 0; k < n; k++)
+		for (int i = 0; i < n; i++)
+			for (int j = 0; j < n; j++)
+				if (d[i][k] < INF && d[k][j] < INF && d[i][j] > d[i][k] + d[k][j])
+				{
+					d[i][j] = d[i][k] + d[k][j];
+					p[i][j] = p[k][j];
+				}
+}
 ```
+### Negative Cycles
+- The algorithm does not apply to graphs containing negative cycles. But for all pairs of vertex $i$ and $j$ for which there doesn't exist a path starting at $i$, visiting a negative cycle, and ending at $j$, the algorithm will work correctly.
+- To handle the other cases, we run the algorithm for a given graph. Then a shortest path between $i$ and $j$ does not exist iff there is a vertex $t$ that is reachable from $i$ and also from $j$ for which $d[t][t]<0$.
