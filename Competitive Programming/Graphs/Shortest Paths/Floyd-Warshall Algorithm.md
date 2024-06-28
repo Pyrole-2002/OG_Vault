@@ -1,2 +1,5 @@
 - Given a weighted graph $G$ with $n$ vertices, we will find the length of the shortest path $d_{ij}$ between each pair of vertices $i$ and $j$.
 - The graph can have negative weights but no negative cycles should exist. This algorithm can be used to detect the presence of negative cycles. The graph has a negative cycle if at the end of the algorithm, the distance from a vertex $v$ to itself is negative.
+- The idea is to partition the process of finding the shortest path between any two vertices to several incremental phases.
+- The matrix of distances is $d$ and the vertices are numbered from $1$ to $n$.
+- 
