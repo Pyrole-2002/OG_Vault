@@ -2,4 +2,4 @@
 - The graph can have negative weights but no negative cycles should exist. This algorithm can be used to detect the presence of negative cycles. The graph has a negative cycle if at the end of the algorithm, the distance from a vertex $v$ to itself is negative.
 - The idea is to partition the process of finding the shortest path between any two vertices to several incremental phases.
 - The matrix of distances is $d$ and the vertices are numbered from $1$ to $n$.
-- 
+- Before $k^\text{th}$ phase, the value of $d[i][j]$ is equal to the length of the shortest path from $i$ to $j$, if this path is allowed to enter only the vertex with numbers smaller than $k$ (the beginning and end of the path are not restricted by this property).
