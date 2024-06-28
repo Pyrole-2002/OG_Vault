@@ -19,8 +19,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "4ad4126fa04f0036",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.6.5"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -168,7 +179,7 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "e8317685c746f02a",
+  "active": "4ad4126fa04f0036",
   "lastOpenFiles": [
     "Competitive Programming/Graphs/Bridges & Articulation Points.md",
     "Competitive Programming/Graphs/Traversal/DFS.md",
