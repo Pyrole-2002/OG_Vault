@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Competitive Programming/Graphs/Spanning Trees/Prim's Algorithm.md",
+                "file": "Competitive Programming/Data Structures/Sparse Table.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Competitive Programming/Graphs/Spanning Trees/Prim's Algorithm.md",
+                "file": "Competitive Programming/Data Structures/Sparse Table.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Competitive Programming/Graphs/Spanning Trees/Prim's Algorithm.md",
+                "file": "Competitive Programming/Data Structures/Sparse Table.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Competitive Programming/Graphs/Spanning Trees/Prim's Algorithm.md"
+                "file": "Competitive Programming/Data Structures/Sparse Table.md"
               }
             }
           },
@@ -170,8 +170,8 @@
   },
   "active": "ebcbb20bc11568b5",
   "lastOpenFiles": [
-    "Competitive Programming/Graphs/Shortest Paths/Floyd-Warshall Algorithm.md",
     "Competitive Programming/Graphs/Spanning Trees/Prim's Algorithm.md",
+    "Competitive Programming/Graphs/Shortest Paths/Floyd-Warshall Algorithm.md",
     "Competitive Programming/Graphs/Spanning Trees",
     "Competitive Programming/Graphs/Shortest Paths/D'Esopo-Pape Algorithm.md",
     "Competitive Programming/Graphs/Bridges & Articulation Points.md",
