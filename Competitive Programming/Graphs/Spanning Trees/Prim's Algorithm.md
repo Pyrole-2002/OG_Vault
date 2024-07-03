@@ -10,3 +10,7 @@
 - If we only look at one edge from each already selected vertex, we can sort the edges from each vertex in ascending order of their weights, and store a pointer to the first valid edge.
 - Then after finding and selecting the minimal edge, we update the pointers. This gives a complexity of $O(V^2+E)$ and for sorting the edges an additional $O(E\log V)$ which gives the complexity $O(V^2\log V)$ in the worst case.
 ## Dense Graphs
+- For every not yet selected vertex, we will store the minimum edge to an already selected vertex. Then during a step, we only look at these minimum weight edges which take $O(V)$.
+- After adding an edge some minimum edge pointers have to be recalculated. The weights can only decrease, the minimal weight edge of every non-selected vertex may stay the same or it will be updated by an edge to the newly selected vertex. This also takes $O(V)$.
+- Therefore the total complexity becomes $O(V^2)$.
+- This implementation is very convenient for the Euclidean MST where we have $V$ nodes on a plane and the distance between each pair of points is the Euclidean distance between them and we want to find an MST for this complete graph. This task can be solved by Prim's Algorithm in $O(V^2)$ time and $O(V)$ space which is not possible with [[Kruskal's Algorithm]].
