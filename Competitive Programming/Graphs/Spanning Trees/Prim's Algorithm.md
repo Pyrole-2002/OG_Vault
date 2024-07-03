@@ -1,4 +1,4 @@
-- Given a weighted undirected graph $G$ with $V$ vertices and $E$ edges, we will find a spanning tree of this graph which connects all vertices and has the least sum of weights of all edges. A spanning tree is a set of edges such that any vertex can reach any other by exactly one simple path. The spanning tree with the least weight is called a Minimum Spanning Tree.
+- Given a weighted undirected [[Graphs Representation|graph]] $G$ with $V$ vertices and $E$ edges, we will find a spanning tree of this graph which connects all vertices and has the least sum of weights of all edges. A spanning tree is a set of edges such that any vertex can reach any other by exactly one simple path. The spanning tree with the least weight is called a Minimum Spanning Tree.
 ![[Pasted image 20240703014427.png]]![[Pasted image 20240703014433.png]]
 - Any spanning tree consists of $V-1$ edges.
 - The MST is built gradually by adding edges one at a time. At first the tree consists only of a single arbitrary vertex.
@@ -62,3 +62,47 @@ vector<vector<pair<int, int>>> prim()
 - It is possible to interpret the operations of finding the minimum and modifying some values as [[Set]] operations.
 - We can now find the minimum edge in $O(\log V)$ time but recomputing the pointers will now take $O(V\log V)$. When we consider that we only need to update $O(E)$ times in total and perform $O(V)$ searches for the minimal edge, then the total complexity will be $O(E\log V)$.
 - For sparse graphs this is better but for dense graphs this will be slower.
+```cpp
+vector<vector<pair<int, int>>> prim()
+{
+	int total_weight = 0; // total weight of the MST
+	vector<bool> selected(n, false);
+	vector<vector<pair<int, int>>> mst(n);
+	vector<int> min_edge(n, INF), parent(n, -1); // min edge weight to reach a vertex and its parent
+
+	min_edge[0] = 0;
+	set<pair<int, int>> s; // {min_edge_weight, vertex}
+	s.insert({0, 0});
+
+	for (int i = 0; i < n; i++)
+	{
+		if (s.empty())
+			return {};
+
+		int u = s.begin()->second;
+		s.erase(s.begin());
+		selected[u] = true;
+		total_weight += min_edge[u];
+
+		if (parent[u] != -1)
+		{
+			mst[u].push_back({parent[u], min_edge[u]});
+			mst[parent[u]].push_back({u, min_edge[u]});
+		}
+
+		for (auto edge : adj[u])
+		{
+			int v = edge.first, w = edge.second;
+			if (!selected[v] && w < min_edge[v])
+			{
+				s.erase({min_edge[v], v});
+				min_edge[v] = w;
+				parent[v] = u;
+				s.insert({min_edge[v], v});
+			}
+		}
+	}
+
+	return mst;
+}
+```

@@ -13,14 +13,23 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Competitive Programming/Graphs/Spanning Trees/Prim's Algorithm.md",
+                "file": "Competitive Programming/Graphs/Spanning Trees/Kruskal's Algorithm.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
+          },
+          {
+            "id": "c9f259aaa4ca9436",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +95,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Competitive Programming/Graphs/Spanning Trees/Prim's Algorithm.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +111,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Competitive Programming/Graphs/Spanning Trees/Prim's Algorithm.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,9 +132,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Competitive Programming/Graphs/Spanning Trees/Prim's Algorithm.md"
-              }
+              "state": {}
             }
           },
           {
@@ -168,12 +173,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "e04571a2d45fe391",
+  "active": "c9f259aaa4ca9436",
   "lastOpenFiles": [
+    "Competitive Programming/Graphs/Spanning Trees/Kruskal's Algorithm.md",
+    "Competitive Programming/Graphs/Spanning Trees/Prim's Algorithm.md",
     "attachments/Pasted image 20240703014433.png",
     "attachments/Pasted image 20240703014427.png",
     "Competitive Programming/Data Structures/Sparse Table.md",
-    "Competitive Programming/Graphs/Spanning Trees/Prim's Algorithm.md",
     "Competitive Programming/Graphs/Shortest Paths/Floyd-Warshall Algorithm.md",
     "Competitive Programming/Graphs/Spanning Trees",
     "Competitive Programming/Graphs/Shortest Paths/D'Esopo-Pape Algorithm.md",
@@ -209,7 +215,6 @@
     "Competitive Programming/Graphs/Traversal",
     "Competitive Programming/Graphs",
     "attachments/Pasted image 20240602194242.png",
-    "attachments/Pasted image 20240602193845.png",
     "attachments",
     "Excalidraw",
     "Competitive Programming/Data Structures/Trees",
