@@ -14,3 +14,48 @@
 - After adding an edge some minimum edge pointers have to be recalculated. The weights can only decrease, the minimal weight edge of every non-selected vertex may stay the same or it will be updated by an edge to the newly selected vertex. This also takes $O(V)$.
 - Therefore the total complexity becomes $O(V^2)$.
 - This implementation is very convenient for the Euclidean MST where we have $V$ nodes on a plane and the distance between each pair of points is the Euclidean distance between them and we want to find an MST for this complete graph. This task can be solved by Prim's Algorithm in $O(V^2)$ time and $O(V)$ space which is not possible with [[Kruskal's Algorithm]].
+```cpp
+int n;
+vector<vector<pair<int, int>>> adj;
+
+vector<vector<pair<int, int>>> prim()
+{
+	int total_weight = 0; // total weight of the MST
+	vector<bool> selected(n, false);
+	vector<vector<pair<int, int>>> mst(n);
+	vector<int> min_edge(n, INF), parent(n, -1); // min edge weight to reach a vertex and its parent
+
+	min_edge[0] = 0;
+	for (int i = 0; i < n; i++)
+	{
+		int u = -1;
+		for (int j = 0; j < n; j++)
+			if (!selected[j] && (u == -1 || min_edge[j] < min_edge[u])) // find the vertex with the minimum edge weight
+				u = j;
+
+		if (min_edge[u] == INF) // if the vertex is not reachable
+			return {};
+
+		selected[u] = true;
+		total_weight += min_edge[u];
+		if (parent[u] != -1)
+		{
+			mst[u].push_back({parent[u], min_edge[u]});
+			mst[parent[u]].push_back({u, min_edge[u]});
+		}
+
+		for (auto e : adj[u])
+		{
+			int v = e.first, w = e.second;
+			if (w < min_edge[v])
+			{
+				min_edge[v] = w;
+				parent[v] = u;
+			}
+		}
+	}
+
+	return mst;
+}
+```
+## Sparse Graphs
