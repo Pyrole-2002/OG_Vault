@@ -59,3 +59,6 @@ vector<vector<pair<int, int>>> prim()
 }
 ```
 ## Sparse Graphs
+- It is possible to interpret the operations of finding the minimum and modifying some values as [[Set]] operations.
+- We can now find the minimum edge in $O(\log V)$ time but recomputing the pointers will now take $O(V\log V)$. When we consider that we only need to update $O(E)$ times in total and perform $O(V)$ searches for the minimal edge, then the total complexity will be $O(E\log V)$.
+- For sparse graphs this is better but for dense graphs this will be slower.
