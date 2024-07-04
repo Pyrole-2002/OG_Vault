@@ -20,7 +20,6 @@ vector<vector<pair<int, int>>> adj;
 
 vector<vector<pair<int, int>>> prim()
 {
-	int total_weight = 0; // total weight of the MST
 	vector<bool> selected(n, false);
 	vector<vector<pair<int, int>>> mst(n);
 	vector<int> min_edge(n, INF), parent(n, -1); // min edge weight to reach a vertex and its parent
@@ -37,7 +36,6 @@ vector<vector<pair<int, int>>> prim()
 			return {};
 
 		selected[u] = true;
-		total_weight += min_edge[u];
 		if (parent[u] != -1)
 		{
 			mst[u].push_back({parent[u], min_edge[u]});

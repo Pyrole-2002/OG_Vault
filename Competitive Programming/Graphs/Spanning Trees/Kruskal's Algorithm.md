@@ -7,5 +7,35 @@
 ### Simplest Implementation
 Directly implementing the algorithm results in $O(E\log E+V^2)$ time complexity.
 ```cpp
+vector<Edge> adj;
+
+struct Edge
+{
+	int u, v, w;
+};
+
+vector<Edge> kruskal()
+{
+	vector<Edge> mst;
+	sort(adj.begin(), adj.end(), [](Edge a, Edge b) { return a.w < b.w; });
+	vector<int> tree_id(n); // for each vertex, store the tree it belongs to
+	for (int i = 0; i < n; i++)
+		tree_id[i] = i; // initially each vertex is in its own tree
+	for (Edge e : adj)
+		if (tree_id[e.u] != tree_id[e.v])
+		{
+			mst.push_back(e);
+			int old_id = tree_id[e.u], new_id = tree_id[e.v];
+			for (int i = 0; i < n; i++)
+				if (tree_id[i] == old_id)
+					tree_id[i] = new_id;
+		}
+
+	return mst;
+}
+```
+## Using [[Disjoint Set Union]]
+We can use DSU for implementing Kruskal's Algorithm which will achieve the time complexity of $O(E\log V)$.
+```cpp
 
 ```
