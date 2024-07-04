@@ -19,17 +19,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "c9f259aaa4ca9436",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -95,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Competitive Programming/Graphs/Spanning Trees/Kruskal's Algorithm.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Competitive Programming/Graphs/Spanning Trees/Kruskal's Algorithm.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -132,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Competitive Programming/Graphs/Spanning Trees/Kruskal's Algorithm.md"
+              }
             }
           },
           {
@@ -173,10 +168,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "c9f259aaa4ca9436",
+  "active": "e04571a2d45fe391",
   "lastOpenFiles": [
-    "Competitive Programming/Graphs/Spanning Trees/Kruskal's Algorithm.md",
     "Competitive Programming/Graphs/Spanning Trees/Prim's Algorithm.md",
+    "Competitive Programming/Graphs/Spanning Trees/Kruskal's Algorithm.md",
     "attachments/Pasted image 20240703014433.png",
     "attachments/Pasted image 20240703014427.png",
     "Competitive Programming/Data Structures/Sparse Table.md",
