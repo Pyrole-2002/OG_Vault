@@ -131,7 +131,7 @@ void union_sets(int a, int b)
 # Applications
 ### Connected Components in a Graph
 - DSU can be used when we have an empty graph, and want to add vertices and undirected edges to answer the queries whether two vertices are in the same connected component of the graph or not.
-- Nearly the same problem appears in [[MST - Kruskal & DSU]].
+- Nearly the same problem appears in [[Kruskal's Algorithm]].
 ### Search for Connected Components in an Image
 - Let there be an image of $n\times m$ pixels. Initially, all are white, but then few black pixels are drawn. Determine the size of each white connected component in the final image.
 - Iterate over all white pixels in the image, for each pixel, iterate over it's four neighbors and if the neighbor is white call `union_sets`.
