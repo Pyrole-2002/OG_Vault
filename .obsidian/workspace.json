@@ -4,20 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "34e849de4b201e03",
+        "id": "8f1ce1d3dc437eaf",
         "type": "tabs",
         "children": [
           {
-            "id": "e04571a2d45fe391",
+            "id": "75666c4e2a66c7b8",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Competitive Programming/Graphs/Spanning Trees/Kruskal's Algorithm.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -86,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Competitive Programming/Graphs/Spanning Trees/Kruskal's Algorithm.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Competitive Programming/Graphs/Spanning Trees/Kruskal's Algorithm.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Competitive Programming/Graphs/Spanning Trees/Kruskal's Algorithm.md"
-              }
+              "state": {}
             }
           },
           {
@@ -168,10 +159,14 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "e04571a2d45fe391",
+  "active": "75666c4e2a66c7b8",
   "lastOpenFiles": [
-    "Competitive Programming/Data Structures/Trees/Disjoint Set Union.md",
+    "Competitive Programming/Graphs/Connected Components.md",
+    "Competitive Programming/Graphs/Traversal/BFS.md",
+    "Competitive Programming/STL/Stack.md",
+    "Competitive Programming/STL/Queue.md",
     "Competitive Programming/Graphs/Spanning Trees/Kruskal's Algorithm.md",
+    "Competitive Programming/Data Structures/Trees/Disjoint Set Union.md",
     "Competitive Programming/Graphs/Spanning Trees/Prim's Algorithm.md",
     "attachments/Pasted image 20240703014433.png",
     "attachments/Pasted image 20240703014427.png",
@@ -182,8 +177,6 @@
     "Competitive Programming/Graphs/Bridges & Articulation Points.md",
     "Competitive Programming/Graphs/Traversal/DFS.md",
     "Competitive Programming/Graphs/Graphs Representation.md",
-    "Competitive Programming/Graphs/Traversal/BFS.md",
-    "Competitive Programming/Graphs/Connected Components.md",
     "Competitive Programming/Graphs/Shortest Paths/0-1 BFS.md",
     "Competitive Programming/Graphs/Shortest Paths/Dijkstra's Algorithm.md",
     "Competitive Programming/Graphs/Shortest Paths/Bellman-Ford Algorithm.md",
@@ -198,8 +191,6 @@
     "Competitive Programming/Number Theory/Fibonacci Computation.md",
     "Competitive Programming/Number Theory/Integer Factorization.md",
     "Competitive Programming/Number Theory/Linear Congruence Equation.md",
-    "Competitive Programming/Number Theory/Linear Diophantine Equation.md",
-    "Competitive Programming/Number Theory/Linear Sieve.md",
     "attachments/Pasted image 20240613132654.png",
     "attachments/Pasted image 20240613132451.png",
     "attachments/Pasted image 20240613032852.png",
