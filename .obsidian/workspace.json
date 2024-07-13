@@ -11,8 +11,13 @@
             "id": "75666c4e2a66c7b8",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Competitive Programming/STL/Queue.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Competitive Programming/STL/Queue.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Competitive Programming/STL/Queue.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Competitive Programming/STL/Queue.md"
+              }
             }
           },
           {
@@ -161,10 +170,10 @@
   },
   "active": "75666c4e2a66c7b8",
   "lastOpenFiles": [
-    "Competitive Programming/Graphs/Connected Components.md",
-    "Competitive Programming/Graphs/Traversal/BFS.md",
     "Competitive Programming/STL/Stack.md",
     "Competitive Programming/STL/Queue.md",
+    "Competitive Programming/Graphs/Connected Components.md",
+    "Competitive Programming/Graphs/Traversal/BFS.md",
     "Competitive Programming/Graphs/Spanning Trees/Kruskal's Algorithm.md",
     "Competitive Programming/Data Structures/Trees/Disjoint Set Union.md",
     "Competitive Programming/Graphs/Spanning Trees/Prim's Algorithm.md",
