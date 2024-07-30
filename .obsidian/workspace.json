@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Competitive Programming/STL/Queue.md",
+                "file": "Competitive Programming/Graphs/Bridges & Articulation Points.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Competitive Programming/STL/Queue.md",
+                "file": "Competitive Programming/Graphs/Bridges & Articulation Points.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Competitive Programming/STL/Queue.md",
+                "file": "Competitive Programming/Graphs/Bridges & Articulation Points.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Competitive Programming/STL/Queue.md"
+                "file": "Competitive Programming/Graphs/Bridges & Articulation Points.md"
               }
             }
           },
@@ -170,6 +170,7 @@
   },
   "active": "152694bb7ccefa76",
   "lastOpenFiles": [
+    "Competitive Programming/STL/Queue.md",
     "Competitive Programming/STL/Map.md",
     "Competitive Programming/Arrays/Kadane's Algorithm.md",
     "Competitive Programming/Arrays/Longest Subarray with Sum K.md",
@@ -178,7 +179,6 @@
     "Competitive Programming/Graphs/Shortest Paths/Floyd-Warshall Algorithm.md",
     "Competitive Programming/Graphs/Bridges & Articulation Points.md",
     "Competitive Programming/Graphs/Traversal/DFS.md",
-    "Competitive Programming/STL/Queue.md",
     "Competitive Programming/STL/Stack.md",
     "Competitive Programming/Graphs/Connected Components.md",
     "Competitive Programming/Graphs/Traversal/BFS.md",
