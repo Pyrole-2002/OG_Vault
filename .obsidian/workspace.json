@@ -4,20 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "b09b398734b07be3",
+        "id": "5cedb2814bc3da6a",
         "type": "tabs",
         "children": [
           {
-            "id": "152694bb7ccefa76",
+            "id": "7f461fca91737d03",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Competitive Programming/Graphs/Bridges & Articulation Points.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -86,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Competitive Programming/Graphs/Bridges & Articulation Points.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Competitive Programming/Graphs/Bridges & Articulation Points.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Competitive Programming/Graphs/Bridges & Articulation Points.md"
-              }
+              "state": {}
             }
           },
           {
@@ -168,8 +159,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "152694bb7ccefa76",
+  "active": "7f461fca91737d03",
   "lastOpenFiles": [
+    "Competitive Programming/Tricks.md",
+    "Competitive Programming/Graphs/Bridges & Articulation Points.md",
     "Competitive Programming/STL/Queue.md",
     "Competitive Programming/STL/Map.md",
     "Competitive Programming/Arrays/Kadane's Algorithm.md",
@@ -177,7 +170,6 @@
     "Competitive Programming/Graphs/Spanning Trees/Prim's Algorithm.md",
     "Competitive Programming/Graphs/Spanning Trees/Kruskal's Algorithm.md",
     "Competitive Programming/Graphs/Shortest Paths/Floyd-Warshall Algorithm.md",
-    "Competitive Programming/Graphs/Bridges & Articulation Points.md",
     "Competitive Programming/Graphs/Traversal/DFS.md",
     "Competitive Programming/STL/Stack.md",
     "Competitive Programming/Graphs/Connected Components.md",
@@ -199,7 +191,6 @@
     "Competitive Programming/Graphs/Articulation Points.md",
     "Competitive Programming/Number Theory/Euclidean Algorithm.md",
     "Competitive Programming/Number Theory/Euler's Totient Function.md",
-    "Competitive Programming/Number Theory/Fermat's Little Theorem.md",
     "attachments/Pasted image 20240613132654.png",
     "attachments/Pasted image 20240613132451.png",
     "attachments/Pasted image 20240613032852.png",
