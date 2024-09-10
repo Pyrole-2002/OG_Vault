@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "5cedb2814bc3da6a",
+        "id": "803ae8768d4ae898",
         "type": "tabs",
         "children": [
           {
-            "id": "7f461fca91737d03",
+            "id": "c7278f7ce850a993",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -159,8 +159,9 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "7f461fca91737d03",
+  "active": "c7278f7ce850a993",
   "lastOpenFiles": [
+    "Competitive Programming/Arrays/Dutch National Flag Algorithm.md",
     "Competitive Programming/Tricks.md",
     "Competitive Programming/Graphs/Bridges & Articulation Points.md",
     "Competitive Programming/STL/Queue.md",
@@ -190,7 +191,6 @@
     "Competitive Programming/Number Theory/Divisors.md",
     "Competitive Programming/Graphs/Articulation Points.md",
     "Competitive Programming/Number Theory/Euclidean Algorithm.md",
-    "Competitive Programming/Number Theory/Euler's Totient Function.md",
     "attachments/Pasted image 20240613132654.png",
     "attachments/Pasted image 20240613132451.png",
     "attachments/Pasted image 20240613032852.png",
