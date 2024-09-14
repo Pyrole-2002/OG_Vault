@@ -11,8 +11,13 @@
             "id": "c7278f7ce850a993",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Competitive Programming/Sorting/Quick Sort.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Competitive Programming/Sorting/Quick Sort.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Competitive Programming/Sorting/Quick Sort.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Competitive Programming/Sorting/Quick Sort.md"
+              }
             }
           },
           {
@@ -161,36 +170,36 @@
   },
   "active": "c7278f7ce850a993",
   "lastOpenFiles": [
+    "Competitive Programming/Sorting/Merge Sort.md",
+    "Competitive Programming/Sorting/Quick Sort.md",
+    "Competitive Programming/Sorting/Selection Sort.md",
+    "Competitive Programming/Sorting/Bubble Sort.md",
+    "Competitive Programming/Sorting/Insertion Sort.md",
+    "Competitive Programming/Graphs/Strong Orientation.md",
+    "Competitive Programming/Graphs/Graphs Representation.md",
+    "Competitive Programming/Graphs/Connected Components.md",
+    "Competitive Programming/Graphs/Bridges & Articulation Points.md",
+    "Competitive Programming/Graphs/Spanning Trees/Kruskal's Algorithm.md",
+    "Competitive Programming/Graphs/Spanning Trees/Prim's Algorithm.md",
+    "Competitive Programming/Graphs/Shortest Paths/Bellman-Ford Algorithm.md",
+    "Competitive Programming/Graphs/Shortest Paths/Floyd-Warshall Algorithm.md",
+    "Competitive Programming/Graphs/Shortest Paths/Dijkstra's Algorithm.md",
+    "Competitive Programming/Graphs/Shortest Paths/0-1 BFS.md",
+    "Competitive Programming/Data Structures/Trees/Disjoint Set Union.md",
+    "Competitive Programming/Arrays/Pascal's Triangle.md",
+    "Competitive Programming/Arrays/Moore's Voting Algorithm.md",
+    "Competitive Programming/Arrays/Longest Subarray with Sum K.md",
+    "Competitive Programming/Arrays/Kadane's Algorithm.md",
     "Competitive Programming/Arrays/Dutch National Flag Algorithm.md",
     "Competitive Programming/Tricks.md",
-    "Competitive Programming/Graphs/Bridges & Articulation Points.md",
     "Competitive Programming/STL/Queue.md",
     "Competitive Programming/STL/Map.md",
-    "Competitive Programming/Arrays/Kadane's Algorithm.md",
-    "Competitive Programming/Arrays/Longest Subarray with Sum K.md",
-    "Competitive Programming/Graphs/Spanning Trees/Prim's Algorithm.md",
-    "Competitive Programming/Graphs/Spanning Trees/Kruskal's Algorithm.md",
-    "Competitive Programming/Graphs/Shortest Paths/Floyd-Warshall Algorithm.md",
     "Competitive Programming/Graphs/Traversal/DFS.md",
     "Competitive Programming/STL/Stack.md",
-    "Competitive Programming/Graphs/Connected Components.md",
-    "Competitive Programming/Graphs/Traversal/BFS.md",
-    "Competitive Programming/Data Structures/Trees/Disjoint Set Union.md",
     "attachments/Pasted image 20240703014433.png",
     "attachments/Pasted image 20240703014427.png",
-    "Competitive Programming/Data Structures/Sparse Table.md",
     "Competitive Programming/Graphs/Spanning Trees",
-    "Competitive Programming/Graphs/Shortest Paths/D'Esopo-Pape Algorithm.md",
-    "Competitive Programming/Graphs/Graphs Representation.md",
-    "Competitive Programming/Graphs/Shortest Paths/0-1 BFS.md",
-    "Competitive Programming/Graphs/Shortest Paths/Dijkstra's Algorithm.md",
-    "Competitive Programming/Graphs/Shortest Paths/Bellman-Ford Algorithm.md",
-    "Competitive Programming/STL/Set.md",
-    "Competitive Programming/Graphs/Strong Orientation.md",
     "Competitive Programming/Graphs/Shortest Paths",
-    "Competitive Programming/Number Theory/Divisors.md",
-    "Competitive Programming/Graphs/Articulation Points.md",
-    "Competitive Programming/Number Theory/Euclidean Algorithm.md",
     "attachments/Pasted image 20240613132654.png",
     "attachments/Pasted image 20240613132451.png",
     "attachments/Pasted image 20240613032852.png",
